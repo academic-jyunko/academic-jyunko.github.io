@@ -1,22 +1,22 @@
 # Site settings
-title: Haytham Fayek
-author: Haytham Fayek
-email: h@haythamfayek.com
+title: academic jyunko
+author: jyunko(简律纯)
+email: HsiangNianian@outlook.com
 description: AI/ML
 logo: assets/HF.png
 
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://haythamfayek.com" # the base hostname & protocol for your site
+url: "https://academic.jyunko.cn" # the base hostname & protocol for your site
 
 social_links:
-  twitter: haythamfayek
-  github: haythamfayek
-  linkedin: haythamfayek
+  twitter: HsiangNianian
+  github: cypress0522
+  facebook: Hsiang_Nianian
 
 google_analytics: G-WQVB7M8ZZ2
 
 disqus:
-  shortname: haythamfayek
+  shortname: cypress0522
 
 show_excerpts: true
 
