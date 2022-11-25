@@ -1,0 +1,38 @@
+# Site settings
+title: Haytham Fayek
+author: Haytham Fayek
+email: h@haythamfayek.com
+description: AI/ML
+logo: assets/HF.png
+
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://haythamfayek.com" # the base hostname & protocol for your site
+
+social_links:
+  twitter: haythamfayek
+  github: haythamfayek
+  linkedin: haythamfayek
+
+google_analytics: G-WQVB7M8ZZ2
+
+disqus:
+  shortname: haythamfayek
+
+show_excerpts: true
+
+feed:
+  excerpt_only: true
+
+header_pages:
+  - publications.md
+  - blog.md
+
+# Build settings
+markdown: kramdown
+# theme: minima
+remote_theme: jekyll/minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-remote-theme
