@@ -11,11 +11,17 @@ Artificial Intelligence, Music Theories. There's going to be something more acad
 [~~Maybe we can really try it~~]()
 
 **View My Social Account!**
+
 Github: <https://github.com/cypress0522>
+
 Facebook: <https://facebook.com/hsiang.nianian>
+
 Soundcloud: <https://soundcloud.com/hsiang_nianian>
+
 Twitter: <https://twitter.com/HsiangNianian>
+
 Youtube: <https://www.youtube.com/channel/UCkgzeD3fl24G1lzbOQjIWBA>
+
 Instagram: <https://instagram.com/hsiang_nianian>
 
 <script type="text/javascript">
