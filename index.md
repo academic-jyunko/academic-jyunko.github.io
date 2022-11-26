@@ -6,7 +6,11 @@ title: Jyunko's academic site
 <p><img src="/assets/jyunko.jpg" alt="jyunko" class="profilepicmain"/></p>
 
 <!-- 人工智能、音乐理论。在这里将会讲述一些更加具有学术性的内容以及一些令我着迷的东西。我一直有个荒谬的想法——用编程语言作曲，用音乐语言编程~~或许我们真的可以试试~~。 -->
-Artificial Intelligence, Music Theories. There's going to be something more academic and something that fascinates me. I have always had an absurd idea-composing music in a programming language and programming in a music language.[~~Maybe we can really try it~~]()
+Artificial Intelligence, Music Theories. There's going to be something more academic and something that fascinates me. I have always had an absurd idea-composing music in a programming language and programming in a music language.
+
+[~~Maybe we can really try it~~]()
+
+[`Github`](https://github.com/cypress0522)|[`Facebook`](https://facebook.com/hsiang.nianian)|[`Soundcloud`](https://soundcloud.com/hsiang_nianian)|[`Twitter`](https://twitter.com/HsiangNianian)|[`Youtube`](https://www.youtube.com/channel/UCkgzeD3fl24G1lzbOQjIWBA)|[`Instagram`](https://instagram.com/hsiang_nianian)
 
 <script type="text/javascript">
 <!--//--><![CDATA[//><!--
