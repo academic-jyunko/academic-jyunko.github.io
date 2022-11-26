@@ -10,7 +10,13 @@ Artificial Intelligence, Music Theories. There's going to be something more acad
 
 [~~Maybe we can really try it~~]()
 
-[`Github`](https://github.com/cypress0522)|[`Facebook`](https://facebook.com/hsiang.nianian)|[`Soundcloud`](https://soundcloud.com/hsiang_nianian)|[`Twitter`](https://twitter.com/HsiangNianian)|[`Youtube`](https://www.youtube.com/channel/UCkgzeD3fl24G1lzbOQjIWBA)|[`Instagram`](https://instagram.com/hsiang_nianian)
+**View My Social Account!**
+Github: <https://github.com/cypress0522>
+Facebook: <https://facebook.com/hsiang.nianian>
+Soundcloud: <https://soundcloud.com/hsiang_nianian>
+Twitter: <https://twitter.com/HsiangNianian>
+Youtube: <https://www.youtube.com/channel/UCkgzeD3fl24G1lzbOQjIWBA>
+Instagram: <https://instagram.com/hsiang_nianian>
 
 <script type="text/javascript">
 <!--//--><![CDATA[//><!--
@@ -98,6 +104,7 @@ function email(e, d) {
 email("HsiangNianian", "outlook.com");
 //--><!]]>
 </script> 
+
 **Phone:** 
 <script type="text/javascript">
 <!--//--><![CDATA[//><!--
@@ -111,6 +118,7 @@ function phone(c, n, e) {
 phone("+86 131", "4835", "0229");
 //--><!]]>
 </script>
+
 **Postal:** 
 <script type="text/javascript">
 <!--//--><![CDATA[//><!--
