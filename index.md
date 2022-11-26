@@ -1,19 +1,16 @@
 ---
 layout: page
-title: Haytham Fayek
+title: Jyunko's academic site
 ---
 
-<p><img src="/assets/Haytham.jpg" alt="Haytham" class="profilepicmain"/></p>
+<p><img src="/assets/jyunko.jpg" alt="jyunko" class="profilepicmain"/></p>
 
 Artificial Intelligence / Machine Learning Research / Science.  
-Senior Lecturer, School of Computing Technologies,  
-[Royal Melbourne Institute of Technology (RMIT University)](https://www.rmit.edu.au).  
+Senior Lecturer, School of Computing Technologies.  
 Alumnus, [Meta/Facebook Research](https://research.fb.com), [Oculus Research](https://www.oculus.com/research/), & [WorleyParsons](https://www.worley.com).  
 SMIEEE, MACM, MIEAust.  
-[Scholar](https://scholar.google.com/citations?user=l5T9RtcAAAAJ) |
-[Github](https://github.com/haythamfayek) |
-[LinkedIn](https://www.linkedin.com/in/haythamfayek/) |
-[Twitter](https://twitter.com/HaythamFayek)  
+[Github](https://github.com/cypress0522) |
+[Twitter](https://twitter.com/0)                                                                                                                                                                                                                                                                                                           `
 <!--[Resume](assets/Fayek_resume.pdf) |-->
 <script type="text/javascript">
 <!--//--><![CDATA[//><!--
