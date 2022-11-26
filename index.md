@@ -85,7 +85,6 @@ My research projects include ASR detection sensitive word system based on MFSC a
 
 **Mr. Hsiang Nianian**  
 
-
 **Email:** 
 <script type="text/javascript">
 <!--//--><![CDATA[//><!--
@@ -99,7 +98,6 @@ function email(e, d) {
 email("HsiangNianian", "outlook.com");
 //--><!]]>
 </script> 
-
 **Phone:** 
 <script type="text/javascript">
 <!--//--><![CDATA[//><!--
@@ -113,7 +111,6 @@ function phone(c, n, e) {
 phone("+86 131", "4835", "0229");
 //--><!]]>
 </script>
-
 **Postal:** 
 <script type="text/javascript">
 <!--//--><![CDATA[//><!--
