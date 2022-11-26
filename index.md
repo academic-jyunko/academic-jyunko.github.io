@@ -94,7 +94,8 @@ function email(e, d) {
 }
 email("HsiangNianian", "outlook.com");
 //--><!]]>
-</script>  
+</script> 
+
 **Phone:** 
 <script type="text/javascript">
 <!--//--><![CDATA[//><!--
@@ -107,8 +108,8 @@ function phone(c, n, e) {
 }
 phone("+86 131", "4835", "0229");
 //--><!]]>
+</script>
 
-</script>  
 **Postal:** 
 <script type="text/javascript">
 <!--//--><![CDATA[//><!--
