@@ -12,7 +12,7 @@ Artificial Intelligence, Music Theories. There's going to be something more acad
 
 **View My Social Account!**
 
-Github: <https://github.com/cypress0522>
+Github: <https://github.com/A2C29K9>
 
 Facebook: <https://facebook.com/hsiang.nianian>
 
@@ -44,7 +44,8 @@ email("HsiangNianian", "outlook.com");
 <br/>
 
 <!-- 2022年一无所获的今天...| -->
-| **Dec 2022**: | [The Pain of AI](./2022-12-26-The-Pain-of-AI) |
+
+**Dec 2022**: [The Pain of AI](https://academic.jyunko.cn/2022/12/26/The-Pain-of-AI.html)
 
 <br/>
 
@@ -67,7 +68,6 @@ email("HsiangNianian", "outlook.com");
 <div id="news" style="display:none" markdown="1"> 
 
 | **Aug 2017**: | Talk at the [ML / AI Melbourne Meetup](https://www.meetup.com/Machine-Learning-AI-Meetup/events/239993347/), on [Will Deep Learning Lead to AI?](../assets/presentations/Fayek_deeplearningai17.pdf) |
-| **Aug 2017**: | At ICML'17, Sydney and IJCAI'17, Melbourne. | 
 
 </div>
 
