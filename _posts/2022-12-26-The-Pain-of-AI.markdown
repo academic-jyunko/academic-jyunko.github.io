@@ -26,4 +26,4 @@ author: 2222202112
 
 不管他多有良心，这样的人不配做老师。
 
-<style color="red">AI之痛</style>
+<a color="red">AI之痛</a>
