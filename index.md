@@ -44,7 +44,7 @@ email("HsiangNianian", "outlook.com");
 <br/>
 
 <!-- 2022年一无所获的今天...| -->
-2022 Nothing Today...
+| **Dec 2022**: | [The Pain of AI](./2022-12-26-The-Pain-of-AI) |
 
 <br/>
 
