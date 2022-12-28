@@ -1,4 +1,4 @@
-# Site settings
+8# Site settings
 title: Academic Jyunko
 author: jyunko/简律纯
 email: HsiangNianian@outlook.com
@@ -31,8 +31,8 @@ header_pages:
 
 # Build settings
 markdown: kramdown
-# theme: Lessormore # minima
-remote_theme: luoyan35714/LessOrMore
+theme: minima
+# remote_theme: luoyan35714/LessOrMore
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
