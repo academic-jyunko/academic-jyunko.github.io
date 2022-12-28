@@ -5,6 +5,7 @@ excerpt: "A summary of setting up a clean mac for pythonic machine learning rese
 date: 2018-01-14
 disqus_identifier: 20180114
 mathjax: true
+author: heytham fayek
 ---
 
 **Update #1:** Post updated to reflect macOS' move to zsh and the move to Python3 (09/06/2020). 
