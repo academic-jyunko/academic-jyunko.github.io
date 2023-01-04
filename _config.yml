@@ -28,7 +28,7 @@ feed:
 header_pages:
   # - publications.md
   - blog.md
-  - about.md
+  - Links.md
   
 # Build settings
 markdown: kramdown
