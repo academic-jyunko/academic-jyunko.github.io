@@ -28,7 +28,7 @@ feed:
 header_pages:
   # - publications.md
   - blog.md
-  - jyunko.md
+  - [jyunko.cn](https://jyunko.cn/)
   
 # Build settings
 markdown: kramdown
