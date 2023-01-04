@@ -28,7 +28,8 @@ feed:
 header_pages:
   # - publications.md
   - blog.md
-
+  - jyunko.md
+  
 # Build settings
 markdown: kramdown
 theme: minima
