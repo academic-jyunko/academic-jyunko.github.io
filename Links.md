@@ -1,5 +1,6 @@
 ---
-layout: about
+layout: Home
+title: Links
 author: 简律纯
 ---
 
