@@ -82,7 +82,7 @@ My research projects include ASR detection sensitive word system based on MFSC a
 ## Contact
 ---
 <br/>
-我不用微信，我不用QQ。
+我不用微信，我不用QQ，给我发邮件。
 
 **Mr. Hsiang Nianian**  
 
