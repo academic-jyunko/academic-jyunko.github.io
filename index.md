@@ -32,7 +32,7 @@ email("HsiangNianian", "outlook.com");
 <br/>
 
 <!-- 2022年一无所获的今天...| -->
-
+**Jan 2023**: [Anout Rasa](https://academic.jyunko.cn/2023/01/08/About-Rasa.html)
 **Dec 2022**: [The Pain of AI](https://academic.jyunko.cn/2022/12/26/The-Pain-of-AI.html)
 
 <br/>
