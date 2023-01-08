@@ -1,6 +1,7 @@
 ---
 title: The Pain of AI
 date: 2022-12-26 18:02
+update: 2023-01-09 05:39
 author: 2222202112
 ---
 
