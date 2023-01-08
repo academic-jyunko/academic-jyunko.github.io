@@ -1,7 +1,7 @@
 ---
 layout: post
 title: GPT-3 vs. Rasa chatbots
-auhor: Mark_Ryan
+author: Mark_Ryan
 ---
 
 
