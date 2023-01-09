@@ -1,2 +1,2 @@
 # My Website
-<academic.jyunko.cn>
+<https://academic.jyunko.cn>
