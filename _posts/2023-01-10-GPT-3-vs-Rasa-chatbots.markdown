@@ -1,7 +1,6 @@
 ---
 layout: post
 title: GPT-3 vs. Rasa chatbots
-date: 2023-01-10
 author: Mark_Ryan
 ---
 
