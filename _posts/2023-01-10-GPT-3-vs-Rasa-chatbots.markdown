@@ -8,6 +8,7 @@ author: Mark_Ryan
 
 <div align="center">
 <img src="https://miro.medium.com/max/720/1*M4Hj_yHDulwWTPetLVoQpQ.webp">
+<br>
 <small>Richard Trevithick’s locomotive — the GPT-3 of the early 19th century (Shutterstock.com)</small>
 </div>
 
@@ -32,6 +33,7 @@ To run the test with the Rasa chatbot, I started the trained Rasa model using th
 
 <div align="center">
 <img src="https://miro.medium.com/max/720/1*cACbTa0H1laFBvmq2MCo-g.webp">
+<br>
 <small>Test responses from the Rasa chatbot</small>
 </div>
 
@@ -46,6 +48,7 @@ To run the test with GPT-3, I selected the Q&A preset in the Playground tab of t
 
 <div align="center">
 <img src="https://miro.medium.com/max/720/1*-dA8xPG94VcTnyGtdVKq5Q.webp">
+<br>
 <small>Test responses from GPT-3</small>
 </div>
 
