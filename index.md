@@ -32,7 +32,7 @@ email("HsiangNianian", "outlook.com");
 <br/>
 
 | **Jan 2023**: | [GPT-3 vs. Rasa chatbots](https://academic.jyunko.cn/2023/01/10/GPT-3-vs-Rasa-chatbots.html),An article explains the difference between GPT-3 and Rasa. |
-| **Jan 2023**: | [The Pain of AI](https://academic.jyunko.cn/2023/01/09/The-Pain-of-AI.html),Some anecdotes with my teacher. |
+| | [The Pain of AI](https://academic.jyunko.cn/2023/01/09/The-Pain-of-AI.html),Some anecdotes with my teacher. |
 
 <br/>
 
