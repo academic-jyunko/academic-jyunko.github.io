@@ -13,6 +13,9 @@ layout: default
             {% if page.author %}
             • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>
             {% endif %}
+            {% if page.update %}
+            • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="update">Updated: {{ page.update | update: date_format }}</span></span>
+            {% endif %}
         </p>
     </header>
 
