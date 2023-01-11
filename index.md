@@ -32,7 +32,8 @@ email("HsiangNianian", "outlook.com");
 <br/>
 
 | **Jan 2023**: | [GPT-3 vs. Rasa chatbots](https://academic.jyunko.cn/2023/01/10/GPT-3-vs-Rasa-chatbots.html),An article explains the difference between GPT-3 and Rasa. |
-| | [The Pain of AI](https://academic.jyunko.cn/2023/01/09/The-Pain-of-AI.html),Some anecdotes with my teacher. | | [Training an acoustic model for CMUSphinx](https://academic.jyunko.cn/2023/01/11/Training-an-acoustic-model-for-CMUSphinx-en.html) An article explaining how to train one's own acoustic model in CMUSphinx speech recognition project |
+| | [The Pain of AI](https://academic.jyunko.cn/2023/01/09/The-Pain-of-AI.html),Some anecdotes with my teacher. |
+| | [Training an acoustic model for CMUSphinx](https://academic.jyunko.cn/2023/01/11/Training-an-acoustic-model-for-CMUSphinx-en.html) An article explaining how to train one's own acoustic model in CMUSphinx speech recognition project |
 
 <br/>
 
