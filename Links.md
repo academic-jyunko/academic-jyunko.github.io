@@ -4,7 +4,7 @@ title: Links
 author: 简律纯
 ---
 
-Github: <https://github.com/A2C29K9>
+Github: <https://github.com/HsiangNianian>
 
 Facebook: <https://facebook.com/hsiang.nianian>
 
