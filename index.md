@@ -31,9 +31,9 @@ email("HsiangNianian", "outlook.com");
 ---
 <br/>
 
-| **Jan 2023**: | [Training an acoustic model for CMUSphinx](https://academic.jyunko.cn/2023/01/11/Training-an-acoustic-model-for-CMUSphinx-en.html) (An article explaining how to train one's own acoustic model in CMUSphinx speech recognition project) |
-| | [GPT-3 vs. Rasa chatbots](https://academic.jyunko.cn/2023/01/10/GPT-3-vs-Rasa-chatbots.html),An article explains the difference between GPT-3 and Rasa. |
-| | [The Pain of AI](https://academic.jyunko.cn/2023/01/09/The-Pain-of-AI.html),Some anecdotes with my teacher. |
+The ASR detection sensitive word system of SC algorithm ",and I also actively participated in various programming competitions; In addition, I also have some research on music theory (especially the first feeling of chord color).
+
+In the rest of the time, I am committed to the development of a robot framework that connects QQ, WeChat and other platforms.
 
 <br/>
 
@@ -41,6 +41,10 @@ email("HsiangNianian", "outlook.com");
 ---
 <br/>
 
+| **Jan 2023**: | [训练自己的声学模型](https://academic.jyunko.cn/2023/01/18/Training-an-acoustic-model-for-CMUSphinx-zh-CN.html) (一篇来自官方的阐述如何训练自己的声学模型的文章) |
+| | [Training an acoustic model for CMUSphinx](https://academic.jyunko.cn/2023/01/11/Training-an-acoustic-model-for-CMUSphinx-en.html) (An article explaining how to train one's own acoustic model in CMUSphinx speech recognition project) |
+| | [GPT-3 vs. Rasa chatbots](https://academic.jyunko.cn/2023/01/10/GPT-3-vs-Rasa-chatbots.html),An article explains the difference between GPT-3 and Rasa. |
+| | [The Pain of AI](https://academic.jyunko.cn/2023/01/09/The-Pain-of-AI.html),Some anecdotes with my teacher. |
 | **Oct 2022**: | Promoted to Senior Lecturer (with Tenure)! |
 
 <script type="text/javascript">
