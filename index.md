@@ -31,9 +31,9 @@ email("HsiangNianian", "outlook.com");
 ---
 <br/>
 
-The ASR detection sensitive word system of SC algorithm ",and I also actively participated in various programming competitions; In addition, I also have some research on music theory (especially the first feeling of chord color).
+I am contributing to the ASR speech detection sensitive word system based on MFSC algorithm.
 
-In the rest of the time, I am committed to the development of a robot framework that connects QQ, WeChat and other platforms.
+In the rest of the time, I am committed to the development of a robot whl that connects QQ, WeChat and other platforms.
 
 <br/>
 
