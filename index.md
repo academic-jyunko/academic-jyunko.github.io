@@ -16,8 +16,8 @@ Artificial Intelligence, Music Theories. There's going to be something more acad
 <br/>
 
 I am contributing to the ASR speech detection sensitive word system based on MFSC algorithm.
-
 In the rest of the time, I am committed to the development of a robot whl that connects QQ, WeChat and other platforms.
+If you are interested in these, you can send me an email (mentioned below) and tell me what you think, and I will contact you.
 
 <br/>
 
@@ -25,11 +25,10 @@ In the rest of the time, I am committed to the development of a robot whl that c
 ---
 <br/>
 
-| **Jan 2023**: | [训练自己的声学模型](https://academic.jyunko.cn/2023/01/18/Training-an-acoustic-model-for-CMUSphinx-zh-CN.html) (一篇来自官方的阐述如何训练自己的声学模型的文章) |
-| | [Training an acoustic model for CMUSphinx](https://academic.jyunko.cn/2023/01/11/Training-an-acoustic-model-for-CMUSphinx-en.html) (An article explaining how to train one's own acoustic model in CMUSphinx speech recognition project) |
+| **Jan 2023**: | [训练自己的声学模型](https://academic.jyunko.cn/2023/01/18/Training-an-acoustic-model-for-CMUSphinx-zh-CN.html) (一篇来自官方的阐述如何训练自己的声学模型的文章)。 |
+| | [Training an acoustic model for CMUSphinx](https://academic.jyunko.cn/2023/01/11/Training-an-acoustic-model-for-CMUSphinx-en.html) (An article explaining how to train one's own acoustic model in CMUSphinx speech recognition project). |
 | | [GPT-3 vs. Rasa chatbots](https://academic.jyunko.cn/2023/01/10/GPT-3-vs-Rasa-chatbots.html),An article explains the difference between GPT-3 and Rasa. |
 | | [The Pain of AI](https://academic.jyunko.cn/2023/01/09/The-Pain-of-AI.html),Some anecdotes with my teacher. |
-| **Oct 2022**: | Promoted to Senior Lecturer (with Tenure)! |
 
 <script type="text/javascript">
    function toggle_vis(id) {
