@@ -9,21 +9,6 @@ Artificial Intelligence, Music Theories. There's going to be something more acad
 
 **[View My Social Account!](/about)**
 
-<--
-<script type="text/javascript">
-<!--//--><![CDATA[//><!--
-function email(e, d) {
-   if (!document.write) return false;
-   if (document.write) {
-      var e; var d;
-      document.write('<a href="' + 'mailto:' + e + '@' + d + '">' + e + '@' + d + '<\/a>');
-   }
-}
-email("HsiangNianian", "outlook.com");
-//--><!]]>
-</script>
--->
-
 <br/>
 
 ## Current
