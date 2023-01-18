@@ -5,9 +5,7 @@ title: Jyunko's academic site
 
 <p><img src="/assets/jyunko.jpg" alt="jyunko" class="profilepicmain"/></p>
 
-Artificial Intelligence, Music Theories. There's going to be something more academic and something that fascinates me. I have always had an absurd idea-composing music in a programming language and programming in a music language.
-
-[~~Maybe we can really try it !~~]()
+Artificial Intelligence, Music Theories. There's going to be something more academic and something that fascinates me. I have always had an absurd idea-composing music in a programming language and programming in a music language.[~~Maybe we can really try it !~~]()
 
 **[View My Social Account!](/about)**
 
