@@ -4,13 +4,13 @@ title: Publications
 permalink: /publications/
 ---
 
-### Paper / Eassy
+## Paper / Eassy
 
 Save some of my own papers and papers that I have read and think are very helpful.
 
-#### 2023
+### 2023
 
-***
+**Jan 20**
 
 [Jeffrey Dean](https://research.google/people/jeff/), [Sanjay Ghemawat](https://research.google/people/SanjayGhemawat/)<br>
 **MapReduce: Simplified Data Processing on Large Clusters**<br>
