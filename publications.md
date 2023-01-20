@@ -6,13 +6,12 @@ permalink: /publications/
 
 ### Paper / Eassy
 
-***
-
 Save some of my own papers and papers that I have read and think are very helpful.
 
+#### 2023
+
 ***
 
-#### 2023
 [Jeffrey Dean](https://research.google/people/jeff/), [Sanjay Ghemawat](https://research.google/people/SanjayGhemawat/)<br>
 **MapReduce: Simplified Data Processing on Large Clusters**
 OSDI'04: Sixth Symposium on Operating System Design and Implementation, San Francisco, CA (2004), pp. 137-150<br>
