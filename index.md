@@ -25,7 +25,8 @@ If you are interested in these, you can send me an email (mentioned below) and t
 ---
 <br/>
 
-| **Jan 2023**: | [训练自己的声学模型](https://academic.jyunko.cn/2023/01/18/Training-an-acoustic-model-for-CMUSphinx-zh-CN.html) (一篇来自官方的阐述如何训练自己的声学模型的文章)。 |
+| **Jan 2023**: | [MapReduce: Simplified Data Processing on Large Clusters](https://research.google/pubs/pub62.pdf) |
+| | [训练自己的声学模型](https://academic.jyunko.cn/2023/01/18/Training-an-acoustic-model-for-CMUSphinx-zh-CN.html) (一篇来自官方的阐述如何训练自己的声学模型的文章)。 |
 | | [Training an acoustic model for CMUSphinx](https://academic.jyunko.cn/2023/01/11/Training-an-acoustic-model-for-CMUSphinx-en.html) (An article explaining how to train one's own acoustic model in CMUSphinx speech recognition project). |
 | | [GPT-3 vs. Rasa chatbots](https://academic.jyunko.cn/2023/01/10/GPT-3-vs-Rasa-chatbots.html),An article explains the difference between GPT-3 and Rasa. |
 | | [The Pain of AI](https://academic.jyunko.cn/2023/01/09/The-Pain-of-AI.html),Some anecdotes with my teacher. |
@@ -52,7 +53,6 @@ If you are interested in these, you can send me an email (mentioned below) and t
 ---
 <br/>
 
-<!-- 我来自中国，是一名人工智能专业的大学生，我也是[`FragmentXwords`]()厂牌主理人，现正在攻读作曲硕士。自2019年以来，我出版发行过许多音乐作品了；但是自2021年末以后，我便再也没有发行过任何完整作品，我在等待，等待自己全新情感的开始，那时候我将会改变自己的曲风。作为计算机系的大学生，我因为自己突出的编程能力而受到老师独特的青睐，今年(2022年)我将会投入到各种比赛中，也会在此留下全过程的产物。 -->
 Hi! I'm from China, a college student majoring in artificial intelligence, and I am also the manager of [`FragmentXwords`]() label, and I am currently studying for a master's degree in composition. Since 2019, I have published many music works; but since the end of 2021, I have not released any complete works, I am waiting, waiting for the beginning of my new emotion, when I will change my genre. As a college student in the Department of Computer Science, I have been favored by teachers because of my outstanding programming ability. This year (2022) I will participate in various competitions and leave the products of the whole process here.
 
 <br/>
@@ -61,7 +61,6 @@ Hi! I'm from China, a college student majoring in artificial intelligence, and I
 ---
 <br/>
 
-<!-- 我的研究项目有基于MFSC算法的ASR检测敏感词系统、和弦色彩的系统运用等。 -->
 My research projects include ASR detection sensitive word system based on MFSC algorithm, system application of chord color, etc.
 
 <br/>
