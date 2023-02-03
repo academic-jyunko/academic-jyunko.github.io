@@ -81,7 +81,7 @@ function email(e, d) {
       document.write('<a href="' + 'mailto:' + e + '@' + d + '">' + e + '@' + d + '<\/a>');
    }
 }
-email("admin", "jyunko.cn"); | email("HsiangNianian", "outlook.com");
+email("admin", "jyunko.cn");
 //--><!]]>
 </script> 
 
