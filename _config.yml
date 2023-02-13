@@ -66,8 +66,8 @@ destination:      ./_site
 incremental:      false
 regenerate:       true
 
-disqus:
-  shortname: cypress-github-io
+# disqus:
+#   shortname: cypress-github-io
 
 header_pages:
   - publications.md
