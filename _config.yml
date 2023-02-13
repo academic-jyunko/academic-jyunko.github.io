@@ -56,7 +56,8 @@ destination:      ./_site
 incremental:      false
 regenerate:       true
 
-google_analytics: G-WQVB7M8ZZ2
+track:
+  google_analytics: G-WQVB7M8ZZ2
 
 plugins:
   - jekyll-feed
