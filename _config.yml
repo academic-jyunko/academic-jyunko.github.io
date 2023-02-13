@@ -1,6 +1,6 @@
 # Configurations
 title:            Academic Jyunko
-longtitle:        Academic Jyunko | 
+longtitle:        Academic Jyunko | AI/ML
 author:           简律纯
 email:            admin@jyunko.cn
 description: >
@@ -48,7 +48,7 @@ exclude:
 collections:
   pages:
     output: true
-    permalink: /:collection/:path/
+    permalink: /:path/
 
 page_width: 800px
 
