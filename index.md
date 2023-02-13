@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: Jyunko's academic site
 ---
 

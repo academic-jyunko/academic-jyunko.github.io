@@ -1,66 +1,41 @@
-# Configurations
-title:            Academic Jyunko
-longtitle:        Academic Jyunko | AI/ML
-author:           简律纯
-email:            admin@jyunko.cn
-description: >
-  AI/ML, thoughts? 
-version:          1.0
-gitbook_version:  3.2.3
+# Site settings
+title: Academic Jyunko
+author: 简律纯
+email: HsiangNianian@outlook.com
+description: AI/ML, thoughts? 
+logo: assets/retro.png
 
-url:              'https://academic.jyunko.cn'
-baseurl:          ''
-rss:              RSS
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://academic.jyunko.cn" # the base hostname & protocol for your site
 
-# bootstrap: use the remote theme for the site itself
-remote_theme: sighingnow/jekyll-gitbook
+social_links:
+  twitter: HsiangNianian
+  github: HsiangNianian
+  facebook: hsiang.nianian
+  soundcloud: hsiang_nianian
+  instagram: hsiang_nianian 
 
-toc:
-  enabled: true
-  h_min: 1
-  h_max: 3
+google_analytics: G-WQVB7M8ZZ2
 
-# customize the link favicon in header, will be {{site.baseurl}}/{{site.favicon_path}}
-favicon_path:     /assets/retro.png
+disqus:
+  shortname: cypress-github-io
 
-# markdown render engine.
-markdown:         kramdown
-kramdown:
-  auto_ids:               true
-  input:                  GFM
-  math_engine:            mathjax
-  smart_quotes:           lsquo,rsquo,ldquo,rdquo
-  toc_levels:             1..6
-  syntax_highlighter:     rouge
-  syntax_highlighter_opts:
-    guess_lang:           true
+show_excerpts: true
 
-syntax_highlighter_style: colorful
+feed:
+  excerpt_only: true
 
-markdown_ext:     markdown,mkdown,mkdn,mkd,md
-
-# Permalinks
-permalink:        /:year-:month-:day-:title:output_ext
-
-exclude:
-  - _drafts
-
-collections:
-  pages:
-    output: true
-    permalink: /:path/
-
-page_width: 800px
-
-destination:      ./_site
-incremental:      false
-regenerate:       true
-
-tracker:
-  google_analytics: G-WQVB7M8ZZ2
-
+header_pages:
+  - publications.md
+  - blog.md
+  - Links.md
+  
+# Build settings
+markdown: kramdown
+theme: minima
+# remote_theme: luoyan35714/LessOrMore
 plugins:
   - jekyll-feed
-  - jekyll-readme-index
-  - jemoji
+  - jekyll-seo-tag
   - jekyll-sitemap
+  - jekyll-remote-theme
