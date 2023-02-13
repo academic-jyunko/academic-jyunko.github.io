@@ -3,7 +3,7 @@ title: Academic Jyunko
 author: 简律纯
 email: HsiangNianian@outlook.com
 description: AI/ML, thoughts? 
-logo: assets/retro.png
+# logo: assets/retro.png
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://academic.jyunko.cn" # the base hostname & protocol for your site
