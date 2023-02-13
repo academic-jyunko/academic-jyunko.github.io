@@ -93,7 +93,7 @@ function phone(c, n, e) {
       document.write(c + ' ' + n + ' ' + e);
    }
 }
-phone("+86 131", "4835", "0229");
+phone("+86 1314", "835", "0229");
 //--><!]]>
 </script>
 **Postal:** 
