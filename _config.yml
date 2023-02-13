@@ -79,4 +79,4 @@ plugins:
   - jekyll-readme-index
   - jemoji
   # - jekyll-seo-tag
-  # - jekyll-sitemap
+  # - jekyll-sitemaps

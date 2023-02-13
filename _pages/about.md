@@ -1,17 +1,9 @@
 ---
-layout: page
 title: About
-permalink: /about/
+author: Tao He
+date: 2022-02-04
+category: Jekyll
+layout: post
 ---
 
-Github: <https://github.com/HsiangNianian>
-
-Facebook: <https://facebook.com/hsiang.nianian>
-
-Soundcloud: <https://soundcloud.com/hsiang_nianian>
-
-Twitter: <https://twitter.com/HsiangNianian>
-
-Youtube: <https://www.youtube.com/channel/UCkgzeD3fl24G1lzbOQjIWBA>
-
-Instagram: <https://instagram.com/hsiang_nianian>
+This is an about page.
