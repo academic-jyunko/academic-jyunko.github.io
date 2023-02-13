@@ -1,12 +1,59 @@
-# Site settings
-title: Academic Jyunko
-author: 简律纯
-email: HsiangNianian@outlook.com
-description: AI/ML, thoughts? 
-logo: assets/retro.png
+# Configurations
+title:            Academic Jyunko
+longtitle:        Academic Jyunko,for AI/ML
+author:           简律纯
+email:            admin@jyunko.cn
+description: >
+  AI/ML, thoughts? 
 
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://academic.jyunko.cn" # the base hostname & protocol for your site
+version:          1.0
+gitbook_version:  3.2.3
+
+url:              'https://academic.jyunko.cn'
+baseurl:          '' #'/jekyll-gitbook'
+rss:              RSS
+
+# bootstrap: use the remote theme for the site itself
+remote_theme: sighingnow/jekyll-gitbook
+
+toc:
+  enabled: true
+  h_min: 1
+  h_max: 3
+
+# customize the link favicon in header, will be {{site.baseurl}}/{{site.favicon_path}}
+favicon_path:     /assets/retro.png
+
+# markdown render engine.
+markdown:         kramdown
+kramdown:
+  auto_ids:               true
+  input:                  GFM
+  math_engine:            mathjax
+  smart_quotes:           lsquo,rsquo,ldquo,rdquo
+  toc_levels:             1..6
+  syntax_highlighter:     rouge
+  syntax_highlighter_opts:
+    guess_lang:           true
+
+syntax_highlighter_style: colorful
+
+markdown_ext:     markdown,mkdown,mkdn,mkd,md
+
+# Permalinks
+permalink:        /:year-:month-:day-:title:output_ext
+
+exclude:
+  - _drafts
+
+collections:
+  pages:
+    output: true
+    permalink: /:collection/:path/
+
+page_width: 800px
+
+show_excerpts: true
 
 social_links:
   twitter: HsiangNianian
@@ -15,27 +62,21 @@ social_links:
   soundcloud: hsiang_nianian
   instagram: hsiang_nianian 
 
-google_analytics: G-WQVB7M8ZZ2
+destination:      ./_site
+incremental:      false
+regenerate:       true
 
 disqus:
   shortname: cypress-github-io
-
-show_excerpts: true
-
-feed:
-  excerpt_only: true
 
 header_pages:
   - publications.md
   - blog.md
   - Links.md
-  
-# Build settings
-markdown: kramdown
-theme: minima
-# remote_theme: luoyan35714/LessOrMore
+
 plugins:
   - jekyll-feed
+  - jekyll-readme-index
+  - jemoji
   - jekyll-seo-tag
   - jekyll-sitemap
-  - jekyll-remote-theme
