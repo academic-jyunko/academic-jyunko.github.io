@@ -70,7 +70,6 @@ My research projects include ASR detection sensitive word system based on MFSC a
 我不用微信，我不用QQ，给我发邮件。
 
 **Mr. Hsiang Nianian**  
-
 **Email:** 
 <script type="text/javascript">
 <!--//--><![CDATA[//><!--
@@ -84,7 +83,6 @@ function email(e, d) {
 email("admin", "jyunko.cn");
 //--><!]]>
 </script> 
-
 **Phone:** 
 <script type="text/javascript">
 <!--//--><![CDATA[//><!--
@@ -98,7 +96,6 @@ function phone(c, n, e) {
 phone("+86 131", "4835", "0229");
 //--><!]]>
 </script>
-
 **Postal:** 
 <script type="text/javascript">
 <!--//--><![CDATA[//><!--
