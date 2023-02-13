@@ -56,7 +56,7 @@ destination:      ./_site
 incremental:      false
 regenerate:       true
 
-track:
+tracker:
   google_analytics: G-WQVB7M8ZZ2
 
 plugins:
