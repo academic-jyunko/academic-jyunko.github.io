@@ -1,10 +1,10 @@
 ---
-layout: page
+layout: post
 title: Contact
 permalink: /contact/
 ---
 
-**Dr Haytham Fayek**  
+**HsiangNianian**  
 School of Computing Technologies  
 Royal Melbourne Institute of Technology (RMIT)  
 Building 14, Level 11, Room 03  
