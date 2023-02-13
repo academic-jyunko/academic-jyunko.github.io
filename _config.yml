@@ -1,16 +1,16 @@
 # Configurations
-title:            Academic Jyunko
-longtitle:        Academic Jyunko,for AI/ML
-author:           简律纯
-email:            admin@jyunko.cn
+title:            Jekyll Gitbook
+longtitle:        Jekyll Gitbook
+author:           HE Tao
+email:            sighingnow@gmail.com
 description: >
-  AI/ML, thoughts? 
+  Build Jekyll site with the GitBook style.
 
 version:          1.0
 gitbook_version:  3.2.3
 
 url:              'https://academic.jyunko.cn'
-baseurl:          '' #'/jekyll-gitbook'
+baseurl:          ''
 rss:              RSS
 
 # bootstrap: use the remote theme for the site itself
@@ -22,7 +22,7 @@ toc:
   h_max: 3
 
 # customize the link favicon in header, will be {{site.baseurl}}/{{site.favicon_path}}
-favicon_path:     /assets/retro.png
+favicon_path:     /assets/gitbook/images/favicon.ico
 
 # markdown render engine.
 markdown:         kramdown
@@ -41,7 +41,7 @@ syntax_highlighter_style: colorful
 markdown_ext:     markdown,mkdown,mkdn,mkd,md
 
 # Permalinks
-permalink:        /:year-:month-:day-:title:output_ext
+permalink:        /:categories/:year-:month-:day-:title:output_ext
 
 exclude:
   - _drafts
@@ -53,30 +53,11 @@ collections:
 
 page_width: 800px
 
-# show_excerpts: true
-
-# social_links:
-#   twitter: HsiangNianian
-#   github: HsiangNianian
-#   facebook: hsiang.nianian
-#   soundcloud: hsiang_nianian
-#   instagram: hsiang_nianian 
-
 destination:      ./_site
 incremental:      false
 regenerate:       true
-
-# disqus:
-#   shortname: cypress-github-io
-
-# header_pages:
-#   - publications.md
-#   - blog.md
-#   - Links.md
 
 plugins:
   - jekyll-feed
   - jekyll-readme-index
   - jemoji
-  # - jekyll-seo-tag
-  # - jekyll-sitemaps
