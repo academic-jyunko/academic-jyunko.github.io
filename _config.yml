@@ -53,14 +53,14 @@ collections:
 
 page_width: 800px
 
-show_excerpts: true
+# show_excerpts: true
 
-social_links:
-  twitter: HsiangNianian
-  github: HsiangNianian
-  facebook: hsiang.nianian
-  soundcloud: hsiang_nianian
-  instagram: hsiang_nianian 
+# social_links:
+#   twitter: HsiangNianian
+#   github: HsiangNianian
+#   facebook: hsiang.nianian
+#   soundcloud: hsiang_nianian
+#   instagram: hsiang_nianian 
 
 destination:      ./_site
 incremental:      false
@@ -69,10 +69,10 @@ regenerate:       true
 # disqus:
 #   shortname: cypress-github-io
 
-header_pages:
-  - publications.md
-  - blog.md
-  - Links.md
+# header_pages:
+#   - publications.md
+#   - blog.md
+#   - Links.md
 
 plugins:
   - jekyll-feed
