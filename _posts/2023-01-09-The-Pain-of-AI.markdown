@@ -27,4 +27,4 @@ updated: 2023-01-10 16:27
 
 不管他多有良心，这样的人不配做老师。
 
-<font color="red">AI之痛</font>
+<p align="right"><font color="red">AI之痛</font></p>
