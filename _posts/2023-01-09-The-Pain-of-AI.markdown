@@ -2,7 +2,6 @@
 layout: post
 title: The Pain of AI
 author: 2222202112
-updated: 2023-01-10 16:27
 ---
 
 > ???
