@@ -2,8 +2,6 @@
 layout: default
 ---
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-  {% for post in paginator.posts %}
-  {% if post.visible== 1  %}
         <header class="post-header">
             <h1 class="post-title" itemprop="name headline">{{ page.title | escape }}</h1>
             <p class="post-meta">
@@ -41,6 +39,4 @@ layout: default
         {% if site.disqus.shortname %}
             {% include disqus_comments.html %}
         {% endif %}
-  {% endif %}
-  {% endfor %}
 </article>
