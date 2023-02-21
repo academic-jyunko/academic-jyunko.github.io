@@ -2,8 +2,10 @@
 layout: post
 title: The Pain of AI
 author: 2222202112
-excerpt: "???"
+excerpt_separator: "<!--more-->"
 ---
+
+<!--more-->
 
 > ???
 
