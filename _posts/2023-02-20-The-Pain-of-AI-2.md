@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: secret
 title: The Pain of AI II
 author: "2222202112,2222202107"
 excerpt: "???"
