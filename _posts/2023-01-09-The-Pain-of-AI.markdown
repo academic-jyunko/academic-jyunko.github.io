@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: secret
 title: The Pain of AI
 author: 2222202112
 excerpt_separator: "<!--more-->"
