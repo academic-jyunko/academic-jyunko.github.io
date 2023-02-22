@@ -1,5 +1,5 @@
 ---
-layout: secret
+layout: post
 title: The Pain of AI II
 author: "2222202112,2222202107"
 visible: 1
