@@ -17,7 +17,7 @@ gem "minima", "~> 2.5"
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.12"
   gem "jekyll-sitemap", "~> 1.4.0"
-  gem "jekyll-remote-theme", "~> 1.0.0"
+  gem 'jekyll-remote-theme', '~> 0.4.3'
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
