@@ -25,7 +25,7 @@ If you are interested in these, you can send me an email (mentioned below) and t
 ---
 <br/>
 
-| **Apr 2023** | [关于几位开发组四月四日利用漏洞恶意攻击Bot账号一事](https://academic.jyunko.cn/2023/04/04/April-Fours-Day.html)
+| **Apr 2023** | [关于几位小丑四月四日利用漏洞恶意攻击Bot账号一事](https://academic.jyunko.cn/2023/04/04/April-Fours-Day.html)
 | **Feb 2023** | [The Pain of AI II](https://academic.jyunko.cn/2023/02/20/The-Pain-of-AI-2.html) |
 | **Jan 2023** | [训练自己的声学模型](https://academic.jyunko.cn/2023/01/18/Training-an-acoustic-model-for-CMUSphinx-zh-CN.html)(一篇来自官方的阐述如何训练自己的声学模型的文章的翻译)。 |
 | | [Training an acoustic model for CMUSphinx](https://academic.jyunko.cn/2023/01/11/Training-an-acoustic-model-for-CMUSphinx-en.html)(An article explaining how to train one's own acoustic model in CMUSphinx speech recognition project). |
