@@ -84,31 +84,4 @@ function email(e, d) {
 }
 email("admin", "jyunko.cn");
 //--><!]]>
-</script><br>
-
-**Phone:** 
-<script type="text/javascript">
-<!--//--><![CDATA[//><!--
-function phone(c, n, e) {
-   if (!document.write) return false;
-   if (document.write) {
-      var c; var n; var e;
-      document.write(c + ' ' + n + ' ' + e);
-   }
-}
-phone("");
-//--><!]]>
-</script><br>
-**Postal:** 
-<script type="text/javascript">
-<!--//--><![CDATA[//><!--
-function address(a, s, c) {
-   if (!document.write) return false;
-   if (document.write) {
-      var a; var s; var c;
-      document.write(a + ', ' + s + ', ' + c);
-   }
-}
-address("");
-//--><!]]>
 </script>
