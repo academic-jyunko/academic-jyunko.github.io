@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "关于几位开发组四月四日利用漏洞恶意攻击Bot账号一事"
+title: "关于几位小丑四月四日利用漏洞恶意攻击Bot账号一事"
 author: 简律纯
 excerpt: >
  涉事名单
