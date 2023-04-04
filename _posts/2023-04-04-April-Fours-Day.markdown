@@ -4,6 +4,14 @@ title: "关于几位开发组四月四日利用漏洞恶意攻击Bot账号一事
 author: 简律纯
 ---
 
+涉事名单
+--------
+
+  * 主犯 [A60](https://github.com/djkcyl)、[Bryan不可思议](https://github.com/ProgramRipper)
+  * 从犯 [Tarrailt](https://github.com/RF-Tar-Railt)、[Akirami](https://github.com/A-Kirami)
+  * 禁言 [Nyuan Zhang](https://github.com/blueglassblock)
+
+
 我认为，
 
 这不是我该趟的浑水，
@@ -17,13 +25,6 @@ author: 简律纯
 挺寒心的，
 
 我作为开发者没有及时关闭测试插件是不负责任的行为，这一点在开发中非常重要。同时，对于测试过程中出现的问题，也需要进行及时反馈和处理，避免类似的事故再次发生。至于众多开发者对我本人的账号的滥用，这是不道德的行为，我认为违背了大家应该遵循的职业道德。如果是出于恶意的攻击导致账号被封禁，则更加严重，涉及到网络安全等法律问题。
-
-涉事名单
---------
-
-  * 主犯 [A60](https://github.com/djkcyl)、[Bryan不可思议](https://github.com/ProgramRipper)
-  * 从犯 [Tarrailt](https://github.com/RF-Tar-Railt)、[Akirami](https://github.com/A-Kirami)
-  * 禁言 [Nyuan Zhang](https://github.com/blueglassblock)
   
 事件始
 ------
