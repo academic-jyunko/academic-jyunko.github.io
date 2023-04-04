@@ -2,7 +2,7 @@
 layout: post
 title: "关于几位开发组四月四日利用漏洞恶意攻击Bot账号一事"
 author: 简律纯
-excerpt: >|
+excerpt: >
  涉事名单
  --------
    * 主犯 [A60](https://github.com/djkcyl)、[Bryan不可思议](https://github.com/ProgramRipper)
