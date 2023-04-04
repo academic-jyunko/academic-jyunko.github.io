@@ -3,9 +3,8 @@ layout: post
 title: "关于几位小丑四月四日利用漏洞恶意攻击Bot账号一事"
 author: 简律纯
 excerpt: >
- * 主犯 [A60](https://github.com/djkcyl)、[Bryan不可思议](https://github.com/ProgramRipper)
- * 从犯 [Tarrailt](https://github.com/RF-Tar-Railt)、[Akirami](https://github.com/A-Kirami)
- * 禁言 [Nyuan Zhang](https://github.com/blueglassblock)
+ 涉事名单
+ A60、Bryan不可思议、Tarrailt、Akirami、Nyuan Zhang
 ---
 
 涉事名单
