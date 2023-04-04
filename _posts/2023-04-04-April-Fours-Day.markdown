@@ -3,11 +3,9 @@ layout: post
 title: "关于几位小丑四月四日利用漏洞恶意攻击Bot账号一事"
 author: 简律纯
 excerpt: >
- 涉事名单
- --------
-   * 主犯 [A60](https://github.com/djkcyl)、[Bryan不可思议](https://github.com/ProgramRipper)
-   * 从犯 [Tarrailt](https://github.com/RF-Tar-Railt)、[Akirami](https://github.com/A-Kirami)
-   * 禁言 [Nyuan Zhang](https://github.com/blueglassblock)
+ * 主犯 [A60](https://github.com/djkcyl)、[Bryan不可思议](https://github.com/ProgramRipper)
+ * 从犯 [Tarrailt](https://github.com/RF-Tar-Railt)、[Akirami](https://github.com/A-Kirami)
+ * 禁言 [Nyuan Zhang](https://github.com/blueglassblock)
 ---
 
 涉事名单
@@ -220,7 +218,7 @@ A60 2023/4/4 11:28:41
 
 <img width="400" src="https://user-images.githubusercontent.com/44714368/229875603-9ee13241-bba2-4d9f-90c9-2f17f49c42da.png">
 
-> 我对此人的评价是——读了点书还是一副没见过世面自以为是的小丑。这种人怎么做一个社区的管理的？
+> 我对此人的评价是——读了点书还是一副没见过世面自以为是的小丑。这种人怎么做一个社区的管理的？估摸学历大一。
 
 ```
 [Graia群]
