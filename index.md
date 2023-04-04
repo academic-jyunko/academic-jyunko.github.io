@@ -85,7 +85,8 @@ function email(e, d) {
 email("admin", "jyunko.cn");
 //--><!]]>
 </script><br>
-<!-- **Phone:** 
+
+**Phone:** 
 <script type="text/javascript">
 <!--//--><![CDATA[//><!--
 function phone(c, n, e) {
@@ -95,7 +96,7 @@ function phone(c, n, e) {
       document.write(c + ' ' + n + ' ' + e);
    }
 }
-phone("+86 1314", "835", "0229");
+phone("");
 //--><!]]>
 </script><br>
 **Postal:** 
@@ -108,7 +109,6 @@ function address(a, s, c) {
       document.write(a + ', ' + s + ', ' + c);
    }
 }
-address("310000", "HangZhou ZheJiang Prov.", "China");
+address("");
 //--><!]]>
 </script>
- -->
