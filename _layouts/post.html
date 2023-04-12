@@ -26,18 +26,7 @@ layout: default
         <!-- mathjax -->
         {% if page.mathjax %}
             <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-        {% endif %}
-        
-        <div class="sakana-box"></div>
-        <script src="https://cdn.jsdelivr.net/npm/sakana"></script>
-        <script>
-        Sakana.init({
-          el:         '.sakana-box',     // 启动元素 node 或 选择器
-          scale:      .5,                // 缩放倍数
-          canSwitchCharacter: true,      // 允许换角色
-        });
-        </script>
-        
+        {% endif %}        
         <!-- Share -->
         <strong>Share:</strong>
         <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Facademic.jyunko.cn&t=" title="Share on Facebook" target="_blank" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(document.URL) + '&t=' + encodeURIComponent(document.URL)); return false;">Facebook</a> |
