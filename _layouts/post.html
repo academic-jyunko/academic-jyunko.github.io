@@ -74,11 +74,11 @@ layout: default
     }
 
     /* 添加媒体查询，对移动设备隐藏 */
-    @media only screen and (max-width: 768px) {
+    <!-- @media only screen and (max-width: 768px) {
       .sakana-box {
         display: none;
       }
-    }
+    } -->
   </style>
 
   <div class="sakana-box"></div>
@@ -91,7 +91,7 @@ layout: default
     // 启动
     Sakana.init({
       el: '.sakana-box',     // 启动元素 node 或 选择器
-      scale: .5,                // 缩放倍数
+      scale: .2,                // 缩放倍数
       canSwitchCharacter: true,      // 允许换角色
     });
   </script>

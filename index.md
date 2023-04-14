@@ -2,7 +2,6 @@
 layout: page
 title: Jyunko's academic site
 ---
-
 <p><img src="/assets/jyunko.jpg" alt="jyunko" class="profilepicmain"/></p>
 
 Artificial Intelligence, Music Theories. There's going to be something more academic and something that fascinates me. I have always had an absurd idea-composing music in a programming language and programming in a music language.[~~Maybe we can really try it !~~](https://github.com/retrofor/retro)
@@ -12,7 +11,9 @@ Artificial Intelligence, Music Theories. There's going to be something more acad
 <br/>
 
 ## Current
+
 ---
+
 <br/>
 
 I am contributing to the ASR speech detection sensitive word system based on MFSC algorithm.
@@ -22,10 +23,12 @@ If you are interested in these, you can send me an email (mentioned below) and t
 <br/>
 
 ## Recent
+
 ---
+
 <br/>
 
-| **Apr 2023** | [深度学习心得体会](https://academic.jyunko.cn/2023/04/13/deep-learning-zh.html) | [关于几位小丑四月四日利用漏洞恶意攻击我的账号一事](https://academic.jyunko.cn/2023/04/04/April-Fours-Day.html) 
+| **Apr 2023** | [深度学习心得体会](https://academic.jyunko.cn/2023/04/13/deep-learning-zh.html) | [关于几位小丑四月四日利用漏洞恶意攻击我的账号一事](https://academic.jyunko.cn/2023/04/04/April-Fours-Day.html)
 | **Feb 2023** | [The Pain of AI II](https://academic.jyunko.cn/2023/02/20/The-Pain-of-AI-2.html) |
 | **Jan 2023** | [训练自己的声学模型](https://academic.jyunko.cn/2023/01/18/Training-an-acoustic-model-for-CMUSphinx-zh-CN.html)(一篇来自官方的阐述如何训练自己的声学模型的文章的翻译)。 |
 | | [Training an acoustic model for CMUSphinx](https://academic.jyunko.cn/2023/01/11/Training-an-acoustic-model-for-CMUSphinx-en.html)(An article explaining how to train one's own acoustic model in CMUSphinx speech recognition project). |
@@ -41,8 +44,10 @@ If you are interested in these, you can send me an email (mentioned below) and t
            e.style.display = 'none';
    }
 </script>
-<a href="javascript:toggle_vis('news')">**Show/Hide Previous News**</a>
-<div id="news" style="display:none" markdown="1"> 
+
+`<a href="javascript:toggle_vis('news')">`**Show/Hide Previous News**`</a>`
+
+<div id="news" style="display:none" markdown="1">
 
 | **Aug 2017**: | Talk at the [ML / AI Melbourne Meetup](https://www.meetup.com/Machine-Learning-AI-Meetup/events/239993347/), on [Will Deep Learning Lead to AI?](../assets/presentations/Fayek_deeplearningai17.pdf) |
 
@@ -51,7 +56,9 @@ If you are interested in these, you can send me an email (mentioned below) and t
 <br/>
 
 ## About
+
 ---
+
 <br/>
 
 Hi! I'm from China, a college student majoring in artificial intelligence, and I am also the manager of [`FragmentXwords`]() label, and I am currently studying for a master's degree in composition. Since 2019, I have published many music works; but since the end of 2021, I have not released any complete works, I am waiting, waiting for the beginning of my new emotion, when I will change my genre. As a college student in the Department of Computer Science, I have been favored by teachers because of my outstanding programming ability. This year (2022) I will participate in various competitions and leave the products of the whole process here.
@@ -59,7 +66,9 @@ Hi! I'm from China, a college student majoring in artificial intelligence, and I
 <br/>
 
 ## Research
+
 ---
+
 <br/>
 
 My research projects include ASR detection sensitive word system based on MFSC algorithm, system application of chord color, etc.
@@ -67,12 +76,15 @@ My research projects include ASR detection sensitive word system based on MFSC a
 <br/>
 
 ## Contact
+
 ---
+
 <br/>
 我不用微信，我不用QQ，给我发邮件。
 
-**Mr. Hsiang Nianian**<br>
-**Email:** 
+**Mr. Hsiang Nianian**`<br>`
+**Email:**
+
 <script type="text/javascript">
 <!--//--><![CDATA[//><!--
 function email(e, d) {
@@ -111,6 +123,7 @@ html .sakana-box{
 <div class="sakana-box"></div>
 
 <script src="https://cdn.jsdelivr.net/npm/sakana@1.0.8"></script>
+
 <script>
 // 取消静音
 Sakana.setMute(false);
@@ -118,7 +131,7 @@ Sakana.setMute(false);
 // 启动
 Sakana.init({
   el:         '.sakana-box',     // 启动元素 node 或 选择器
-  scale:      .5,                // 缩放倍数
+  scale:      .2,                // 缩放倍数
   canSwitchCharacter: true,      // 允许换角色
 });
 </script>
