@@ -42,7 +42,7 @@ If you are interested in these, you can send me an email (mentioned below) and t
    }
 </script>
 
-<a href="javascript:toggle_vis('news')">`**Show/Hide Previous News**`</a>
+<a href="javascript:toggle_vis('news')">**Show/Hide Previous News**</a>
 
 <div id="news" style="display:none" markdown="1">
 
