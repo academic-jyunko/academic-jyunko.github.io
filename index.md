@@ -61,7 +61,7 @@ If you are interested in these, you can send me an email (mentioned below) and t
 
 <br/>
 
-Hi! I'm from China, a college student majoring in artificial intelligence, and I am also the manager of [`FragmentXwords`]() label, and I am currently studying for a master's degree in composition. Since 2019, I have published many music works; but since the end of 2021, I have not released any complete works, I am waiting, waiting for the beginning of my new emotion, when I will change my genre. As a college student in the Department of Computer Science, I have been favored by teachers because of my outstanding programming ability. This year (2022) I will participate in various competitions and leave the products of the whole process here.
+Hi! I'm from China, a college student majoring in artificial intelligence, and I am also the manager of [`FragmentXwords`](https://fm.jyunko.cn) label, and I am currently studying for a master's degree in composition. Since 2019, I have published many music works; but since the end of 2021, I have not released any complete works, I am waiting, waiting for the beginning of my new emotion, when I will change my genre. As a college student in the Department of Computer Science, I have been favored by teachers because of my outstanding programming ability. This year (2022) I will participate in various competitions and leave the products of the whole process here.
 
 <br/>
 
