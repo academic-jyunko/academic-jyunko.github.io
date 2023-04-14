@@ -84,7 +84,6 @@ My research projects include ASR detection sensitive word system based on MFSC a
 
 **Mr. Hsiang Nianian**<br>
 **Email:**
-
 <script type="text/javascript">
 <!--//--><![CDATA[//><!--
 function email(e, d) {
