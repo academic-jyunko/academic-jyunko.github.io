@@ -257,7 +257,7 @@ rnn = SimpleRNN(input_size=28, hidden_size=128, num_layers=1, output_size=10).to
 
 1. LSTM 的计算
 
-\\[
+$$
 \begin{aligned}
 f_t &= \sigma(W_f \cdot [h_{t-1}, x_t] + b_f) \\
 i_t &= \sigma(W_i \cdot [h_{t-1}, x_t] + b_i) \\
@@ -265,7 +265,7 @@ C_t &= f_t \odot C_{t-1} + i_t \odot g_t \\
 o_t &= \sigma(W_o \cdot [h_{t-1}, x_t] + b_o) \\
 h_t &= o_t \odot \tanh(C_t)
 \end{aligned}
-\\]
+$$
 
 其中\\(f_t\\)和\\(i_t\\)分别表示遗忘门和输入门，\\(C_t\\)表示记忆单元，\\(g_t\\)表示当前时间步的候选记忆，\\(o_t\\)表示输出门，\\(\sigma\\)表示 sigmoid 函数，\\(\odot\\)表示逐元素乘法，\\(\tanh\\)表示双曲正切函数。
 
