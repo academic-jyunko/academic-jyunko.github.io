@@ -87,6 +87,7 @@ email("admin", "jyunko.cn");
 </script>
 
 <meta name="viewport" content="width=device-width">
+
 <style>
 html{
   background: #CCC;
@@ -97,6 +98,13 @@ html .sakana-box{
   bottom: 0;
   
   transform-origin: 100% 100%; /* 从右下开始变换 */
+}
+
+/* 添加媒体查询，对移动设备隐藏 */
+@media only screen and (max-width: 768px){
+  .sakana-box{
+    display: none;
+  }
 }
 </style>
 
