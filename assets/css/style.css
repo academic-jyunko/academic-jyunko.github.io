@@ -1,19 +1,13 @@
-.tooltip_templates {
-    position: relative;
+.tooltipster-base {
+    max-width: 200px;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
   }
   
-  .tooltip_templates span {
-    display:none;
-    position:absolute;
-    top:10px; /* 调整提示文本的垂直位置 */
-    left:0;
-    z-index:99;
-    padding: 5px; /* 调整提示文本的内边距 */
-    background:#fff;
-    border:1px solid #ccc;
-  }
-  
-  .tooltip:hover + .tooltip_templates span {
-    display:block;
+  .tooltipster-base::before {
+    border-top-color: #333;
+    top: -5px; /* 将箭头上移 */
+    left: 5px; /* 将箭头向右移动 */
   }
   
