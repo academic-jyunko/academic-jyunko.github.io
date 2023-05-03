@@ -37,3 +37,11 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
+  - jekyll-tipsy
+  
+# tips
+tipsy:
+  selector: '[data-tipsy]'     # 指定触发提示的元素选择器（这里使用了 HTML5 data-* 属性）
+  gravity: n                  # 指定提示文本的位置
+  fadeIn: 200                 # 指定提示文本的显示和隐藏动画
+  fadeOut: 200
