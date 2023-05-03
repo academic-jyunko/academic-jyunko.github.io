@@ -1,10 +1,7 @@
 ---
 layout: post
-title: Training an acoustic model for CMUSphinx
+title: "How chords'colors enhance the Expressiveness of Music Analyzing"
 author: 简律纯
-visible: 1
-excerpt: |
-  An article explaining how to train one's own acoustic model in CMUSphinx speech recognition project
 ---
 
 Music is an art form that conveys emotions through sound, melody, harmony, and other elements. In music composition, chords are an important musical element and a tool for expressing emotions and intentions. This article will explore how to better use chords to enhance the expressiveness of music from both acoustic and audience perspectives.
