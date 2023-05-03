@@ -1,0 +1,17 @@
+<div id="sidebar">
+    <div class="annotation">
+        <h2>批注内容</h2>
+        <ul id="annotations"></ul>
+    </div>
+
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(function () {
+            $('body').contents().filter(function () {
+                return this.nodeType === 8 && /^ 批注内容/.test(this.nodeValue);
+            }).each(function () {
+                $('<li />', { text: this.nodeValue.replace(/^ 批注内容/, '') }).appendTo('#annotations');
+            });
+        });
+    </script>
+</div>
