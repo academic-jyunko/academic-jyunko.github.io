@@ -28,7 +28,7 @@ If you are interested in these, you can send me an email (mentioned below) and t
 
 <br/>
 
-| **May 2023** | [How to Use Chords to Enhance the Expressiveness of Music—Analyzing from the Acoustic and Audience Perspectives](https://academic.jyunko.cn/2023/05/04/How-chords-colors-enhance-the-expressiveness-of-music-analyzing)(如何利用和弦增强音乐表现力——从声学和听众角度解析)。 |
+| **May 2023** | [How to Use Chords to Enhance the Expressiveness of Music—Analyzing from the Acoustic and Audience Perspectives](https://academic.jyunko.cn/2023/05/04/HccetEMA.html)(如何利用和弦增强音乐表现力——从声学和听众角度解析)。 |
 | **Apr 2023** | [深度学习心得体会](https://academic.jyunko.cn/2023/04/13/deep-learning-zh.html) |
 | | [关于几位小丑四月四日利用漏洞恶意攻击我的账号一事](https://academic.jyunko.cn/2023/04/04/April-Fours-Day.html) |
 | **Feb 2023** | [The Pain of AI II](https://academic.jyunko.cn/2023/02/20/The-Pain-of-AI-2.html) |
