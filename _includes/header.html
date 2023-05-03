@@ -1,3 +1,7 @@
+---
+layout: header
+---
+
 <header class="site-header" role="banner">
   <!-- 添加jsDelivr基础CDN样式 -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tooltipster@4.2.8/dist/css/tooltipster.bundle.min.css">
@@ -6,12 +10,13 @@
   <!-- 添加Tooltipster的JS代码 -->
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/tooltipster@4.2.8/dist/js/tooltipster.bundle.min.js"></script>
+  
   <div class="wrapper">
     {% assign default_paths = site.pages | map: "path" %}
     {% assign page_paths = site.header_pages | default: default_paths %}
     
     {% if page.title contains 'Hsaing Nianian' %}
-      <a class="site-title" href="{{ "/" | relative_url}}"><img src="{{ relative_url  }}/assets/jyunko.jpg" style="height:40px; margin-top:0px; border-radius:100%"/></a>
+      <a class="site-title" href="{{ "/" | relative_url}}"><img src="{{ '/assets/jyunko.jpg' | relative_url }}" style="height:40px; margin-top:0px; border-radius:100%"/></a>
     {% else %}
       <a class="site-title" href="{{ "/" | relative_url}}">{{ site.title | escape }}</a>
     {% endif %}
