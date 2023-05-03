@@ -3,6 +3,7 @@ layout: post
 title: The Pain of AI III
 author: "2222202112"
 excerpt: "???"
+mathjax: true
 ---
 ## “你是不是失恋了？”
 
