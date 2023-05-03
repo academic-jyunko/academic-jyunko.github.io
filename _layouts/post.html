@@ -46,23 +46,23 @@ layout: default
       z-index: 20;
     }
   </style>
-  <div id="overlay"> {% if page.summary %}
-    <div class="container">
-      <div class="summary">
-        <b>Summary</b>
-        <hr />
-        {{ page.summary }}
-      </div>
-      <div class="content">
-        <!-- insert your main article content here -->
-      </div>
+  {% if page.summary %}
+  <div class="container">
+    <div class="summary">
+      <b>Summary</b>
+      <hr />
+      {{ page.summary }}
     </div>
-    <br>
-    <br>
-    {% endif %}
-    <div class="post-content" itemprop="articleBody">
-      {{ content }}
+    <div class="content">
+      <!-- insert your main article content here -->
     </div>
+  </div>
+  <br>
+  <br>
+  {% endif %}
+
+  <div id="overlay" class="post-content" itemprop="articleBody">
+    {{ content }}
   </div>
 
   <script>// 获取覆盖层元素和要批注的文章元素
