@@ -24,25 +24,30 @@ layout: default
       background-color: #fff;
       border-radius: 0;
       box-shadow: none;
-      text-align: right; /*将容器内的内容向右对齐*/
+      text-align: right;
+      /*将容器内的内容向右对齐*/
     }
-  
+
     .summary {
       width: 80%;
-      display: inline-block; /*将元素设置为行内块级元素*/
-      text-align: left; /*将文本内容向左对齐*/
+      display: inline-block;
+      /*将元素设置为行内块级元素*/
+      text-align: left;
+      /*将文本内容向左对齐*/
+    }
+
+    .post-content {
+      display: inline-block;
+      float: right;
     }
   </style>
-  
+
   {% if page.summary %}
   <div class="container">
     <div class="summary">
       <b>Summary</b>
       <hr />
       {{ page.summary }}
-    </div>
-    <div class="content">
-      <!-- insert your main article content here -->
     </div>
   </div>
   <br>
