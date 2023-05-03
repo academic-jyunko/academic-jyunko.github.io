@@ -7,22 +7,22 @@
         </p>
     </div>
 
-</footer>
-<script type="text/javascript">
-    $(document).ready(function () {
-        $('.tooltip').tooltipster({
-            theme: 'tooltipster-shadow',
-            side: 'top',
-            contentAsHTML: true,
-            functionInit: function (instance, helper) {
-                var content = $(helper.tooltipClone).find('.tooltip_templates').detach();
-                instance.content(content);
-            },
-            interactive: true,
-            animationDuration: 100,
-            delay: 50,
-            arrow: false,
-            zIndex: 9999
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.tooltip').tooltipster({
+                theme: 'tooltipster-shadow',
+                side: 'top',
+                contentAsHTML: true,
+                functionInit: function (instance, helper) {
+                    var content = $(helper.tooltipClone).find('.tooltip_templates').detach();
+                    instance.content(content);
+                },
+                interactive: true,
+                animationDuration: 100,
+                delay: 50,
+                arrow: false,
+                zIndex: 9999
+            });
         });
-    });
-</script>
+    </script>
+</footer>
