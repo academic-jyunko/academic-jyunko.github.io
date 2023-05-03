@@ -3,6 +3,8 @@ layout: post
 title: "深度学习心得体会"
 author: 简律纯
 mathjax: true
+summary: |
+    This article introduces the applications and issues of deep learning in the field of machine learning. Deep learning is a technology that uses algorithms and network structures such as neural networks for self-learning and optimization, capable of handling complex data and tasks. Deep learning has broad applications, especially in the field of artificial intelligence. At the same time, deep learning also faces hardware, data, ethical, and legal issues. The article proposes that continued research and innovation in deep learning need to be advanced from the perspective of algorithms, hardware, data, and other aspects, as well as focusing on ethical and legal issues. Finally, the article classifies and introduces commonly used deep learning algorithms, including neural networks, convolutional neural networks, recurrent neural networks, autoencoders, and generative models.
 ---
 
 深度学习是机器学习领域中的一种最先进的技术，它可以在处理复杂数据时取得非常出色的效果。与传统机器学习方法相比，深度学习能够更好地处理自然语言、语音识别、图像识别、物体识别等复杂的任务。深度学习采用了一些特殊的算法和网络结构，例如神经网络，使得机器可以从数据中进行自我学习，并且可以通过大量的数据训练来不断优化自身的性能。

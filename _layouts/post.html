@@ -17,6 +17,37 @@ layout: default
     {% seo %}
   </header>
 
+  <style>
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      text-align: center;
+    }
+  
+    .summary {
+      width: 80%; /*占据容器一半的空间*/
+      padding-right: 20px; /*向右添加一些填充*/
+      text-align: left; /*将内容向右对齐*/
+    }
+  </style>
+  {% if page.summary %}
+  <div class="container">
+    <div class="summary">
+      <b>Summary</b>
+      <hr />
+      {{ page.summary }}
+    </div>
+    <div class="content">
+      <!-- insert your main article content here -->
+    </div>
+  </div>
+  <br>
+  <br>
+  {% endif %}
   <div class="post-content" itemprop="articleBody">
     {{ content }}
   </div>
