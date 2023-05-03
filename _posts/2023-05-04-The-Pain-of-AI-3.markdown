@@ -1,8 +1,7 @@
 ---
 layout: post
 title: The Pain of AI III
-author: "2222202112,2222202107"
-visible: 1
+author: "2222202112"
 excerpt: "???"
 ---
 ## “你是不是失恋了？”
