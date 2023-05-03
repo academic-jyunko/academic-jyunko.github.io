@@ -10,3 +10,15 @@
     top: -5px; /* 将箭头上移 */
     left: 5px; /* 将箭头向右移动 */
   }
+
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+  }
+  .container {
+    border: 1px solid gray;
+    padding: 20px;
+  }
