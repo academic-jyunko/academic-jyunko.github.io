@@ -2,7 +2,6 @@
 layout: post
 title: "How chords'colors enhance the Expressiveness of Music Analyzing"
 author: 简律纯
-date: 2023-05-04
 mathjax: true
 ---
 
