@@ -13,10 +13,6 @@ layout: default
       • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author
           }}</span></span>
       {% endif %}
-      {% if page.updated %}
-      Edited: <span itemprop="updated" itemscope itemtype="http://schema.org/Person"><span itemprop="updated">{{
-          page.updated }}</span></span>
-      {% endif %}
     </p>
     {% seo %}
   </header>
@@ -56,43 +52,4 @@ layout: default
   {% if site.disqus.shortname %}
   {% include disqus_comments.html %}
   {% endif %}
-
-  <meta name="viewport" content="width=device-width">
-
-  <style>
-    html {
-      background: #CCC;
-    }
-
-    html .sakana-box {
-      position: fixed;
-      right: 0;
-      bottom: 0;
-
-      transform-origin: 100% 100%;
-      /* 从右下开始变换 */
-    }
-
-    /* 添加媒体查询，对移动设备隐藏 */
-    @media only screen and (max-width: 768px) {
-      .sakana-box {
-        display: none;
-      }
-    }
-  </style>
-
-  <div class="sakana-box"></div>
-
-  <script src="https://cdn.jsdelivr.net/npm/sakana@1.0.8"></script>
-  <script>
-    // 取消静音
-    Sakana.setMute(false);
-
-    // 启动
-    Sakana.init({
-      el: '.sakana-box',     // 启动元素 node 或 选择器
-      scale: .2,                // 缩放倍数
-      canSwitchCharacter: true,      // 允许换角色
-    });
-  </script>
 </article>
