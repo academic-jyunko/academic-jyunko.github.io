@@ -1,0 +1,11 @@
+.tooltipster-base {
+    max-width: 200px;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .tooltipster-base::before {
+    border-top-color: #333;
+  }
+  

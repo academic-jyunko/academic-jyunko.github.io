@@ -1,7 +1,28 @@
 <footer class="site-footer ">
 
     <div class="wrapper centering">
-        <p>Copyright &copy; 2018-<script language="JavaScript" type="text/javascript">document.write((new Date()).getFullYear());</script> {{ site.title }}.</p>
+        <p>Copyright &copy; 2018-
+            <script language="JavaScript" type="text/javascript">document.write((new Date()).getFullYear());</script> {{
+            site.title }}.
+        </p>
     </div>
 
 </footer>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.tooltip').tooltipster({
+            theme: 'tooltipster-shadow',
+            side: 'top',
+            contentAsHTML: true,
+            functionInit: function (instance, helper) {
+                var content = $(helper.tooltipClone).find('.tooltip_templates').detach();
+                instance.content(content);
+            },
+            interactive: true,
+            animationDuration: 100,
+            delay: 50,
+            arrow: false,
+            zIndex: 9999
+        });
+    });
+</script>
