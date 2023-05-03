@@ -18,26 +18,37 @@ layout: default
 
   <style>
     .container {
-      max-width: 800px;
-      margin: 0;
+      display: flex;
+      /*使用flex布局*/
+      max-width: 1000px;
+      margin: 0 auto;
       padding: 20px;
       background-color: #fff;
       border-radius: 0;
       box-shadow: none;
-      text-align: right;
     }
 
     .summary {
-      width: 50%;
-      display: inline-block;
-      text-align: left;
-      float: right;
+      width: 30%;
+      padding-right: 20px;
+      /*右侧留出一定的间距*/
+      box-sizing: border-box;
+      /*将padding值包含在盒子的总宽度和高度之内*/
+      text-align: justify;
+      /*文本两端对齐*/
     }
 
     .content {
-      display: inline-block;
-      float: right;
+      width: 70%;
+      text-align: justify;
     }
+
+    .post-content {
+      text-align: justify;
+      padding-left: 20px; /*左侧留出一定的间距*/
+      box-sizing: border-box;
+    }
+    
   </style>
 
   {% if page.summary %}
@@ -47,14 +58,18 @@ layout: default
       <hr />
       {{ page.summary }}
     </div>
+    <div class="content">
+      <!-- insert your main article content here -->
+    </div>
   </div>
   <br>
   <br>
   {% endif %}
-  <div class="post-content" itemprop="articleBody">
-    {{ content }}
+  <div class="content">
+    <div class="post-content" itemprop="articleBody">
+      {{ content }}
+    </div>
   </div>
-
   <!-- mathjax -->
   {% if page.mathjax %}
   <script type="text/javascript"
