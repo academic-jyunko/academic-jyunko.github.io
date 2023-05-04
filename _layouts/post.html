@@ -89,7 +89,7 @@ layout: default
 
   <div class="post-content" itemprop="articleBody">
     {{ content }}
-    <div >
+    <div>
       <!-- 批注链接部分 -->
       <div class="note">
         <a href="#annotation-1">这里有一个批注</a>
@@ -111,18 +111,18 @@ layout: default
       </div>
 
       <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
-      <script>
-        $(function () {
-          $('body').contents().filter(function () {
-            return this.nodeType === 8 && /^ 批注/.test(this.nodeValue);
-          }).each(function () {
-            $('<li />', { text: this.nodeValue.replace(/^ 批注/, '') }).appendTo('#annotations');
-          });
-        });
-      </script>
+
     </div>
   </div>
-
+  <script>
+    $(function () {
+      $('body').contents().filter(function () {
+        return this.nodeType === 8 && /^ 批注/.test(this.nodeValue);
+      }).each(function () {
+        $('<li />', { text: this.nodeValue.replace(/^ 批注/, '') }).appendTo('#annotations');
+      });
+    });
+  </script>
 
   <!-- mathjax -->
   {% if page.mathjax %}
