@@ -15,25 +15,12 @@
                             <use xlink:href="{{ 'assets/minima-social-icons.svg#rss' | relative_url }}"></use>
                         </svg><span>Subscribe</span>
                     </a>
-                </p>
-                {%- if site.author %}
-                <ul class="contact-list">
-                    {% if site.author.name -%}
-                    <li class="p-name">{{ site.author.name | escape }}</li>
-                    {% endif -%}
-                    {% if site.author.email -%}
-                    <li><a class="u-email" href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></li>
-                    {%- endif %}
-                </ul>
-                {%- endif %}
-            </div>
-            <div class="footer-col">
-                <p>{{ site.description | escape }}</p>
                 <p>Human vs. AI, 1:0 :s</p>
                 <p>Copyright &copy; 2018-
                     <script language="JavaScript"
                         type="text/javascript">document.write((new Date()).getFullYear());</script> {{
                     site.title }}.
+                </p>
                 </p>
             </div>
         </div>
