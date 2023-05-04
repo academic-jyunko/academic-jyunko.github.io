@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<article class="post" itemscope itemtype="http://schema.org/ScholarlyArticle">
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
   <header class="post-header">
     <h1 class="post-title" itemprop="name headline" style="text-align:center">{{ page.title | escape }}</h1>
     <p class="post-meta" style="text-align:center">
@@ -34,6 +34,12 @@ layout: default
       /*将元素设置为行内块级元素*/
       text-align: left;
       /*将文本内容向左对齐*/
+    }
+
+    .post-content {
+      margin-left: auto;
+      margin-right: 0;
+      /*将内容向右对齐到最右边*/
     }
   </style>
 

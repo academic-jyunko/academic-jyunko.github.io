@@ -12,3 +12,8 @@
   left: 5px;
   /* 将箭头向右移动 */
 }
+
+.post-content {
+  margin-left: auto;
+  margin-right: 0;
+}
