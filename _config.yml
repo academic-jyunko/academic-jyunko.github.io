@@ -1,19 +1,21 @@
 # Site settings
 title: Academic Jyunko
-author: 简律纯
-email: i@jyunko.cn
-description: AI/ML, thoughts? 
+author:
+  name: 简律纯
+  email: i@jyunko.cn
+description: AI/ML, thoughts?
 # logo: assets/retro.png
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://academic.jyunko.cn" # the base hostname & protocol for your site
 
-social_links:
-  twitter: HsiangNianian
-  github: HsiangNianian
-  facebook: hsiang.nianian
-  soundcloud: hsiang_nianian
-  instagram: hsiang_nianian 
+minima:
+  social_links:
+    twitter: HsiangNianian
+    github: HsiangNianian
+    facebook: hsiang.nianian
+    soundcloud: hsiang_nianian
+    instagram: hsiang_nianian
 
 google_analytics: G-WQVB7M8ZZ2
 
@@ -29,7 +31,7 @@ header_pages:
   - publications.md
   - blog.md
   - Links.md
-  
+
 # Build settings
 markdown: kramdown
 theme: minima
@@ -39,4 +41,4 @@ plugins:
   - jekyll-sitemap
 
 # tips
-gems: ['tipsy']
+gems: ["tipsy"]
