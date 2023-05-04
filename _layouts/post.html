@@ -39,38 +39,37 @@ layout: default
 
   <div class="main-content">
     <!-- 将以下所有代码放在这个 <div> 元素中 -->
-    <div class="container" style="float: right; width: 66.666%;">
-  
-      {% if page.summary %}
-      <div class="summary">
-        <b><i>Summary:</i></b><hr />
-          {{ page.summary }}
-      </div>
-      {% if page.scontent %}
-      <div class="content">
-        {{ page.scontent }}
-      </div>
-      {% endif %}
-      {% endif %}
-  
-      {% if page.notes %}
-      <div class="summary">
-        <b><i>Notes:</i></b><hr />
-          {{ page.notes }}
-      </div>
-      {% if page.ncontent %}
-      <div class="content">
-        {{ page.ncontent }}
-      </div>
-      {% endif %}
-      {% endif %}
-  
+    {% if page.summary or page.notes %}
+    <div class="sidebar sitemap" style="float: right; width: 66.6667%;">
+      <aside class="sidebar__left">
+        <div class="sidebar__inner">
+          <nav class="site-nav">
+            {% if page.summary %}
+            <div class="nav-title">Summary</div>
+            <ul class="navigation">
+              <li><a href="#"> {{ page.summary }} </a></li>
+            </ul>
+            {% endif %}
+
+            {% if page.notes %}
+            <div class="nav-title">Notes</div>
+            <ul class="navigation">
+              <li><a href="#"> {{ page.notes }} </a></li>
+            </ul>
+            {% endif %}
+          </nav>
+        </div>
+      </aside>
     </div>
-  
-    <div class="post-content" itemprop="articleBody">
-      {{ content }}
+    {% endif %}
+
+    <div class="content-wrapper">
+      <div class="post-content" itemprop="articleBody">
+        {{ content }}
+      </div>
     </div>
-  </div>  
+  </div>
+
 
   <!-- mathjax -->
   {% if page.mathjax %}
