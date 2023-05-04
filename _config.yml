@@ -1,8 +1,7 @@
 # Site settings
 title: Academic Jyunko
-author:
-  name: 简律纯
-  email: i@jyunko.cn
+author: 简律纯
+email: i@jyunko.cn
 description: AI/ML, thoughts?
 # logo: assets/retro.png
 
@@ -19,7 +18,6 @@ minima:
   #
   social_links:
     - { platform: github,         user_url: "https://github.com/jekyll/HsiangNianian" }
-    - { platform: twitter,        user_url: "https://twitter.com/HsiangNianian" }
 
 google_analytics: G-WQVB7M8ZZ2
 
