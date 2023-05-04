@@ -37,38 +37,40 @@ layout: default
     }
   </style>
 
-  {% if page.summary %}
-  <div class="container">
-    <div class="summary">
-      <b><i>Summary:</i></b><hr />
-        {{ page.summary }}
+  <div class="main-content">
+    <!-- 将以下所有代码放在这个 <div> 元素中 -->
+    <div class="container" style="float: right; width: 66.666%;">
+  
+      {% if page.summary %}
+      <div class="summary">
+        <b><i>Summary:</i></b><hr />
+          {{ page.summary }}
+      </div>
+      {% if page.scontent %}
+      <div class="content">
+        {{ page.scontent }}
+      </div>
+      {% endif %}
+      {% endif %}
+  
+      {% if page.notes %}
+      <div class="summary">
+        <b><i>Notes:</i></b><hr />
+          {{ page.notes }}
+      </div>
+      {% if page.ncontent %}
+      <div class="content">
+        {{ page.ncontent }}
+      </div>
+      {% endif %}
+      {% endif %}
+  
     </div>
-    {% if page.scontent %}
-    <div class="content">
-      {{ page.scontent }}
+  
+    <div class="post-content" itemprop="articleBody">
+      {{ content }}
     </div>
-    {% endif %}
-  </div>
-  {% endif %}
-
-  {% if page.notes %}
-  <div class="container">
-    <div class="summary">
-      <b><i>Notes:</i></b><hr />
-        {{ page.notes }}
-    </div>
-    {% if page.ncontent %}
-    <div class="content">
-      {{ page.ncontent }}
-    </div>
-    {% endif %}
-  </div>
-  <br>
-  {% endif %}
-
-  <div class="post-content" itemprop="articleBody">
-    {{ content }}
-  </div>
+  </div>  
 
   <!-- mathjax -->
   {% if page.mathjax %}
