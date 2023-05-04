@@ -36,19 +36,36 @@ layout: default
       /*将文本内容向左对齐*/
     }
   </style>
-  
+
   {% if page.summary %}
   <div class="container">
     <div class="summary">
-      <b>Summary</b>
+      <h3>Summary:</h3>
       <hr />
       {{ page.summary }}
     </div>
+    {% if page.scontent %}
     <div class="content">
-      <!-- insert your main article content here -->
+      {{ page.scontent }}
     </div>
+    {% endif %}
   </div>
   <br>
+  {% endif %}
+
+  {% if page.notes %}
+  <div class="container">
+    <div class="summary">
+      <h3>Notes:</h3>
+      <hr />
+      {{ page.notes }}
+    </div>
+    {% if page.ncontent %}
+    <div class="content">
+      {{ page.ncontent }}
+    </div>
+    {% endif %}
+  </div>
   <br>
   {% endif %}
 
