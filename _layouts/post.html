@@ -87,26 +87,24 @@ layout: default
   <br>
   {% endif %}
 
-  <div class="post-content" itemprop="articleBody">
+  <div id="sidebar" class="post-content" itemprop="articleBody">
     {{ content }}
+    <!-- 批注链接部分 -->
+    <div class="note">
+      <a href="#annotation-1">这里有一个批注</a>
+    </div>
+
+    <!-- 批注部分 -->
     <div id="sidebar">
-      <!-- 批注链接部分 -->
-      <div class="note">
-        <a href="#annotation-1">这里有一个批注</a>
-      </div>
 
-      <!-- 批注部分 -->
-      <div id="sidebar">
-
-        <!-- 批注内容列表 -->
-        <div class="annotation">
-          <h2>批注</h2>
-          <ul>
-            <li id="annotation-1">
-              这是一个批注。
-            </li>
-          </ul>
-        </div>
+      <!-- 批注内容列表 -->
+      <div class="annotation">
+        <h2>批注</h2>
+        <ul>
+          <li id="annotation-1">
+            这是一个批注。
+          </li>
+        </ul>
 
       </div>
 
