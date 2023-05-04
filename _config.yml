@@ -18,12 +18,8 @@ minima:
   # Generate social links in footer.
   #
   social_links:
-    - { platform: facebook,       user_url: "https://www.facebook.com/hsiang.nianian" }
     - { platform: github,         user_url: "https://github.com/jekyll/HsiangNianian" }
-    - { platform: instagram,      user_url: "https://www.instagram.com/hsiang_nianian" }
-    - { platform: telegram,       user_url: "https://t.me/Hsiang_Nianian" }
     - { platform: twitter,        user_url: "https://twitter.com/HsiangNianian" }
-    - { platform: youtube,        user_url: "https://www.youtube.com/jekyll" }
 
 google_analytics: G-WQVB7M8ZZ2
 
