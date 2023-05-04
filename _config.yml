@@ -10,12 +10,20 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://academic.jyunko.cn" # the base hostname & protocol for your site
 
 minima:
+  # Minima date format.
+  # Refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this.
+  #
+  # date_format: "%b %-d, %Y"
+
+  # Generate social links in footer.
+  #
   social_links:
-    twitter: HsiangNianian
-    github: HsiangNianian
-    facebook: hsiang.nianian
-    soundcloud: hsiang_nianian
-    instagram: hsiang_nianian
+    - { platform: facebook,       user_url: "https://www.facebook.com/hsiang.nianian" }
+    - { platform: github,         user_url: "https://github.com/jekyll/HsiangNianian" }
+    - { platform: instagram,      user_url: "https://www.instagram.com/hsiang_nianian" }
+    - { platform: telegram,       user_url: "https://t.me/Hsiang_Nianian" }
+    - { platform: twitter,        user_url: "https://twitter.com/HsiangNianian" }
+    - { platform: youtube,        user_url: "https://www.youtube.com/jekyll" }
 
 google_analytics: G-WQVB7M8ZZ2
 
