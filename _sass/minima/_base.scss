@@ -1,0 +1,19 @@
+body {
+    font-family: $font-family-sans-serif;
+    font-weight: $font-weight-normal;
+    font-style: $font-style-normal;
+}
+
+strong {
+    font-weight: $font-weight-bold;
+}
+
+em {
+    font-style: $font-style-italic;
+}
+
+strong em,
+em strong {
+    font-weight: $font-weight-bold;
+    font-style: $font-style-italic;
+}
