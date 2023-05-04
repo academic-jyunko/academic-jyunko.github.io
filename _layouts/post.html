@@ -35,16 +35,12 @@ layout: default
       text-align: left;
       /*将文本内容向左对齐*/
     }
-    
-    .underline {
-      border-bottom: 1px solid black;
-  }
   </style>
 
   {% if page.summary %}
   <div class="container">
     <div class="summary">
-      <h3 class="unserline">Summary</h3>
+      <b><i>Summary:</i></b><br />
         {{ page.summary }}
     </div>
     {% if page.scontent %}
@@ -59,7 +55,7 @@ layout: default
   {% if page.notes %}
   <div class="container">
     <div class="summary">
-      <h3 class="unserline">Notes</h3>
+      <b><i>Notes:</i></b><br />
         {{ page.notes }}
     </div>
     {% if page.ncontent %}
