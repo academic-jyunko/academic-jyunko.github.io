@@ -36,15 +36,40 @@ layout: default
       /*将文本内容向左对齐*/
     }
 
+    /* 批注部分的样式 */
     #sidebar {
       position: fixed;
       top: 0;
       right: 0;
-      width: 200px;
+      width: 300px;
       height: 100%;
       background-color: #f8f8f8;
       padding: 20px;
       box-sizing: border-box;
+      overflow-y: scroll;
+    }
+
+    /* 被批注的文本/段落的样式 */
+    .note {
+      position: relative;
+    }
+
+    /* 曲线的样式 */
+    .note:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 100%;
+      width: 0;
+      height: 0;
+      border-top: 10px solid transparent;
+      border-right: 15px solid #ddd;
+      border-bottom: 10px solid transparent;
+    }
+
+    /* 批注内容的列表项的样式 */
+    .annotation li {
+      margin-bottom: 10px;
     }
   </style>
   {% if page.summary %}
@@ -65,9 +90,24 @@ layout: default
   <div class="post-content" itemprop="articleBody">
     {{ content }}
     <div id="sidebar">
-      <div class="annotation">
-        <h2>批注</h2>
-        <ul id="annotations"></ul>
+      <!-- 批注链接部分 -->
+      <div class="note">
+        <a href="#annotation-1">这里有一个批注</a>
+      </div>
+
+      <!-- 批注部分 -->
+      <div id="sidebar">
+
+        <!-- 批注内容列表 -->
+        <div class="annotation">
+          <h2>批注</h2>
+          <ul>
+            <li id="annotation-1">
+              这是一个批注。
+            </li>
+          </ul>
+        </div>
+
       </div>
 
       <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
