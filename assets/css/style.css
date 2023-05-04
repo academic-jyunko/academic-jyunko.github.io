@@ -1,12 +1,14 @@
 .tooltipster-base {
-    max-width: 200px;
-    padding: 10px;
-    background-color: #333;
-    color: #fff;
-  }
-  
-  .tooltipster-base::before {
-    border-top-color: #333;
-    top: -5px; /* 将箭头上移 */
-    left: 5px; /* 将箭头向右移动 */
-  }
+  max-width: 200px;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+}
+
+.tooltipster-base::before {
+  border-top-color: #333;
+  top: -5px;
+  /* 将箭头上移 */
+  left: 5px;
+  /* 将箭头向右移动 */
+}
