@@ -38,13 +38,12 @@ layout: default
   </style>
 
   <div class="main-content">
-    <!-- 将以下所有代码放在这个 <div> 元素中 -->
-    <div class="wapper" style="float: right; width: 66.666%;">
-  
+    <div class="post-content" itemprop="articleBody" style="float: right; width: 66.666%;">
       {% if page.summary %}
       <div class="summary">
-        <b><i>Summary:</i></b><hr />
-          {{ page.summary }}
+        <b><i>Summary:</i></b>
+        <hr />
+        {{ page.summary }}
       </div>
       {% if page.scontent %}
       <div class="content">
@@ -52,11 +51,12 @@ layout: default
       </div>
       {% endif %}
       {% endif %}
-  
+
       {% if page.notes %}
       <div class="summary">
-        <b><i>Notes:</i></b><hr />
-          {{ page.notes }}
+        <b><i>Notes:</i></b>
+        <hr />
+        {{ page.notes }}
       </div>
       {% if page.ncontent %}
       <div class="content">
@@ -64,13 +64,10 @@ layout: default
       </div>
       {% endif %}
       {% endif %}
-  
-    </div>
-  
-    <div class="post-content" itemprop="articleBody">
+
       {{ content }}
     </div>
-  </div>  
+  </div>
 
   <!-- mathjax -->
   {% if page.mathjax %}
