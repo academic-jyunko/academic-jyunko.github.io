@@ -35,41 +35,38 @@ layout: default
       text-align: left;
       /*将文本内容向左对齐*/
     }
-
-    .post-content {
-      margin-left: auto;
-      margin-right: 0;
-      /*将内容向右对齐到最右边*/
-    }
   </style>
 
-  <div class="post-content">
-    {% if page.summary %}
+  {% if page.summary %}
+  <div class="container">
     <div class="summary">
-      <b><i>Summary:</i></b>
-      <hr />
-      {{ page.summary }}
+      <b><i>Summary:</i></b><hr />
+        {{ page.summary }}
     </div>
     {% if page.scontent %}
     <div class="content">
       {{ page.scontent }}
     </div>
     {% endif %}
-    {% endif %}
+  </div>
+  {% endif %}
 
-    {% if page.notes %}
+  {% if page.notes %}
+  <div class="container">
     <div class="summary">
-      <b><i>Notes:</i></b>
-      <hr />
-      {{ page.notes }}
+      <b><i>Notes:</i></b><hr />
+        {{ page.notes }}
     </div>
     {% if page.ncontent %}
     <div class="content">
       {{ page.ncontent }}
     </div>
     {% endif %}
-    {% endif %}
+  </div>
+  <br>
+  {% endif %}
 
+  <div class="post-content" itemprop="articleBody">
     {{ content }}
   </div>
 
