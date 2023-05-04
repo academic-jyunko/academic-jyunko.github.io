@@ -36,6 +36,7 @@ layout: default
       /*将文本内容向左对齐*/
     }
   </style>
+  
   {% if page.summary %}
   <div class="container">
     <div class="summary">
@@ -54,15 +55,6 @@ layout: default
   <div class="post-content" itemprop="articleBody">
     {{ content }}
   </div>
-  <script>
-    $(function () {
-      $('body').contents().filter(function () {
-        return this.nodeType === 8 && /^ 批注/.test(this.nodeValue);
-      }).each(function () {
-        $('<li />', { text: this.nodeValue.replace(/^ 批注/, '') }).appendTo('#annotations');
-      });
-    });
-  </script>
 
   <!-- mathjax -->
   {% if page.mathjax %}
