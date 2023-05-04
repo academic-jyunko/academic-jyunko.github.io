@@ -37,36 +37,34 @@ layout: default
     }
   </style>
 
-  <div class="main-content">
-    <div class="post-content" itemprop="articleBody" style="float: right; width: 66.666%;">
-      {% if page.summary %}
-      <div class="summary">
-        <b><i>Summary:</i></b>
-        <hr />
-        {{ page.summary }}
-      </div>
-      {% if page.scontent %}
-      <div class="content">
-        {{ page.scontent }}
-      </div>
-      {% endif %}
-      {% endif %}
-
-      {% if page.notes %}
-      <div class="summary">
-        <b><i>Notes:</i></b>
-        <hr />
-        {{ page.notes }}
-      </div>
-      {% if page.ncontent %}
-      <div class="content">
-        {{ page.ncontent }}
-      </div>
-      {% endif %}
-      {% endif %}
-
-      {{ content }}
+  <div class="post-content" itemprop="articleBody" style="float: right; width: 66.666%;">
+    {% if page.summary %}
+    <div class="summary">
+      <b><i>Summary:</i></b>
+      <hr />
+      {{ page.summary }}
     </div>
+    {% if page.scontent %}
+    <div class="content">
+      {{ page.scontent }}
+    </div>
+    {% endif %}
+    {% endif %}
+
+    {% if page.notes %}
+    <div class="summary">
+      <b><i>Notes:</i></b>
+      <hr />
+      {{ page.notes }}
+    </div>
+    {% if page.ncontent %}
+    <div class="content">
+      {{ page.ncontent }}
+    </div>
+    {% endif %}
+    {% endif %}
+
+    {{ content }}
   </div>
 
   <!-- mathjax -->
@@ -74,28 +72,31 @@ layout: default
   <script type="text/javascript"
     src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
   {% endif %}
-  <!-- Share -->
-  <strong>Share:</strong>
-  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Facademic.jyunko.cn&t=" title="Share on Facebook"
-    target="_blank"
-    onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(document.URL) + '&t=' + encodeURIComponent(document.URL)); return false;">Facebook</a>
-  |
-  <a href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Facademic.jyunko.cn&title=&summary=&source=http%3A%2F%2Facademic.jyunko.cn"
-    target="_blank" title="Share on LinkedIn"
-    onclick="window.open('http://www.linkedin.com/shareArticle?mini=true&url=' + encodeURIComponent(document.URL) + '&title=' +  encodeURIComponent(document.title)); return false;">LinkedIn</a>
-  |
-  <a href="http://pinterest.com/pin/create/button/?url=http%3A%2F%2Facademic.jyunko.cn&description=" target="_blank"
-    title="Pin it"
-    onclick="window.open('http://pinterest.com/pin/create/button/?url=' + encodeURIComponent(document.URL) + '&description=' +  encodeURIComponent(document.title)); return false;">Pinterest</a>
-  |
-  <a href="http://www.reddit.com/submit?url=http%3A%2F%2Facademic.jyunko.cn&title=" target="_blank"
-    title="Submit to Reddit"
-    onclick="window.open('http://www.reddit.com/submit?url=' + encodeURIComponent(document.URL) + '&title=' +  encodeURIComponent(document.title)); return false;">Reddit</a>
-  |
-  <a href="https://twitter.com/intent/tweet?source=http%3A%2F%2Facademic.jyunko.cn&text=:%20http%3A%2F%2Facademic.jyunko.cn&via=academic.jyunko.cn"
-    target="_blank" title="Tweet"
-    onclick="window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent(document.title) + ':%20'  + encodeURIComponent(document.URL)); return false;">Twitter</a>
-  <br /><br />
+  <div>
+    <!-- Share -->
+    <strong>Share:</strong>
+    <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Facademic.jyunko.cn&t=" title="Share on Facebook"
+      target="_blank"
+      onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(document.URL) + '&t=' + encodeURIComponent(document.URL)); return false;">Facebook</a>
+    |
+    <a href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Facademic.jyunko.cn&title=&summary=&source=http%3A%2F%2Facademic.jyunko.cn"
+      target="_blank" title="Share on LinkedIn"
+      onclick="window.open('http://www.linkedin.com/shareArticle?mini=true&url=' + encodeURIComponent(document.URL) + '&title=' +  encodeURIComponent(document.title)); return false;">LinkedIn</a>
+    |
+    <a href="http://pinterest.com/pin/create/button/?url=http%3A%2F%2Facademic.jyunko.cn&description=" target="_blank"
+      title="Pin it"
+      onclick="window.open('http://pinterest.com/pin/create/button/?url=' + encodeURIComponent(document.URL) + '&description=' +  encodeURIComponent(document.title)); return false;">Pinterest</a>
+    |
+    <a href="http://www.reddit.com/submit?url=http%3A%2F%2Facademic.jyunko.cn&title=" target="_blank"
+      title="Submit to Reddit"
+      onclick="window.open('http://www.reddit.com/submit?url=' + encodeURIComponent(document.URL) + '&title=' +  encodeURIComponent(document.title)); return false;">Reddit</a>
+    |
+    <a href="https://twitter.com/intent/tweet?source=http%3A%2F%2Facademic.jyunko.cn&text=:%20http%3A%2F%2Facademic.jyunko.cn&via=academic.jyunko.cn"
+      target="_blank" title="Tweet"
+      onclick="window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent(document.title) + ':%20'  + encodeURIComponent(document.URL)); return false;">Twitter</a>
+    <br /><br />
+  </div>
+
 
   {% if site.disqus.shortname %}
   {% include disqus_comments.html %}
