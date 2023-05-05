@@ -17,3 +17,35 @@
   margin-left: auto;
   margin-right: 0;
 }
+
+table {
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+td,
+th {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  padding: 5px;
+  text-align: center;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 0;
+  box-shadow: none;
+  text-align: right;
+  /*将容器内的内容向右对齐*/
+}
+
+.summary {
+  width: 90%;
+  display: inline-block;
+  /*将元素设置为行内块级元素*/
+  text-align: left;
+  /*将文本内容向左对齐*/
+}
