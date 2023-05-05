@@ -28,10 +28,10 @@ If you are interested in these, you can send me an email (mentioned below) and t
 
 <br/>
 
-| **May 2023** | [How to Use Chords to Enhance the Expressiveness of Music—Analyzing from the Acoustic and Audience Perspectives](https://academic.jyunko.cn/2023/05/03/HccetEMA.html)(如何利用和弦增强音乐表现力——从声学和听众角度解析)。 |
-| **Apr 2023** | [深度学习心得体会](https://academic.jyunko.cn/2023/04/13/deep-learning-zh.html)(介绍了一些主流算法（NN、CNN、RNN、LSTM）的算法原理、步骤、涉及到的数学理论以及算法核心代码)。 |
-| | [关于几位小丑四月四日利用漏洞恶意攻击我的账号一事](https://academic.jyunko.cn/2023/04/04/April-Fours-Day.html)(Wut a shame). |
-| **Feb 2023** | [The Pain of AI II](https://academic.jyunko.cn/2023/02/20/The-Pain-of-AI-2.html)(Another anecdotes with my teacher). |
+| **May 2023** | - [How to Use Chords to Enhance the Expressiveness of Music—Analyzing from the Acoustic and Audience Perspectives](https://academic.jyunko.cn/2023/05/03/HccetEMA.html)(如何利用和弦增强音乐表现力——从声学和听众角度解析) |
+| **Apr 2023** | - [深度学习心得体会](https://academic.jyunko.cn/2023/04/13/deep-learning-zh.html)(介绍了一些主流算法（NN、CNN、RNN、LSTM）的算法原理、步骤、涉及到的数学理论以及算法核心代码)。 |
+| | - [关于几位小丑四月四日利用漏洞恶意攻击我的账号一事](https://academic.jyunko.cn/2023/04/04/April-Fours-Day.html)(Wut a shame). |
+| **Feb 2023** | - [The Pain of AI II](https://academic.jyunko.cn/2023/02/20/The-Pain-of-AI-2.html)(Another anecdotes with my teacher). |
 
 <script type="text/javascript">
    function toggle_vis(id) {
@@ -47,10 +47,10 @@ If you are interested in these, you can send me an email (mentioned below) and t
 
 <div id="news" style="display:none" markdown="1">
 
-| **Jan 2023** | [训练自己的声学模型](https://academic.jyunko.cn/2023/01/18/Training-an-acoustic-model-for-CMUSphinx-zh-CN.html)(一篇来自官方的阐述如何训练自己的声学模型的文章的翻译)。 |
-| | [Training an acoustic model for CMUSphinx](https://academic.jyunko.cn/2023/01/11/Training-an-acoustic-model-for-CMUSphinx-en.html)(An article explaining how to train one's own acoustic model in CMUSphinx speech recognition project). |
-| | [GPT-3 vs. Rasa chatbots](https://academic.jyunko.cn/2023/01/10/GPT-3-vs-Rasa-chatbots.html)(An article explains the difference between GPT-3 and Rasa). |
-| | [The Pain of AI](https://academic.jyunko.cn/2023/01/09/The-Pain-of-AI.html)(Some anecdotes with my teacher). |
+| **Jan 2023** | - [训练自己的声学模型](https://academic.jyunko.cn/2023/01/18/Training-an-acoustic-model-for-CMUSphinx-zh-CN.html)(一篇来自官方的阐述如何训练自己的声学模型的文章的翻译)。 |
+| | - [Training an acoustic model for CMUSphinx](https://academic.jyunko.cn/2023/01/11/Training-an-acoustic-model-for-CMUSphinx-en.html)(An article explaining how to train one's own acoustic model in CMUSphinx speech recognition project). |
+| | - [GPT-3 vs. Rasa chatbots](https://academic.jyunko.cn/2023/01/10/GPT-3-vs-Rasa-chatbots.html)(An article explains the difference between GPT-3 and Rasa). |
+| | - [The Pain of AI](https://academic.jyunko.cn/2023/01/09/The-Pain-of-AI.html)(Some anecdotes with my teacher). |
 
 </div>
 
