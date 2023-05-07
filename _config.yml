@@ -157,6 +157,7 @@ include:
   - .htaccess
   - _pages
 exclude:
+  - v1
   - "*.sublime-project"
   - "*.sublime-workspace"
   - vendor
@@ -290,5 +291,3 @@ defaults:
       comments: # true
       share: true
       related: true
-
-includes: ['v1']
