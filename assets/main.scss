@@ -1,7 +1,11 @@
---- # Only the main Sass file needs front matter (the dashes are enough) --- $base-font-weight: 300; // 400
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
 
-$brand-color: #2980b9; // #808080
-$brand-color-light: lighten($brand-color, 50%);
+$base-font-weight: 300; // 400
+
+$brand-color:      #2980b9; // #808080
+$brand-color-light:lighten($brand-color, 50%);
 
 $content-width: 900px;
 
@@ -25,14 +29,13 @@ table {
     border: 0 !important;
 }
 
-tr,
-td {
+tr, td {
     background-color: #fdfdfd;
     border: 0 !important;
     padding: 0 !important;
 }
 
-td:nth-child(1) {
+td:nth-child(1) {  
     min-width: 80px;
     width: 10%;
     vertical-align: top;
@@ -70,7 +73,7 @@ img {
     margin-top: 25px;
 }
 
-img+em {
+img + em {
     display: block;
     text-align: center;
     margin-bottom: 25px;
@@ -92,58 +95,3 @@ code {
     background-color: $brand-color-light;
 }
 
-@font-face {
-    font-family: 'Times';
-    src: url('/assets/fonts/times.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'TimesBD';
-    src: url('/assets/fonts/timesbd.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'TimesBI';
-    src: url('/assets/fonts/timesbi.ttf') format('truetype');
-    font-weight: bold;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'TimesI';
-    src: url('/assets/fonts/timesi.ttf') format('truetype');
-    font-weight: normal;
-    font-style: italic;
-}
-
-body {
-    font-family: 'Times', Arial, sans-serif;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: 'TimesBD', Arial, sans-serif;
-}
-
-strong {
-    font-family: 'TimesBD', Arial, sans-serif;
-}
-
-em {
-    font-family: 'TimesI', Arial, sans-serif;
-}
-
-strong em,
-em strong {
-    font-family: 'TimesBI', Arial, sans-serif;
-}
-
-s
