@@ -54,3 +54,6 @@ jekyll_admin:
     - datafiles
     - configuration
   homepage: "pages"
+
+exclude:
+  - "v3"
