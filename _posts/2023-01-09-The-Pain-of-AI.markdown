@@ -29,8 +29,6 @@ excerpt: "???"
 
 ## “你们就是一群混蛋学生，没有更烂” <img align="right" width="320" src="https://academic.jyunko.cn/assets/46855298c1258d71.png">
 
-<br />
-
 **侮辱我我无所谓，侮辱全班我就有所谓。**
 
 让我生气的并不是他阴阳怪气我，而是他骂我还借此同作业的问题一起带上全班。
