@@ -27,7 +27,7 @@ excerpt: "???"
 
 算了吧，是我的错，我没做完作业，我是该挨骂。
 
-## “你们就是一群混蛋学生，没有更烂” <img align="right" width="300" src="https://academic.jyunko.cn/assets/46855298c1258d71.png">
+## “你们就是一群混蛋学生，没有更烂” <img align="right" width="290" src="https://academic.jyunko.cn/assets/46855298c1258d71.png">
 
 **侮辱我我无所谓，侮辱全班我就有所谓。**
 
