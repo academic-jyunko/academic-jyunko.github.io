@@ -382,7 +382,7 @@ r1
 
 我是在 nb 群和我朋友聊天转发了他们 graia 的聊天记录结果 graia 的那个恶意的管理(小丑[Bryan不可思议](https://github.com/ProgramRipper))也在里面就跑出来与其他人一起攻击我,这个恶意很明显了。
 
-我说了两句很过分的话，“三观不正”“我确实有错但我会认为你读书少”，随便便没再理会这些人，结果过了一会儿我发现我被 graia 管理 [Nyuan Zhang](https://github.com/blueglassblock) 禁言了，同时还发到了nonebot群示众。
+我说了两句很过分的话，“三观不正”“我确实有错但我会认为你读书少”，随后便没再理会这些人，结果过了一会儿我发现我被 graia 管理 [Nyuan Zhang](https://github.com/blueglassblock) 禁言了，同时还发到了nonebot群示众。
 
 
 事件始末
