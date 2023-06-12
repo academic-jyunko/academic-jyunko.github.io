@@ -28,6 +28,16 @@ The dominant sequence transduction models are based on complex recurrent or conv
 </q>
 </details>
 
+<details close>
+<summary>
+2. 什么是 WMT?
+</summary>
+<q>
+WMT是指机器翻译领域最具代表性的国际评测大会Workshop on Machine Translation（机器翻译研讨会），是由统计机器翻译和神经机器翻译等多个组别组成的基准测试。自2006年开始，每年都会举办一次。WMT的目标是为了提高机器翻译技术的水平，吸引更多学术界、企业参与机器翻译的研究和发展，并促进机器翻译技术应用在实际生产中。WMT评测通常会提供一些双语数据集，然后参赛者根据这些数据集训练出机器翻译模型，并使用其他测试数据集进行测试和评估，最终评选出最优秀的翻译系统。WMT评测已成为机器翻译领域公认的重要学术会议和评测竞赛之一。
+</q>
+</details>
+  
+
 ***
 
 _"那么，论文复现环节需要的算力资源就不是我能承受得起的了，但是不复现又觉得会很遗憾，**怎么办**."<a href="/fool" title="#目移 看向阿尘和CAS.." rel="tipsy">(?)</a>_
