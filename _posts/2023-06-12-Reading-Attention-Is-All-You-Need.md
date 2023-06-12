@@ -40,4 +40,4 @@ WMT是指机器翻译领域最具代表性的国际评测大会Workshop on Machi
 
 ***
 
-_"那么，论文复现环节需要的算力资源就不是我能承受得起的了，但是不复现又觉得会很遗憾，**怎么办**."<a href="/fool" title="#目移 看向阿尘和CAS.." rel="tipsy">(?)</a>_
+_"So, the computing resources required for paper reproduction are beyond my affordability, but I'll feel regretful if I don't reproduce it. **What should I do**"<a href="/fool" title="#目移 看向阿尘和CAS.." rel="tipsy">(?)</a>_
