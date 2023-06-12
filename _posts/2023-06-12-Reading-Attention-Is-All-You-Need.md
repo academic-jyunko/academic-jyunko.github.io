@@ -29,3 +29,5 @@ The dominant sequence transduction models are based on complex recurrent or conv
 </details>
 
 ***
+
+_"那么，论文复现环节需要的算力资源就不是我能承受得起的了，但是不复现又觉得会很遗憾，**怎么办**."<a href="/fool" title="要知道，我从不轻易挖坑。" rel="tipsy">(?)</a>_
