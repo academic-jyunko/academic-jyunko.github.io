@@ -2,7 +2,6 @@
 layout: post
 title: "读《Attention Is All You Need》"
 author: 简律纯
-date: 2023-06-11
 mathjax: true
 summary: |
   无事可做的一天，于是想起来之前自己编译的那篇"Attention Is All You Need"，我打印出来后便是再也没看过了，于是把它翻了个底朝天。在这里记下我阅读它时所做的笔记。
