@@ -3,15 +3,15 @@ layout: page
 title: Jyunko's academic site
 ---
 
-<p algn="left">
+<p align="left">
 
 Artificial Intelligence, Music Theories. There's going to be something more academic and something that fascinates me. I have always had an absurd idea-composing music in a programming language and programming in a music language.[~~Maybe we can really try it !~~](https://github.com/retrofor/retro)
+
+**[View My Social Account!](/about)**
 
 </p>
 
 <img align="right" width="200" src="/assets/img3.jpg" alt="jyunko">
-
-**[View My Social Account!](/about)**
 
 <br/>
 
