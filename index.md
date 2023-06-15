@@ -11,7 +11,9 @@ Artificial Intelligence, Music Theories. There's going to be something more acad
 
 </p>
 
-<img align="right" width="200" src="/assets/img3.jpg" alt="jyunko">
+<p align="right">
+<img width="200" src="/assets/img3.jpg" alt="jyunko">
+</p>
 
 <br/>
 
