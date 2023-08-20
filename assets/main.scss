@@ -95,3 +95,13 @@ code {
     background-color: $brand-color-light;
 }
 
+@font-face {
+  font-family: 'Times';
+  src: url('../fonts/times.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Times', sans-serif;
+}
