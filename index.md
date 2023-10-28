@@ -4,7 +4,7 @@ title: Jyunko's academic site
 ---
 
 <p>
-<img width="200" src="/assets/jyunko.jpg" alt="jyunko" class="profilepicmain"/>
+<img width="200" src="/assets/Nianian.jpg" alt="jyunko" class="profilepicmain"/>
 </p>
 
 Artificial Intelligence, Music Theories. There's going to be something more academic and something that fascinates me. I have always had an absurd idea-composing music in a programming language and programming in a music language.[~~Maybe we can really try it !~~](https://github.com/retrofor/retro)
