@@ -103,8 +103,8 @@ I hope that through my research, I can make some contributions to the developmen
 
 <div id="orgs" style="display:none" markdown="1">
    
-**AICMUniversity**  
-<font color="gray"><small>_Artificial Intelligence and Computational Modeling University_</small></font>  
+**AICMUniversity**
+<font color="gray"><small>Artificial Intelligence and Computational Modeling University</small></font>  
 [[Github]](https://github.com/AICMUniversity) [[Home Page]](https://aicmu.ac.cn) [[anthology]](https://anthology.aicmu.ac.cn) [[Publication]](https://pub.aicmu.ac.cn) [[1629]](https://1629.aicmu.ac.cn)  
 
 **Opensource:* 
