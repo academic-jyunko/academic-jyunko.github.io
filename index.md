@@ -99,7 +99,7 @@ I hope that through my research, I can make some contributions to the developmen
    }
 </script>
 
-<a href="javascript:toggle_vis('news')">**Show/Hide Organizations' Project**</a>
+<a href="javascript:toggle_vis('orgs')">**Show/Hide Organizations' Project**</a>
 
 <div id="news" style="display:none" markdown="1">
    
@@ -177,7 +177,6 @@ email("support", "hydroroll.team");
 
 **Mr. Hsiang Nianian**<br>
 **Email:**
-
 <script type="text/javascript">
 <!--//--><![CDATA[//><!--
 function email(e, d) {
@@ -190,7 +189,7 @@ function email(e, d) {
 email("academic", "jyunko.cn");
 //--><!]]>
 </script>
-
+,
 <script type="text/javascript">
 <!--//--><![CDATA[//><!--
 function email(e, d) {
@@ -203,7 +202,7 @@ function email(e, d) {
 email("jyunko", "retrofor.space");
 //--><!]]>
 </script>
-
+,
 <script type="text/javascript">
 <!--//--><![CDATA[//><!--
 function email(e, d) {
@@ -216,7 +215,7 @@ function email(e, d) {
 email("jyunko", "aicmu.ac.cn");
 //--><!]]>
 </script>
-
+,
 <script type="text/javascript">
 <!--//--><![CDATA[//><!--
 function email(e, d) {
