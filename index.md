@@ -101,7 +101,7 @@ I hope that through my research, I can make some contributions to the developmen
 
 <a href="javascript:toggle_vis('orgs')">**Show/Hide Organizations' Project**</a>
 
-<div id="news" style="display:none" markdown="1">
+<div id="orgs" style="display:none" markdown="1">
    
 **AICMUniversity**  
 <font color="gray"><small>_Artificial Intelligence and Computational Modeling University_</small></font>  
