@@ -9,6 +9,8 @@ title: Jyunko's academic site
 
 Artificial Intelligence, Music Theories. There's going to be something more academic and something that fascinates me. I have always had an absurd idea-composing music in a programming language and programming in a music language.[~~Maybe we can really try it !~~](https://github.com/AICMUniversity/aria)
 
+[[Github]](https://github.com/HsiangNianian) [[Scholar]](https://scholar.google.com/citations?user=4rbBsy0AAAAJ&hl=en)
+
 <br/>
 
 ## Current
