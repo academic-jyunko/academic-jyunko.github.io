@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "关于几位小丑四月四日利用漏洞恶意攻击我的账号一事"
+visiable: 0
 author: 简律纯
 excerpt: |
  涉事名单
