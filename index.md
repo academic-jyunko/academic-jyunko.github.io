@@ -192,45 +192,6 @@ function email(e, d) {
 email("academic", "jyunko.cn");
 //--><!]]>
 </script>
-,
-<script type="text/javascript">
-<!--//--><![CDATA[//><!--
-function email(e, d) {
-   if (!document.write) return false;
-   if (document.write) {
-      var e; var d;
-      document.write('<a href="' + 'mailto:' + e + '@' + d + '">' + e + '@' + d + '<\/a>');
-   }
-}
-email("jyunko", "retrofor.space");
-//--><!]]>
-</script>
-,
-<script type="text/javascript">
-<!--//--><![CDATA[//><!--
-function email(e, d) {
-   if (!document.write) return false;
-   if (document.write) {
-      var e; var d;
-      document.write('<a href="' + 'mailto:' + e + '@' + d + '">' + e + '@' + d + '<\/a>');
-   }
-}
-email("jyunko", "aicmu.ac.cn");
-//--><!]]>
-</script>
-,
-<script type="text/javascript">
-<!--//--><![CDATA[//><!--
-function email(e, d) {
-   if (!document.write) return false;
-   if (document.write) {
-      var e; var d;
-      document.write('<a href="' + 'mailto:' + e + '@' + d + '">' + e + '@' + d + '<\/a>');
-   }
-}
-email("leader", "hydroroll.team");
-//--><!]]>
-</script>
 
 <meta name="viewport" content="width=device-width">
 
