@@ -39,11 +39,11 @@ layout: default
   <div class="container">
     <div class="summary">
       <b><i>Summary:</i></b><hr />
-        {{ page.summary }}
+        <font color="gray"><small>{{ page.summary }}</small></font>
     </div>
     {% if page.scontent %}
     <div class="content">
-      {{ page.scontent }}
+      <font color="gray"><small>{{ page.scontent }}</small></font>
     </div>
     {% endif %}
   </div>
@@ -54,7 +54,7 @@ layout: default
   <div class="container">
     <div class="summary">
       <b><i>Notes:</i></b><hr />
-        {{ page.notes }}
+      <font color="gray"><small>{{ page.notes }}</small></font>
     </div>
     {% if page.ncontent %}
     <div class="content">
