@@ -108,6 +108,7 @@ I hope that through my research, I can make some contributions to the developmen
    
 **AICMUniversity**
 > <font color="gray"><small>Artificial Intelligence and Computational Modeling University</small></font>  
+
 [[Github]](https://github.com/AICMUniversity) [[Home Page]](https://aicmu.ac.cn) [[anthology]](https://anthology.aicmu.ac.cn) [[Publication]](https://pub.aicmu.ac.cn) [[1629]](https://1629.aicmu.ac.cn)  
 
 **Opensource:* 
@@ -128,7 +129,7 @@ email("opensource", "aicmu.ac.cn");
 - [*aria*](https://aria.aicmu.ac.cn), audio programming language written in rust, [check the source code on Github](https://github.com/AICMUniversity/aria).
 
 **Retro for wut?**  
-> [[Github]](https://github.com/retrofor) [[Home Page]](https://github.com/retrofor.space)  
+[[Github]](https://github.com/retrofor) [[Home Page]](https://github.com/retrofor.space)  
 
 **Contact:*
 <script type="text/javascript">
@@ -148,7 +149,7 @@ email("contact", "retrofor.space");
 -  [*Cyberdynamix*](https://cyberdynamix.retrofor.space), front-end and back-end separation of deployed chatbot framework based on IRC protocol. [[Source Code]](https://github.com/retrofor/Cyberdynamix)
 
 **HydroRoll-Team**  
-> [[Github]](https://github.com/HydroRoll-Team) [[Home Page]](https://hydroroll.team) 
+[[Github]](https://github.com/HydroRoll-Team) [[Home Page]](https://hydroroll.team) 
 
 **Support:*
 <script type="text/javascript">
@@ -168,7 +169,7 @@ email("support", "hydroroll.team");
 - [*HydroRoll*](https://hydroroll.team). [[Source Code]](https://github.com/HydroRoll-Team/HydroRoll)
 
 **Noctisynth**  DW   
-> [[Github]](https://github.com/noctisynth) [[Home Page]](https://noctisynth.top)  
+[[Github]](https://github.com/noctisynth) [[Home Page]](https://noctisynth.top)  
 
 - [*Quantumix*](#), a Rust-based project distribution project that is currently under development. [[Source Code]](https://github.com/noctisynth/Quantumix)
 - [*Moonstone*](#), A communication tool based on the end-to-end encryption protocol Oblivion. [[Source Code]](https://github.com/noctisynth/mOONSTONE)
