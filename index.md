@@ -168,7 +168,7 @@ email("support", "hydroroll.team");
 - [*infini*](https://grps.hydroroll.team), Core of HydroRoll, python version of GRPS-1. [[Source Code]](https://github.com/HydroRoll-Team/infini)
 - [*HydroRoll*](https://hydroroll.team). [[Source Code]](https://github.com/HydroRoll-Team/HydroRoll)
 
-**Noctisynth**  DW   
+**Noctisynth**  
 [[Github]](https://github.com/noctisynth) [[Home Page]](https://noctisynth.top)  
 
 - [*Quantumix*](#), a Rust-based project distribution project that is currently under development. [[Source Code]](https://github.com/noctisynth/Quantumix)
