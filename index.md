@@ -41,7 +41,7 @@ These activities reflect my current pursuits, and I hope you find them interesti
 
 <br/>
 
-| **Dec 2023** | [Build A Script Language](./2023/12/27/Build-A-Script-Language.html), using rust to build a simple script language named psi. |
+| **Jan 2024** | [Build An Audio Programming Language](./2024/01/05/Build-An-Programming-Language.html), named *"aria"*. |
 
 <script type="text/javascript">
    function toggle_vis(id) {
@@ -57,6 +57,7 @@ These activities reflect my current pursuits, and I hope you find them interesti
 
 <div id="news" style="display:none" markdown="1">
 
+| **Dec 2023** | [Build A Script Language](./2023/12/27/Build-A-Script-Language.html), using rust to build a simple script language named psi. |
 | **Jun 2023** | [Reading "Attention Is All You Need"](/2023/06/12/Reading-Attention-Is-All-You-Need.html), how about having a rest after every coding time? |
 | **May 2023** | [How to Use Chords to Enhance the Expressiveness of Music—Analyzing from the Acoustic and Audience Perspectives](./2023/05/03/HccetEMA.html) |
 | **Feb 2023** | [The Pain of AI II](./2023/02/20/The-Pain-of-AI-2.html), Another anecdotes with my teacher. |
