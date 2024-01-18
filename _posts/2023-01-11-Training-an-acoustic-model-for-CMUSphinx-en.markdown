@@ -1,12 +1,13 @@
 ---
 layout: post
 title: Training an acoustic model for CMUSphinx
-author: CMUSphinx,简律纯
+author: CMUSphinx, Hsiang Nianian
 visible: 1
 toc: true
 excerpt: |
-  An article explaining how to train one's own acoustic model in CMUSphinx speech recognition project
+  An article explaining how to train one's own acoustic model in CMUSphinx speech recognition project.
 ---
+
 ## Introduction
 The CMUSphinx project comes with several high-quality acoustic models. There are US English acoustic models for microphone and broadcast speech as well as a model for speech over a telephone. You can also use French or Chinese models trained on a huge amount of acoustic data. Those models were carefully optimized to achieve the best recognition performance and work well for almost all applications. We put years of experience into making them perfect. Most command-and-control applications and even some large vocabulary applications could just use default models directly.
 
