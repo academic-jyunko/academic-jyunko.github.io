@@ -41,7 +41,7 @@ These activities reflect my current pursuits, and I hope you find them interesti
 
 <br/>
 
-| **Jan 2024** | [Build An Audio Programming Language](./2024/01/05/Build-An-Programming-Language.html), named *"aria"*. |
+| **Jan  2024** | [Build An Audio Programming Language](./2024/01/05/Build-An-Programming-Language.html), named *"aria"*. |
 
 <script type="text/javascript">
    function toggle_vis(id) {
@@ -57,14 +57,13 @@ These activities reflect my current pursuits, and I hope you find them interesti
 
 <div id="news" style="display:none" markdown="1">
 
-| **Dec 2023** | [Build A Script Language](./2023/12/27/Build-A-Script-Language.html), using rust to build a simple script language named psi. |
-| **Jun 2023** | [Reading "Attention Is All You Need"](/2023/06/12/Reading-Attention-Is-All-You-Need.html), how about having a rest after every coding time? |
-| **May 2023** | [How to Use Chords to Enhance the Expressiveness of Music](./2023/05/03/HccetEMA.html), analyzing from the Acoustic and Audience Perspectives. |
-| **Mar 2023** | [Now You Have Three Problems](./2023/03/03/Now-You-Have-Three-Problems.html). |
-| **Feb 2023** | [The Pain of AI II](./2023/02/20/The-Pain-of-AI-2.html), another anecdotes with my teacher. |
-| **Jan 2023** | [Training an acoustic model for CMUSphinx](./2023/01/11/Training-an-acoustic-model-for-CMUSphinx-en.html), an article explaining how to train one's own acoustic model in CMUSphinx speech recognition project. |
-|              | [GPT-3 vs. Rasa chatbots](./2023/01/10/GPT-3-vs-Rasa-chatbots.html), an article explains the difference between GPT-3 and Rasa. |
-|              | [The Pain of AI](./2023/01/09/The-Pain-of-AI.html), some anecdotes with my teacher. |
+| **Dec  2023** | [Build A Script Language](./2023/12/27/Build-A-Script-Language.html), using rust to build a simple script language named psi. |
+| **Jun  2023** | [Reading "Attention Is All You Need"](/2023/06/12/Reading-Attention-Is-All-You-Need.html), how about having a rest after every coding time? |
+| **May  2023** | [How to Use Chords to Enhance the Expressiveness of Music](./2023/05/03/HccetEMA.html), analyzing from the Acoustic and Audience Perspectives. |
+| **Mar  2023** | [Now You Have Three Problems](./2023/03/03/Now-You-Have-Three-Problems.html). |
+| **Jan  2023** | [Training an acoustic model for CMUSphinx](./2023/01/11/Training-an-acoustic-model-for-CMUSphinx-en.html), an article explaining how to train one's own acoustic model in CMUSphinx speech recognition project. |
+|               | [GPT-3 vs. Rasa chatbots](./2023/01/10/GPT-3-vs-Rasa-chatbots.html), an article explains the difference between GPT-3 and Rasa. |
+|               | [The Pain of AI](./2023/01/09/The-Pain-of-AI.html), some anecdotes with my teacher. |
 
 </div>
 
