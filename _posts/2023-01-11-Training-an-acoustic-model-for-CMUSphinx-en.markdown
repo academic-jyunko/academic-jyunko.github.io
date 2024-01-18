@@ -3,6 +3,7 @@ layout: post
 title: Training an acoustic model for CMUSphinx
 author: CMUSphinx,简律纯
 visible: 1
+toc: true
 excerpt: |
   An article explaining how to train one's own acoustic model in CMUSphinx speech recognition project
 ---
