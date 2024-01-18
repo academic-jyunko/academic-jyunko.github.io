@@ -5,6 +5,8 @@ date: 2023-01-10
 toc: true
 visible: 1
 author: Mark_Ryan
+excerpt: |
+  In 1829, an event took place that unleashed a technological revolution. At the Rainhill Trials a group of steam locomotives squared off to determine which one could win a series of tests of speed, strength and reliability. The winning machine, Rocket, not only blew away its competition at the trials, it also set the direction for steam locomotive development for the following century.
 ---
 
 
@@ -14,7 +16,6 @@ author: Mark_Ryan
 <small>Richard Trevithick’s locomotive — the GPT-3 of the early 19th century (Shutterstock.com)</small>
 </div>
 
-## **GPT-3 vs. Rasa chatbots**
 > Comparing the performance of GPT-3 and a custom-trained Rasa chatbot.
 
 In 1829, an event took place that unleashed a technological revolution. At the Rainhill Trials a group of steam locomotives squared off to determine which one could win a series of tests of speed, strength and reliability. The winning machine, Rocket, not only blew away its competition at the trials, it also set the direction for steam locomotive development for the following century.
