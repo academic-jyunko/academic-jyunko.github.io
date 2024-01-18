@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Now You Have Three Problems"
-author: "David Beazley ([@dabeaz](https://www.dabeaz.com))"
+author: "David Beazley"
 mathjax: true
 toc: true
 ---
