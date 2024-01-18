@@ -1,15 +1,16 @@
 ---
 layout: post
 title: 'Reading "Attention Is All You Need"'
-author: 简律纯
+author: Hsiang Nianian
 mathjax: true
+toc: true
 summary: |
   无事可做的一天，于是想起来之前自己编译的那篇"Attention Is All You Need"，我打印出来后便是再也没看过了，于是把它翻了个底朝天。在这里记下我阅读它时所做的笔记。
 excerpt: |
   The dominant sequence transduction models are based on complex recurrent or convolutional neural networks that include an encoder and a decoder. 
 ---
 
-<p align="center">Part 1</p>
+## PART I
 
 > _Abstract_  
 
