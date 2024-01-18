@@ -9,23 +9,17 @@ excerpt: |
   In 1829, an event took place that unleashed a technological revolution. At the Rainhill Trials a group of steam locomotives squared off to determine which one could win a series of tests of speed, strength and reliability. The winning machine, Rocket, not only blew away its competition at the trials, it also set the direction for steam locomotive development for the following century.
 ---
 
-<div>
-  <div align="left">
-    
-  > Comparing the performance of GPT-3 and a custom-trained Rasa chatbot.
-  
-  In 1829, an event took place that unleashed a technological revolution. At the Rainhill Trials a group of steam locomotives squared off to determine which one could win a series of tests of speed, strength and reliability. The winning machine, Rocket, not only blew away its competition at the trials, it also set the direction for steam locomotive development for the following century.
-  
-  What does all this have to do with GPT-3, the transformer language model that OpenAI made available in a limited beta starting in June? Some reviewers have heralded GPT-3 as the first glimpse of artificial general intelligence, while others are calling it a massive lookup table. I don’t think GPT-3 is AGI, but I do think the approach used in GPT-3 will be transformative. Using massive computing power and a huge training suite, OpenAI has created a model that is genuinely general-purpose. By drawing comparisons to the dawn of the railway age we can put GPT-3 in context and see its impact more clearly.
-  
-  </div>
-  
-  <div align="right">
+<div align="center">
   <img src="https://miro.medium.com/max/720/1*M4Hj_yHDulwWTPetLVoQpQ.webp">
-  <br>
+  <br />
   <small>Richard Trevithick’s locomotive — the GPT-3 of the early 19th century (Shutterstock.com)</small>
-  </div>
 </div>
+  
+> Comparing the performance of GPT-3 and a custom-trained Rasa chatbot.
+  
+In 1829, an event took place that unleashed a technological revolution. At the Rainhill Trials a group of steam locomotives squared off to determine which one could win a series of tests of speed, strength and reliability. The winning machine, Rocket, not only blew away its competition at the trials, it also set the direction for steam locomotive development for the following century.
+  
+What does all this have to do with GPT-3, the transformer language model that OpenAI made available in a limited beta starting in June? Some reviewers have heralded GPT-3 as the first glimpse of artificial general intelligence, while others are calling it a massive lookup table. I don’t think GPT-3 is AGI, but I do think the approach used in GPT-3 will be transformative. Using massive computing power and a huge training suite, OpenAI has created a model that is genuinely general-purpose. By drawing comparisons to the dawn of the railway age we can put GPT-3 in context and see its impact more clearly.
 
 In this article I will describe a simple test that I did to compare GPT-3’s performance with a Rasa chatbot. This test was certainly no Rainhill Trials, but I think the results do shed some light on the role that massive transformer models like GPT-3 will play in the future. I will argue that GPT-3 isn’t the AI equivalent of Rocket, but it just might play the role of the locomotives designed by Richard Trevithick in the decades prior to the Rainhill Trials. Trevithick’s machines were slow and so heavy that they destroyed their tracks. However, despite their flaws, these locomotives had the right essential ingredients and they paved the way for the world-changing success of Rocket.
 
