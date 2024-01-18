@@ -3,6 +3,7 @@ layout: post
 title: "Now You Have Three Problems"
 author: "David Beazley ([@dabeaz](https://www.dabeaz.com))"
 mathjax: true
+toc: true
 ---
 
 There's a popular programming trope that if the solution to your
