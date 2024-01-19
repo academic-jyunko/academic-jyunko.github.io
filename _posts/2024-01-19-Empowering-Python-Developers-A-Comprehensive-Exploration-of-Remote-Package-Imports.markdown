@@ -113,18 +113,18 @@ print(numpy_module.__version__)  # Access an attribute of the module
 If you want to import modules from an S3 server, you can use **boto3** module, which is a very powerful AWS SDK, that can let you access and manage AWS's various services, including S3. You can use boto3 module to get the source code of the remote module, then use importlib module to create spec and loader, and finally use exec_module method to execute the module code, to complete the import. Here is an example code, which imports a module named **math** from an S3 server, and calls its square function:
 
 ```pycon
->>>import boto3
->>>import importlib.util
+>>> import boto3
+>>> import importlib.util
 
->>>s3 = boto3.resource("s3")
->>>bucket = s3.Bucket("my-bucket")
->>>object = bucket.Object("math.py")
->>>code = object.get()["Body"].read().decode()
+>>> s3 = boto3.resource("s3")
+>>> bucket = s3.Bucket("my-bucket")
+>>> object = bucket.Object("math.py")
+>>> code = object.get()["Body"].read().decode()
 
->>>spec = importlib.util.spec_from_loader("math", loader=None)
->>>module = importlib.util.module_from_spec(spec)
+>>> spec = importlib.util.spec_from_loader("math", loader=None)
+>>> module = importlib.util.module_from_spec(spec)
 
->>>exec(code, module.__dict__)
+>>> exec(code, module.__dict__)
 ```
 
 Assuming the source code of the remote module is like this:
@@ -137,7 +137,7 @@ def square(x):
 Then running the above code, you will see the following output:
 
 ```pycon
->>>module.square(2)
+>>> module.square(2)
 4
 ```
 
@@ -146,19 +146,19 @@ Then running the above code, you will see the following output:
 If you want to import modules from an SSH server, you can use **paramiko** module, which is a very excellent SSH library, that can let you connect and operate remote servers through SSH protocol. You can use paramiko module to get the source code of the remote module, then use importlib module to create spec and loader, and finally use exec_module method to execute the module code, to complete the import. Here is an example code, which imports a module named **date** from an SSH server, and calls its today function:
 
 ```pycon
->>>import paramiko
->>>import importlib.util
+>>> import paramiko
+>>> import importlib.util
 
->>>ssh = paramiko.SSHClient()
->>>ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
->>>ssh.connect("example.com", username="user", password="pass")
->>>sftp = ssh.open_sftp()
->>>code = sftp.file("date.py").read().decode()
+>>> ssh = paramiko.SSHClient()
+>>> ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
+>>> ssh.connect("example.com", username="user", password="pass")
+>>> sftp = ssh.open_sftp()
+>>> code = sftp.file("date.py").read().decode()
 
->>>spec = importlib.util.spec_from_loader("date", loader=None)
->>>module = importlib.util.module_from_spec(spec)
+>>> spec = importlib.util.spec_from_loader("date", loader=None)
+>>> module = importlib.util.module_from_spec(spec)
 
->>>exec(code, module.__dict__)
+>>> exec(code, module.__dict__)
 ```
 
 Assuming the source code of the remote module is like this:
@@ -173,7 +173,7 @@ def today():
 Then running the above code, you will see the following output:
 
 ```pycon
->>>module.today()
+>>> module.today()
 2024-01-19
 ```
 
