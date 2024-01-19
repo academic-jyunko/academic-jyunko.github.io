@@ -47,11 +47,8 @@ def import_module_from_url(module_name, url):
 
     # Create a loader object using SourceFileLoader
     loader = SourceFileLoader(module_name, url, source_code)
-
     # Create a module spec
     spec = importlib.util.spec_from_loader(module_name, loader)
-
-    # Import the module
     module = importlib.util.module_from_spec(spec)
     loader.exec_module(module)
 
@@ -59,11 +56,8 @@ def import_module_from_url(module_name, url):
 
 # URL of the requests package __init__.py file
 url = "https://raw.githubusercontent.com/psf/requests/main/src/requests/__init__.py"
-
 # Name of the module (without file extension)
 module_name = "requests"
-
-# Import the module from the URL
 requests_module = import_module_from_url(module_name, url)
 
 # Check if the import was successful
@@ -90,17 +84,10 @@ def import_module_from_github(repo_url, module_name):
     # Generate the raw GitHub content URL for the __init__.py file
     init_file_url = f"{repo_url.rstrip('/')}/main/{module_name.replace('.', '/')}/__init__.py"
 
-    # Download the source code from the GitHub repository
     response = urllib.request.urlopen(init_file_url)
     source_code = response.read().decode('utf-8')
-
-    # Create a loader object
     loader = importlib.util.SourceLoader(module_name, init_file_url)
-
-    # Create a module spec
     spec = importlib.util.spec_from_loader(module_name, loader)
-
-    # Import the module
     module = importlib.util.module_from_spec(spec)
 
     try:
@@ -112,15 +99,12 @@ def import_module_from_github(repo_url, module_name):
 
     return module
 
-# GitHub repository URL for numpy
 github_repo_url = "https://github.com/numpy/numpy"
-# Name of the module (without file extension)
 module_name = "numpy"
 
 # Import the module from the GitHub repository
 numpy_module = import_module_from_github(github_repo_url, module_name)
 
-# Now you can use the imported module as needed
 print(numpy_module.__version__)  # Access an attribute of the module
 ```
 
@@ -128,25 +112,19 @@ print(numpy_module.__version__)  # Access an attribute of the module
 
 If you want to import modules from an S3 server, you can use **boto3** module, which is a very powerful AWS SDK, that can let you access and manage AWS's various services, including S3. You can use boto3 module to get the source code of the remote module, then use importlib module to create spec and loader, and finally use exec_module method to execute the module code, to complete the import. Here is an example code, which imports a module named **math** from an S3 server, and calls its square function:
 
-```python
-import boto3
-import importlib.util
+```pycon
+>>>import boto3
+>>>import importlib.util
 
-# Get the source code of the remote module
-s3 = boto3.resource("s3")
-bucket = s3.Bucket("my-bucket")
-object = bucket.Object("math.py")
-code = object.get()["Body"].read().decode()
+>>>s3 = boto3.resource("s3")
+>>>bucket = s3.Bucket("my-bucket")
+>>>object = bucket.Object("math.py")
+>>>code = object.get()["Body"].read().decode()
 
-# Create spec and loader
-spec = importlib.util.spec_from_loader("math", loader=None)
-module = importlib.util.module_from_spec(spec)
+>>>spec = importlib.util.spec_from_loader("math", loader=None)
+>>>module = importlib.util.module_from_spec(spec)
 
-# Execute the module code
-exec(code, module.__dict__)
-
-# Call the module function
-module.square(2)
+>>>exec(code, module.__dict__)
 ```
 
 Assuming the source code of the remote module is like this:
@@ -158,7 +136,8 @@ def square(x):
 
 Then running the above code, you will see the following output:
 
-```python
+```pycon
+>>>module.square(2)
 4
 ```
 
@@ -166,26 +145,20 @@ Then running the above code, you will see the following output:
 
 If you want to import modules from an SSH server, you can use **paramiko** module, which is a very excellent SSH library, that can let you connect and operate remote servers through SSH protocol. You can use paramiko module to get the source code of the remote module, then use importlib module to create spec and loader, and finally use exec_module method to execute the module code, to complete the import. Here is an example code, which imports a module named **date** from an SSH server, and calls its today function:
 
-```python
-import paramiko
-import importlib.util
+```pycon
+>>>import paramiko
+>>>import importlib.util
 
-# Get the source code of the remote module
-ssh = paramiko.SSHClient()
-ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
-ssh.connect("example.com", username="user", password="pass")
-sftp = ssh.open_sftp()
-code = sftp.file("date.py").read().decode()
+>>>ssh = paramiko.SSHClient()
+>>>ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
+>>>ssh.connect("example.com", username="user", password="pass")
+>>>sftp = ssh.open_sftp()
+>>>code = sftp.file("date.py").read().decode()
 
-# Create spec and loader
-spec = importlib.util.spec_from_loader("date", loader=None)
-module = importlib.util.module_from_spec(spec)
+>>>spec = importlib.util.spec_from_loader("date", loader=None)
+>>>module = importlib.util.module_from_spec(spec)
 
-# Execute the module code
-exec(code, module.__dict__)
-
-# Call the module function
-module.today()
+>>>exec(code, module.__dict__)
 ```
 
 Assuming the source code of the remote module is like this:
@@ -199,7 +172,8 @@ def today():
 
 Then running the above code, you will see the following output:
 
-```python
+```pycon
+>>>module.today()
 2024-01-19
 ```
 
