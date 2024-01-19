@@ -7,7 +7,7 @@ description: AI/ML, thoughts?
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://academic.jyunko.cn" # the base hostname & protocol for your site
-
+highlighter: rouge
 minima:
   # Minima date format.
   # Refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this.
@@ -17,9 +17,7 @@ minima:
   # Generate social links in footer.
   #
   social_links:
-    - { platform: github,         user_url: "https://github.com/jekyll/HsiangNianian" }
-
-google_analytics: G-WQVB7M8ZZ2
+    - { platform: 'github', user_url: "https://github.com/HsiangNianian" }
 
 disqus:
   shortname: cypress-github-io
