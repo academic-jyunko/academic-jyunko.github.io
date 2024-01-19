@@ -42,6 +42,7 @@ These activities reflect my current pursuits, and I hope you find them interesti
 <br/>
 
 | **Jan  2024** | [Build An Audio Programming Language](./2024/01/05/Build-An-Programming-Language.html), named *"aria"*. |
+|               | Empowering Python Developers: [A Comprehensive Exploration of Remote Package Imports](./2024/01/19/Empowering-Python-Developers-A-Comprehensive-Exploration-of-Remote-Package-Imports.html). |
 
 <script type="text/javascript">
    function toggle_vis(id) {
