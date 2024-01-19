@@ -115,15 +115,12 @@ If you want to import modules from an S3 server, you can use **boto3** module, w
 ```pycon
 >>> import boto3
 >>> import importlib.util
-
 >>> s3 = boto3.resource("s3")
 >>> bucket = s3.Bucket("my-bucket")
 >>> object = bucket.Object("math.py")
 >>> code = object.get()["Body"].read().decode()
-
 >>> spec = importlib.util.spec_from_loader("math", loader=None)
 >>> module = importlib.util.module_from_spec(spec)
-
 >>> exec(code, module.__dict__)
 ```
 
@@ -148,16 +145,13 @@ If you want to import modules from an SSH server, you can use **paramiko** modul
 ```pycon
 >>> import paramiko
 >>> import importlib.util
-
 >>> ssh = paramiko.SSHClient()
 >>> ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
 >>> ssh.connect("example.com", username="user", password="pass")
 >>> sftp = ssh.open_sftp()
 >>> code = sftp.file("date.py").read().decode()
-
 >>> spec = importlib.util.spec_from_loader("date", loader=None)
 >>> module = importlib.util.module_from_spec(spec)
-
 >>> exec(code, module.__dict__)
 ```
 
