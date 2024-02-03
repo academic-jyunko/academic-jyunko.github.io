@@ -21,8 +21,6 @@ Artificial Intelligence, Music Theories. There's going to be something more acad
 
 ---
 
-<br/>
-
 I am actively involved in the HydroRoll-Team and associated projects, which focus on a TRPG system built on the cross-platform robot framework iamai, primarily utilized for machine learning. Within this initiative, I've contributed to core components and tool libraries like "infini," a dice expression parsing library, and the HydroWindow CLI language.
 
 Beyond HydroRoll-Team, I manage and update personal projects such as iamai and unpredictableFate, spanning diverse fields like artificial intelligence, games, forums, and search. You can explore these projects on my GitHub profile.
@@ -38,8 +36,6 @@ These activities reflect my current pursuits, and I hope you find them interesti
 ## Recent
 
 ---
-
-<br/>
 
 | **Jan  2024** | [Build An Audio Programming Language](./2024/01/05/Build-An-Programming-Language.html), named *"aria"*. |
 |               | Empowering Python Developers: [A Comprehensive Exploration of Remote Package Imports](./2024/01/19/Empowering-Python-Developers-A-Comprehensive-Exploration-of-Remote-Package-Imports.html). |
@@ -73,8 +69,6 @@ These activities reflect my current pursuits, and I hope you find them interesti
 ## About
 
 ---
-
-<br />
 
 Hi! I'm from China, a college student majoring in artificial intelligence, and I am also the manager of [`FragmentXwords`](https://fm.jyunko.cn) label, and I am currently studying for a master's degree in composition. I like programming, writing poetry, composing music, drawing, and other creative activities. I think these activities can help me better understand nature and humanity, and also help me better express my thoughts and emotions.
 
