@@ -31,7 +31,7 @@ In addition to my coding endeavors, I maintain a diary and publish academic arti
 
 I'm also passionate about music and poetry. Recently, I released an EP titled "sequel," which you can listen to [on my Fm site](https://fm.jyunko.cn).
 
-These activities reflect my current pursuits, and I hope you find them interesting. 😊
+These activities reflect my current pursuits, and I hope you find them interesting.
 
 <br/>
 
@@ -92,7 +92,7 @@ I am a computer science student, and I am interested in artificial intelligence 
 - **Music theory:** I like to write some tiny songs, and I also want to be a poet. I have a deep understanding of the expressiveness and emotion of music, and discussed how chord colors enhance the expression of music. I also have a peculiar idea, which is to compose music in a programming language and program in a music language. I think this can create a new connection between music and programming, and also allow music and programming enthusiasts to learn and communicate with each other.
 - **Mathematics:** I have some research on mathematics, especially the insights and applications of Gödel numbers. I use LaTeX to write mathematical formulas and articles, because I think LaTeX is a beautiful and efficient typesetting system. I also use mathematics to analyze some natural phenomena and artistic works, such as the shape of snowflakes, the rhythm of poetry, etc.
 
-I hope that through my research, I can make some contributions to the development of artificial intelligence, music theory and mathematics, and also bring some fun and inspiration to myself and others. 😊
+I hope that through my research, I can make some contributions to the development of artificial intelligence, music theory and mathematics, and also bring some fun and inspiration to myself and others.
 
 <script type="text/javascript">
    function toggle_vis(id) {
@@ -131,24 +131,11 @@ email("opensource", "aicmu.ac.cn");
 - [*aria*](https://aria.aicmu.ac.cn), audio programming language written in rust, [check the source code on Github](https://github.com/AICMUniversity/aria).
 
 **Retro for wut?**  
-[[Github]](https://github.com/retrofor) [[Home Page]](https://github.com/retrofor.space)  
+[[Github]](https://github.com/retrofor) [[Home Page]](https://github.com/retrofor)  
 
-**Contact:*
-<script type="text/javascript">
-<!--//--><![CDATA[//><!--
-function email(e, d) {
-   if (!document.write) return false;
-   if (document.write) {
-      var e; var d;
-      document.write('<a href="' + 'mailto:' + e + '@' + d + '">' + e + '@' + d + '<\/a>');
-   }
-}
-email("contact", "retrofor.space");
-//--><!]]>
-</script>
 
-- [*iamai*](https://iamai.retrofor.space), cross-platform robot framework, mainly used for _Machine Learning_ lering. [[Source Code]](https://github.com/retfor/iamai)
--  [*Cyberdynamix*](https://cyberdynamix.retrofor.space), front-end and back-end separation of deployed chatbot framework based on IRC protocol. [[Source Code]](https://github.com/retrofor/Cyberdynamix)
+- [*iamai*](https://iamai.is-a.dev), cross-platform robot framework, mainly used for _Machine Learning_ lering. [[Source Code]](https://github.com/retrofor/iamai)
+-  [*Cyberdynamix*](https://cyberdynamix.vercel.app), front-end and back-end separation of deployed chatbot framework based on IRC protocol. [[Source Code]](https://github.com/retrofor/Cyberdynamix)
 
 **HydroRoll-Team**  
 [[Github]](https://github.com/HydroRoll-Team) [[Home Page]](https://hydroroll.team) 
@@ -167,7 +154,7 @@ email("support", "hydroroll.team");
 //--><!]]>
 </script>
 
-- [*infini*](https://grps.hydroroll.team), Core of HydroRoll, python version of GRPS-1. [[Source Code]](https://github.com/HydroRoll-Team/infini)
+- [*infini*](https://grps.hydroroll.team), Core of HydroRoll. Official Python Version Implementation for GRPS-1. [[Source Code]](https://github.com/HydroRoll-Team/infini)
 - [*HydroRoll*](https://hydroroll.team). [[Source Code]](https://github.com/HydroRoll-Team/HydroRoll)
 
 **Noctisynth**  
