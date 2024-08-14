@@ -46,20 +46,20 @@ body {
 
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Skrine Regular', Arial, sans-serif;
+    font-family: 'Skrine Regular', sans-serif;
 }
 
 
 strong {
-    font-family: 'TimesBD', Arial, sans-serif;
+    font-family: 'TimesBD', sans-serif;
 }
 
 em {
-    font-family: 'TimesI', Arial, sans-serif;
+    font-family: 'TimesI', sans-serif;
 }
 
 strong em, em strong {
-    font-family: 'TimesBI', Arial, sans-serif;
+    font-family: 'TimesBI', sans-serif;
 }
 
 /* 
