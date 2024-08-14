@@ -26,14 +26,16 @@
     font-style: italic;
 }
 
-/* body {
-    font-family: 'Times', Arial, sans-serif;
+body {
+    font-family: 'Times', 'Skrine Regular', Arial, sans-serif;
 }
+
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'TimesBD', Arial, sans-serif;
 }
 
+/* 
 strong {
     font-family: 'TimesBD', Arial, sans-serif;
 }
