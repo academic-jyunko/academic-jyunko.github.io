@@ -44,14 +44,14 @@
 
 
 
-.strong {
+strong {
     font-family: 'TimesI', sans-serif;
 }
-.em {
+em {
     font-family: 'TimesI', sans-serif;
 }
-.strong em, .em strong {
-    font-family: 'TimesBI', sans-serif;
+strong em, .em strong {
+    font-family: 'TimesI', sans-serif;
 }
 
 .tooltipster-base {
