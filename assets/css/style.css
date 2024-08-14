@@ -1,37 +1,37 @@
 @font-face {
     font-family: 'Times';
-    src: url('/assets/fonts/times.ttf') format('truetype');
+    src: url('https://academic.jyunko.cn/assets/fonts/times.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'TimesBD';
-    src: url('/assets/fonts/timesbd.ttf') format('truetype');
+    src: url('https://academic.jyunko.cn/assets/fonts/timesbd.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'TimesBI';
-    src: url('/assets/fonts/timesbi.ttf') format('truetype');
+    src: url('https://academic.jyunko.cn/assets/fonts/timesbi.ttf') format('truetype');
     font-weight: bold;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'TimesI';
-    src: url('/assets/fonts/timesi.ttf') format('truetype');
+    src: url('https://academic.jyunko.cn/assets/fonts/timesi.ttf') format('truetype');
     font-weight: normal;
     font-style: italic;
 }
 
-/* @font-face {
+@font-face {
     font-family: 'Skrine Regular';
     font-style: normal;
     font-weight: normal;
-    src: url('/assets/fonts/Skrine.woff') format('woff');
-} */
+    src: url('https://academic.jyunko.cn/assets/fonts/Skrine.woff') format('woff');
+}
 
 body {
     font-family: 'Times', sans-serif;
