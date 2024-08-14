@@ -1,4 +1,4 @@
-/* @font-face {
+@font-face {
     font-family: 'Times';
     src: url('/assets/fonts/times.ttf') format('truetype');
     font-weight: normal;
@@ -44,7 +44,9 @@ em {
 
 strong em, em strong {
     font-family: 'TimesBI', Arial, sans-serif;
-} */
+}
+
+/* 
 
 @font-face {
     font-family: 'Adobe Garamond Pro Regular';
@@ -101,3 +103,4 @@ strong {
 strong em {
     font-family: 'Adobe Garamond Pro Bold Italic', serif;
 }
+ */
