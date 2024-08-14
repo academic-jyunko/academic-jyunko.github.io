@@ -33,6 +33,20 @@ layout: default
       text-align: left;
       /*将文本内容向左对齐*/
     }
+    @font-face {
+    font-family: 'Skrine Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: url('/assets/fonts/Skrine.woff') format('woff');
+    }
+    .signature {
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+        font-family: 'Skrine Regular', serif;
+        font-size: 14px;
+        color: #333; /* 设置签名颜色 */
+    }
     </style>
 
   {% if page.toc %}
