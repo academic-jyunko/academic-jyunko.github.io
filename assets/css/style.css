@@ -27,13 +27,13 @@
 }
 
 @font-face {
-    font-family: 'Skrine-Regular';
+    font-family: 'Skrine Regular';
     font-style: normal;
     font-weight: normal;
     src: url('/assets/fonts/Skrine.woff') format('woff');
 }
 
-.body {
+body {
     font-family: 'Times', sans-serif;
 }
 
@@ -105,7 +105,7 @@ th {
 }
 
 .signature {
-    font-family: 'Skrine-Regular', sans-serif;
+    font-family: 'Skrine Regular', sans-serif;
     font-size: 14px;
     color: #333; /* 设置签名颜色 */
 }
