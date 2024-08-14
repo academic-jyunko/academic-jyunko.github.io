@@ -1,9 +1,9 @@
-@font-face {
+/* @font-face {
     font-family: 'Times';
     src: url('/assets/fonts/times.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
-}
+} */
 
 @font-face {
     font-family: 'TimesBD';
@@ -27,20 +27,20 @@
 }
 
 @font-face {
-    font-family: 'Skrine Regular';
+    font-family: 'Skrine-Regular';
     font-style: normal;
     font-weight: normal;
     src: url('/assets/fonts/Skrine.woff') format('woff');
 }
 
 body {
-    font-family: 'Times', sans-serif;
+    font-family: 'Skrine-Regular', sans-serif;
 }
 
 
-h1, h2, h3, h4, h5, h6 {
+/* h1, h2, h3, h4, h5, h6 {
     font-family: 'Skrine Regular', sans-serif;
-}
+} */
 
 
 
