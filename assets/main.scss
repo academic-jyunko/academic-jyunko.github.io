@@ -95,13 +95,44 @@ code {
     background-color: $brand-color-light;
 }
 
+// @font-face {
+//   font-family: 'Times';
+//   src: url('../fonts/times.ttf') format('truetype');
+//   font-weight: normal;
+//   font-style: normal;
+// }
+
 @font-face {
-  font-family: 'Times';
-  src: url('../fonts/times.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
+font-family: 'Adobe Garamond Pro Regular';
+font-style: normal;
+font-weight: normal;
+src: local('fonts/Adobe Garamond Pro Regular'), url('../fonts/AGaramondPro-Regular.woff') format('woff');
 }
 
-body {
-  font-family: 'Times', sans-serif;
+
+@font-face {
+font-family: 'Adobe Garamond Pro Italic';
+font-style: normal;
+font-weight: normal;
+src: local('fonts/Adobe Garamond Pro Italic'), url('../fonts/AGaramondPro-Italic.woff') format('woff');
 }
+
+
+@font-face {
+font-family: 'Adobe Garamond Pro Bold';
+font-style: normal;
+font-weight: normal;
+src: local('fonts/Adobe Garamond Pro Bold'), url('../fonts/AGaramondPro-Bold.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Adobe Garamond Pro Bold Italic';
+font-style: normal;
+font-weight: normal;
+src: local('fonts/Adobe Garamond Pro Bold Italic'), url('../fonts/AGaramondPro-BoldItalic.woff') format('woff');
+}
+
+// body {
+//   font-family: 'Times', sans-serif;
+// }
