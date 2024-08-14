@@ -33,7 +33,7 @@
     src: url('/assets/fonts/Skrine.woff') format('woff');
 }
 
-body {
+.body {
     font-family: 'Skrine-Regular', sans-serif;
 }
 
@@ -44,13 +44,13 @@ body {
 
 
 
-strong {
+.strong {
     font-family: 'TimesI', sans-serif;
 }
-em {
+.em {
     font-family: 'TimesI', sans-serif;
 }
-strong em, em strong {
+.strong em, .em strong {
     font-family: 'TimesBI', sans-serif;
 }
 
@@ -107,7 +107,7 @@ th {
 }
 
 .signature {
-    font-family: 'Skrine Regular', sans-serif;
+    font-family: 'Skrine-Regular', sans-serif;
     font-size: 14px;
     color: #333; /* 设置签名颜色 */
 }
