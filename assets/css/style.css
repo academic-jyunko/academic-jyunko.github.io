@@ -1,9 +1,9 @@
-/* @font-face {
+@font-face {
     font-family: 'Times';
     src: url('/assets/fonts/times.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
-} */
+}
 
 @font-face {
     font-family: 'TimesBD';
@@ -34,7 +34,7 @@
 }
 
 .body {
-    font-family: 'Skrine-Regular', sans-serif;
+    font-family: 'TImes', sans-serif;
 }
 
 
@@ -42,16 +42,14 @@
     font-family: 'Skrine Regular', sans-serif;
 } */
 
-
-
 strong {
-    font-family: 'TimesI', sans-serif;
+    font-family: 'TimesB', sans-serif;
 }
 em {
     font-family: 'TimesI', sans-serif;
 }
 strong em, .em strong {
-    font-family: 'TimesI', sans-serif;
+    font-family: 'TimesBI', sans-serif;
 }
 
 .tooltipster-base {
