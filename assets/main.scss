@@ -13,11 +13,6 @@ $content-width: 900px;
 @import "minima/syntax-highlighting";
 
 /* Custom */
-
-strong {
-    font-weight: 600;
-}
-
 .centering {
     text-align: center;
 }
@@ -103,40 +98,46 @@ code {
 // }
 
 @font-face {
-font-family: 'Adobe Garamond Pro Regular';
-font-style: normal;
-font-weight: normal;
-src: url('../fonts/AGaramondPro-Regular.woff') format('woff');
+    font-family: 'Adobe Garamond Pro Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/AGaramondPro-Regular.woff') format('woff');
 }
-
 
 @font-face {
-font-family: 'Adobe Garamond Pro Italic';
-font-style: normal;
-font-weight: normal;
-src: url('../fonts/AGaramondPro-Italic.woff') format('woff');
+    font-family: 'Adobe Garamond Pro Italic';
+    font-style: italic;
+    font-weight: normal;
+    src: url('../fonts/AGaramondPro-Italic.woff') format('woff');
 }
-
 
 @font-face {
-font-family: 'Adobe Garamond Pro Bold';
-font-style: normal;
-font-weight: normal;
-src: url('../fonts/AGaramondPro-Bold.woff') format('woff');
+    font-family: 'Adobe Garamond Pro Bold';
+    font-style: normal;
+    font-weight: bold;
+    src: url('../fonts/AGaramondPro-Bold.woff') format('woff');
 }
-
 
 @font-face {
-font-family: 'Adobe Garamond Pro Bold Italic';
-font-style: normal;
-font-weight: normal;
-src: url('../fonts/AGaramondPro-BoldItalic.woff') format('woff');
+    font-family: 'Adobe Garamond Pro Bold Italic';
+    font-style: italic;
+    font-weight: bold;
+    src: url('../fonts/AGaramondPro-BoldItalic.woff') format('woff');
 }
-
-// body {
-//   font-family: 'Adobe Faramond Pro Bold Italic', sans-serif;
-// }
 
 body {
-  font-family: 'Adobe Garamond Pro Bold Italic';
+    font-family: 'Adobe Garamond Pro Regular', serif;
+}
+
+em {
+    font-family: 'Adobe Garamond Pro Italic', serif;
+}
+
+strong {
+    font-family: 'Adobe Garamond Pro Bold', serif;
+    // font-weight: 600;
+}
+
+strong em {
+    font-family: 'Adobe Garamond Pro Bold Italic', serif;
 }
