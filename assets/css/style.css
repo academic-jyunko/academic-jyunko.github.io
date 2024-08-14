@@ -49,3 +49,12 @@ th {
   text-align: left;
   /*将文本内容向左对齐*/
 }
+
+.signature {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-family: 'Skrine Regular', serif;
+    font-size: 14px;
+    color: #333; /* 设置签名颜色 */
+}
