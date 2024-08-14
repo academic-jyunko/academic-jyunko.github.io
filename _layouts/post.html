@@ -45,6 +45,20 @@ layout: default
         color: #333; /* 设置签名颜色 */
         transform: rotate(-45deg); /* 将签名右倾斜45度 */
     }
+    .hover-underliner {
+        background-image: linear-gradient(0deg, currentColor, currentColor);
+        background-repeat: no-repeat;
+        background-size: 0 1px;
+        background-position: left 1.1em;
+        transition: background .3s;
+    }
+    .clickable:hover {
+        background-image: linear-gradient(0deg, currentColor, currentColor);
+        background-repeat: no-repeat;
+        background-size: 100% 1px;
+        background-position: left 1.1em;
+        transition: background .3s;
+    }
     </style>
 
   {% if page.toc %}
