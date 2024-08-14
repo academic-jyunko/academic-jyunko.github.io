@@ -25,7 +25,7 @@
     font-weight: normal;
     font-style: italic;
 }
- */
+
 /* body {
     font-family: 'Times', Arial, sans-serif;
 }
@@ -76,13 +76,6 @@ strong em, em strong {
     src: url('/assets/fonts/AGaramondPro-BoldItalic.woff') format('woff');
 }
 
-@font-face {
-font-family: 'Skrine Regular';
-font-style: normal;
-font-weight: normal;
-src: local('Skrine Regular'), url('Skrine.woff') format('woff');
-}
-
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Adobe Garamond Pro Bold Italic', sans-serif;
 }
@@ -104,3 +97,10 @@ strong em {
     font-family: 'Adobe Garamond Pro Bold Italic', serif;
 }
  */
+
+@font-face {
+font-family: 'Skrine Regular';
+font-style: normal;
+font-weight: normal;
+src: url('/assets/fonts/Skrine.woff') format('woff');
+}
