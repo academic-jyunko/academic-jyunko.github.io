@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
     font-family: 'Times';
     src: url('/assets/fonts/times.ttf') format('truetype');
     font-weight: normal;
@@ -25,8 +25,8 @@
     font-weight: normal;
     font-style: italic;
 }
-
-body {
+ */
+/* body {
     font-family: 'Times', Arial, sans-serif;
 }
 
@@ -44,5 +44,53 @@ em {
 
 strong em, em strong {
     font-family: 'TimesBI', Arial, sans-serif;
+} */
+
+@font-face {
+    font-family: 'Adobe Garamond Pro Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: url('/assets/fonts/AGaramondPro-Regular.woff') format('woff');
 }
-s
+
+@font-face {
+    font-family: 'Adobe Garamond Pro Italic';
+    font-style: italic;
+    font-weight: normal;
+    src: url('/assets/fonts/AGaramondPro-Italic.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Adobe Garamond Pro Bold';
+    font-style: normal;
+    font-weight: bold;
+    src: url('/assets/fonts/AGaramondPro-Bold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Adobe Garamond Pro Bold Italic';
+    font-style: italic;
+    font-weight: bold;
+    src: url('/assets/fonts/AGaramondPro-BoldItalic.woff') format('woff');
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Adobe Garamond Pro Bold Italic', sans-serif;
+}
+
+body {
+    font-family: 'Adobe Garamond Pro Regular', serif;
+}
+
+em {
+    font-family: 'Adobe Garamond Pro Italic', serif;
+}
+
+strong {
+    font-family: 'Adobe Garamond Pro Bold', serif;
+    // font-weight: 600;
+}
+
+strong em {
+    font-family: 'Adobe Garamond Pro Bold Italic', serif;
+}
