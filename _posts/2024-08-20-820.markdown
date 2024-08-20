@@ -8,4 +8,5 @@ excerpt: "水系820溯源原文"
 
 等我写完这篇论文，再来更新此文。
 
-人善被人欺。
+<div align="right"><font color="red">人善被人欺。</font></div>
+
