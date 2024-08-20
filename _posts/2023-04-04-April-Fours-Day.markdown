@@ -3,6 +3,7 @@ layout: post
 title: "关于几位小丑四月四日利用漏洞恶意攻击我的账号一事"
 visiable: 0
 author: 简律纯
+draft: true
 excerpt: |
  涉事名单
  A60、Bryan不可思议、Tarrailt、Akirami、Nyuan Zhang
