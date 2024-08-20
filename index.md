@@ -13,6 +13,7 @@ Artificial Intelligence, Music Theories. There's going to be something more acad
 [[Scholar]](https://scholar.google.com/citations?user=4rbBsy0AAAAJ&hl=en) 
 [[Jyunko]](https://www.jyunko.cn) 
 [[AICMU]](https://www.aicmu.ac.cn/~jyunko) 
+[[Blog]](./blog)
 [[Vita]](./cv.pdf)
 
 <br/>
