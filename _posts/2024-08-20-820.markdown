@@ -108,6 +108,18 @@ summary: 一帮脑子有问题的傻逼造我谣言后派了个更有病的傻�
 
 人和人之间根本不需要上帝的巴别塔， 因为本来就不曾了解对方，没有为对方考虑。
 
+**综上所述**
+
+海豹其实是一个很不错的产品(抛开开发规范不谈的话)，很多功能都挺有意思的。
+
+但是海豹圈子被几个脚本小子管理与几个自以为是的用户所组成的小团体搞得乌烟瘴气，臭名昭著。
+
+既然山本健一喜欢被人当枪使，那么就好好的做到底。
+
+原本这算是个人恩怨，现在我把它升级为骰系对立事件(尽管水系不是骰系)，也没什么省流不省流的了，简单来说就一句话: 我要开战。
+
+把毒瘤端了真的是太简单不过了，但是这样真的很便宜他们几个。真的。人前人后我也会，我给你们准备了个情感洋溢的“人前人后”话术，用来记录我从八月二十日早上骂到八月二十一日凌晨三点半的所有人后碎语。[[下载链接]](https://files.hydroroll.team/files/cmp/rqrh.zip)[^i]
+
 ...
 
 等我写完手上的论文，再来更新此文。
@@ -124,3 +136,4 @@ summary: 一帮脑子有问题的傻逼造我谣言后派了个更有病的傻�
 [^f]: 我把水系的内鬼都踢出以后，他们的反应: https://files.hydroroll.team/files/image/96220787e1ba67eb601fa04d3ae1c79.jpg
 [^g]: 水系关于海豹仓库协议与提交同步的工作流: https://github.com/HydroRoll-Team/Repo-Sync/blob/main/.github/workflows/Sync.yml#L23-L34
 [^h]: 挂条原文: https://files.hydroroll.team/files/image/rawPic.png
+[^i]: https://files.hydroroll.team/files/cmp/rqrh.zip | https://files.hydroroll.team/files/image/rqrh/
