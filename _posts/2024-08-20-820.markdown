@@ -136,4 +136,4 @@ summary: 一帮脑子有问题的傻逼造我谣言后派了个更有病的傻�
 [^f]: 我把水系的内鬼都踢出以后，他们的反应: https://files.hydroroll.team/files/image/96220787e1ba67eb601fa04d3ae1c79.jpg
 [^g]: 水系关于海豹仓库协议与提交同步的工作流: https://github.com/HydroRoll-Team/Repo-Sync/blob/main/.github/workflows/Sync.yml#L23-L34
 [^h]: 挂条原文: https://files.hydroroll.team/files/image/rawPic.png
-[^i]: https://files.hydroroll.team/files/cmp/rqrh.zip | https://files.hydroroll.team/files/image/rqrh/
+[^i]: https://files.hydroroll.team/files/cmp/rqrh.zip | https://files.hydroroll.team/files/image/rqrh/001.jpg
