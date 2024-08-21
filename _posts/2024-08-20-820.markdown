@@ -40,7 +40,7 @@ excerpt: "水系820溯源原文"
 
 所以，
 
-<img align="right" width="500" src="https://files.hydroroll.team/files/img/001.png" />
+<img align="right" width="500" src="https://files.hydroroll.team/files/image/001.png" />
 
 他真的明白双相有多痛苦吗，还是把这当成好用的挡箭牌，时不时搬出来，去为自己的网暴找借口？[^2][^3][^4]
 
@@ -63,3 +63,4 @@ excerpt: "水系820溯源原文"
 [^2]: 第一张无删减聊天记录: https://files.hydroroll.team/files/image/962642ede8eee86fea10e9daae17fbb.jpg
 [^3]: 第二张无删减聊天记录: https://files.hydroroll.team/files/image/73f499167f362ccce332af2459a7352.jpg
 [^4]: 第三张无删减聊天记录: https://files.hydroroll.team/files/image/5190b3b88294668298993f35a951c07.jpg
+[^5]: 海豹圈子公告: https://files.hydroroll.team/files/image/announcement.jpg
