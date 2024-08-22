@@ -122,7 +122,7 @@ summary: 一帮脑子有问题的傻逼造我谣言后派了个更有病的傻�
 
 原本这算是个人恩怨，现在我把它升级为骰系对立事件(尽管水系不是骰系)，也没什么省流不省流的了，简单来说就一句话: 开战了。
 
-把毒瘤端了真的是太简单不过了，但是这样真的很便宜他们几个。真的。人前人后我也会，我给你们准备了个情感洋溢的“人前人后”话术，用来记录我从八月二十日早上骂到八月二十一日凌晨三点半的所有人后碎语。[[下载链接]](https://files.hydroroll.team/files/cmp/rqrh.zip)[^i]
+把毒瘤端了真的是太简单不过了，但是这样真的很便宜他们几个。真的。人前人后我也会，我给你们准备了个情感洋溢的“人前人后”话术，用来记录我从八月二十日早上骂到八月二十一日凌晨三点半的所有人后碎语。[[下载链接]](https://files.hydroroll.team/hotlink-ok/files/cmp/rqrh.zip)[^i]
 
 <font color="red"> **既然他想玩，那么就都别玩了。** </font>
 
@@ -134,13 +134,13 @@ summary: 一帮脑子有问题的傻逼造我谣言后派了个更有病的傻�
 
 ***
 
-[^a]: 说我是白莲花的记录: https://files.hydroroll.team/files/image/2024-08-20_09-32-36.png
-[^b]: 海豹圈子公告: https://files.hydroroll.team/files/image/announcement.jpg
-[^c]: 第一张无删减聊天记录: https://files.hydroroll.team/files/image/962642ede8eee86fea10e9daae17fbb.jpg
-[^d]: 第二张无删减聊天记录: https://files.hydroroll.team/files/image/73f499167f362ccce332af2459a7352.jpg
-[^e]: 第三张无删减聊天记录: https://files.hydroroll.team/files/image/5190b3b88294668298993f35a951c07.jpg
-[^f]: 我把水系的内鬼都踢出以后，他们的反应: https://files.hydroroll.team/files/image/96220787e1ba67eb601fa04d3ae1c79.jpg
+[^a]: 说我是白莲花的记录: https://files.hydroroll.team/hotlink-ok/files/image/2024-08-20_09-32-36.png
+[^b]: 海豹圈子公告: https://files.hydroroll.team/hotlink-ok/files/image/announcement.jpg
+[^c]: 第一张无删减聊天记录: https://files.hydroroll.team/hotlink-ok/files/image/962642ede8eee86fea10e9daae17fbb.jpg
+[^d]: 第二张无删减聊天记录: https://files.hydroroll.team/hotlink-ok/files/image/73f499167f362ccce332af2459a7352.jpg
+[^e]: 第三张无删减聊天记录: https://files.hydroroll.team/hotlink-ok/files/image/5190b3b88294668298993f35a951c07.jpg
+[^f]: 我把水系的内鬼都踢出以后，他们的反应: https://files.hydroroll.team/hotlink-ok/files/image/96220787e1ba67eb601fa04d3ae1c79.jpg
 [^g]: 水系关于海豹仓库协议与提交同步的工作流: https://github.com/HydroRoll-Team/Repo-Sync/blob/main/.github/workflows/Sync.yml#L23-L34
-[^h]: 挂条原文: https://files.hydroroll.team/files/image/rawPic.png
-[^i]: 压缩包下载: https://files.hydroroll.team/files/cmp/rqrh.zip , 图片浏览(001-068): https://files.hydroroll.team/files/image/rqrh/001.jpg
-[^j]: 豹 III 聊天记录: https://files.hydroroll.team/files/image/a3ff36702acc78f3f4391af84470333.jpg
+[^h]: 挂条原文: https://files.hydroroll.team/hotlink-ok/files/image/rawPic.png
+[^i]: 压缩包下载: https://files.hydroroll.team/hotlink-ok/files/cmp/rqrh.zip , 图片浏览(001-068): https://files.hydroroll.team/hotlink-ok/files/image/rqrh/001.jpg
+[^j]: 豹 III 聊天记录: https://files.hydroroll.team/hotlink-ok/files/image/a3ff36702acc78f3f4391af84470333.jpg
