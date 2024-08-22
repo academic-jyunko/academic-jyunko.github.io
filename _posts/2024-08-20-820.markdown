@@ -1,12 +1,13 @@
----
+![a3ff36702acc78f3f4391af84470333](https://github.com/user-attachments/assets/08f3770d-036d-4039-a7ce-882b33be24b7)---
 title: 820
 author: 简律纯
 excerpt: "水系820溯源原文"
 summary: 一帮脑子有问题的傻逼造我谣言后派了个更有病的傻逼次次揪着别人说的话找我要求我道歉以及次次言语辱骂我逼我站队，我还什么都没做又胡搅蛮缠说不要让我缠着他们刷存在感，我看都是未成年就好声好气讲道理退让N次未果，反而变本加厉，碰我逆鳞
 ---
 
-[挂条](https://s2.loli.net/2024/08/21/i5wZTIsHFnfWRDp.jpg)[^h]
-[我和山本健一所有的聊天记录][^c][^d][^e] (可以看出来每次找我都是很莫名其妙的，因为我要花很久才能理解他在说什么事情)
+| [挂条](https://s2.loli.net/2024/08/21/i5wZTIsHFnfWRDp.jpg)[^h] | 话都说不灵清写什么挂条，贻笑大方、、、
+| 我和山本健一所有的聊天记录[^c][^d][^e] | 可以看出来每次找我都是很莫名其妙的，因为我要花很久才能理解他在说什么事情
+| 我莫名其妙被所谓“海豹核心开发者”这样的 Contributor 骂了之后去[海豹交流群举报到我被禁言的完整聊天记录](https://s2.loli.net/2024/08/22/H6dzOSAfJc9erlC.jpg)[^j] | 他一直挑衅，凭什么我被禁言？
 
 ---
 
@@ -136,4 +137,5 @@ summary: 一帮脑子有问题的傻逼造我谣言后派了个更有病的傻�
 [^f]: 我把水系的内鬼都踢出以后，他们的反应: https://files.hydroroll.team/files/image/96220787e1ba67eb601fa04d3ae1c79.jpg
 [^g]: 水系关于海豹仓库协议与提交同步的工作流: https://github.com/HydroRoll-Team/Repo-Sync/blob/main/.github/workflows/Sync.yml#L23-L34
 [^h]: 挂条原文: https://files.hydroroll.team/files/image/rawPic.png
-[^i]: https://files.hydroroll.team/files/cmp/rqrh.zip , https://files.hydroroll.team/files/image/rqrh/001.jpg
+[^i]: 压缩包下载: https://files.hydroroll.team/files/cmp/rqrh.zip , 图片浏览(001-068): https://files.hydroroll.team/files/image/rqrh/001.jpg
+[^j]: 豹 III 聊天记录: https://files.hydroroll.team/files/image/a3ff36702acc78f3f4391af84470333.jpg
