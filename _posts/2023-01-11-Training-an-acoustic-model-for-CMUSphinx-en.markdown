@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Training an acoustic model for CMUSphinx
-author: CMUSphinx, Hsiang Nianian
+author: CMUSphinx, HsiangNianian
 visible: 1
 toc: true
 excerpt: |

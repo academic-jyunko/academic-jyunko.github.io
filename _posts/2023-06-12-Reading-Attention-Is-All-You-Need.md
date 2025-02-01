@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Reading "Attention Is All You Need"'
-author: Hsiang Nianian
+author: HsiangNianian
 mathjax: true
 toc: true
 summary: |

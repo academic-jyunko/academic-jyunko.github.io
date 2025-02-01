@@ -1,21 +1,19 @@
 ---
 layout: post
 title: "关于几位小丑四月四日利用漏洞恶意攻击我的账号一事"
-visiable: 0
+visiable: false
 author: 简律纯
 draft: true
 excerpt: |
  涉事名单
  A60、Bryan不可思议、Tarrailt、Akirami、Nyuan Zhang
 ---
-
 涉事名单
 --------
 
-  * 主犯 [A60](https://github.com/djkcyl)、[Bryan不可思议](https://github.com/ProgramRipper)
-  * 从犯 [Tarrailt](https://github.com/RF-Tar-Railt)、[Akirami](https://github.com/A-Kirami)
-  * 禁言 [Nyuan Zhang](https://github.com/blueglassblock)
-
+* 主犯 [A60](https://github.com/djkcyl)、[Bryan不可思议](https://github.com/ProgramRipper)
+* 从犯 [Tarrailt](https://github.com/RF-Tar-Railt)、[Akirami](https://github.com/A-Kirami)
+* 禁言 [Nyuan Zhang](https://github.com/blueglassblock)
 
 我认为，
 
@@ -30,7 +28,7 @@ excerpt: |
 挺寒心的，
 
 我作为开发者没有及时关闭测试插件是不负责任的行为，这一点在开发中非常重要。同时，对于测试过程中出现的问题，也需要进行及时反馈和处理，避免类似的事故再次发生。至于众多开发者对我本人的账号的滥用，这是不道德的行为，我认为违背了大家应该遵循的职业道德。如果是出于恶意的攻击导致账号被封禁，则更加严重，涉及到网络安全等法律问题。
-  
+
 事件始
 ------
 
@@ -38,27 +36,23 @@ excerpt: |
 
 我通宵达旦将频道适配器写好后，匆忙的写了一个掷骰测试插件——"rd"。
 
-
 #### 上午 7时
 
 我测试完毕后实在是太累了，于是累得睡着了，但是电脑上的程序并没有关闭。
-
 
 #### 上午 10时31分
 
 我醒了，醒来后发现电脑死机了，很纳闷。
 
-接着XX在Koishi开发群莫名其妙at我，随后发送了`r1024`，我一开始以为他只是帮我测试罢了，于是和他说"我关了"。
+接着XX在Koishi开发群莫名其妙at我，随后发送了 `r1024`，我一开始以为他只是帮我测试罢了，于是和他说"我关了"。
 
 但是转念一想——不对啊，为什么他知道我的测试指令？？
 
-
 #### 半小时后
 
-我翻看了近一个小时以来的有关群(主要是nonebot2与Graia)的聊天记录，发现群里的人从九点半就开始疯狂刷屏给我输入指令了，其中不缺乏主要涉事人员 [A60](https://github.com/djkcyl) 的`r10d1000000000000000000000000000`指令。
+我翻看了近一个小时以来的有关群(主要是nonebot2与Graia)的聊天记录，发现群里的人从九点半就开始疯狂刷屏给我输入指令了，其中不缺乏主要涉事人员 [A60](https://github.com/djkcyl) 的 `r10d1000000000000000000000000000`指令。
 
 在nonebot与Graia群内我把主要涉事人员的聊天记录全部截取后都发了一遍，但是我把他们想的太好了。
-
 
 事件时
 ------
@@ -69,10 +63,9 @@ excerpt: |
 
 <img width="400" src="https://user-images.githubusercontent.com/44714368/229874870-317052f6-f33a-4c65-b5be-6d20347430c3.png"> <img width="400" src="https://user-images.githubusercontent.com/44714368/229875267-bdc7aab9-da73-4316-addc-0c730af8268a.png">
 
-
 先说此人吧，起因是它一句"rest我不想碰(x"，不论男女，手段是极其残忍的。它的指令输出让我本人的账号承受了很大压力，同时也说了些很让人无语又觉得很好笑的话——
 
-* 注: 以下聊天记录中的`⁢群菜鸮`即A60在Graia群的名片，我认为是人品的复刻。
+* 注: 以下聊天记录中的 `⁢群菜鸮`即A60在Graia群的名片，我认为是人品的复刻。
 
 ```
 [Graia群]
@@ -373,8 +366,6 @@ r1
 
 <img width="500" src="https://user-images.githubusercontent.com/44714368/229870628-d287e8ff-d4a2-4865-981e-c58749e5f75d.png">
 
-
-
 事件末
 ------
 
@@ -385,7 +376,6 @@ r1
 我是在 nb 群和我朋友聊天转发了他们 graia 的聊天记录结果 graia 的那个恶意的管理(小丑[Bryan不可思议](https://github.com/ProgramRipper))也在里面就跑出来与其他人一起攻击我,这个恶意很明显了。
 
 我说了两句很过分的话，“三观不正”“我确实有错但我会认为你读书少”，随后便没再理会这些人，结果过了一会儿我发现我被 graia 管理 [Nyuan Zhang](https://github.com/blueglassblock) 禁言了，同时还发到了nonebot群示众。
-
 
 事件始末
 --------
@@ -408,9 +398,9 @@ r1
 我知道，要是他们就是拿这个说事，就是要小群小团体，说实话也没辙，这种人还是挫折少了。
 
 <script src="https://gist.github.com/ProgramRipper/cc263fcb393f30103fa50544fe8382cd.js"></script>
-真的，我一直不觉得nb群里会有这么蠢的人，我这回开眼界了。像`Well404`这样的下沉人员一定程度无法与开发者共情，往往还觉得自己功劳不说四六分，至少也能占一半。
+
+真的，我一直不觉得nb群里会有这么蠢的人，我这回开眼界了。像 `Well404`这样的下沉人员一定程度无法与开发者共情，往往还觉得自己功劳不说四六分，至少也能占一半。
 
 所以罪魁祸首还是A60。这人我觉得就是个小鬼。
-
 
 <p align="right"><font color="red">2023年4月5日01:51:03</font></p>

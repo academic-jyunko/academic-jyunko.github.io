@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Empowering Python Developers: A Comprehensive Exploration of Remote Package Imports"
-author: Hsiang Nianian
+author: HsiangNianian
 mathjax: true
 toc: true
 summary: |
