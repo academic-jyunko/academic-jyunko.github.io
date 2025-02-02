@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Hsiang Nianian
+title: HsiangNianian
 ---
 
 <p>
@@ -18,9 +18,10 @@ Artificial Intelligence, Music Theories. There's going to be something more acad
 
 <br/>
 
-## Current
-
 ---
+---
+
+## Current
 
 I am actively involved in the HydroRoll-Team and associated projects, which focus on a TRPG system built on the cross-platform robot framework iamai, primarily utilized for machine learning. Within this initiative, I've contributed to core components and tool libraries like "infini," a dice expression parsing library, and the HydroWindow CLI language.
 
@@ -32,16 +33,30 @@ I'm also passionate about music and poetry. Recently, I released an EP titled "s
 
 These activities reflect my current pursuits, and I hope you find them interesting.
 
-<br/>
-
 ## Recent
 
----
+[**Interval Algebra:**When Category Theory Reshapes Musical DNA](./2025/02/01/Interval-Algebra.html).
+[*Can Kolmogorov–Arnold Networks (KAN) beat MLPs?*](https://academic.jyunko.cn/2024/05/25/Can-KAN-beat-MLPs.html)Lately, it seems that the entire AI community has become about one and one thing only, LLMs.  
+[Build An Audio Programming Language](./2024/01/05/Build-An-Programming-Language.html), named *"aria"*.  
+Empowering Python Developers: [A Comprehensive Exploration of Remote Package Imports](./2024/01/19/Empowering-Python-Developers-A-Comprehensive-Exploration-of-Remote-Package-Imports.html).  
+[Build A Script Language](./2023/12/27/Build-A-Script-Language.html), using rust to build a simple script language named psi.  
+[Reading "Attention Is All You Need"](/2023/06/12/Reading-Attention-Is-All-You-Need.html), how about having a rest after every coding time?  
+[How to Use Chords to Enhance the Expressiveness of Music](./2023/05/03/HccetEMA.html), analyzing from the Acoustic and Audience Perspectives.  
+[Now You Have Three Problems](./2023/03/03/Now-You-Have-Three-Problems.html).  
+[Training an acoustic model for CMUSphinx](./2023/01/11/Training-an-acoustic-model-for-CMUSphinx-en.html), an article explaining how to train one's own acoustic model in CMUSphinx speech recognition project.  
+[GPT-3 vs. Rasa chatbots](./2023/01/10/GPT-3-vs-Rasa-chatbots.html), an article explains the difference between GPT-3 and Rasa.  
+[The Pain of AI](./2023/01/09/The-Pain-of-AI.html), some anecdotes with my teacher.  
 
-| **Feb  2025** | [**Interval Algebra:**When Category Theory Reshapes Musical DNA](./2025/02/01/Interval-Algebra.html).
-| **May  2024** | [*Can Kolmogorov–Arnold Networks (KAN) beat MLPs?*](https://academic.jyunko.cn/2024/05/25/Can-KAN-beat-MLPs.html) Lately, it seems that the entire AI community has become about one and one thing only, LLMs.
-| **Jan  2024** | [Build An Audio Programming Language](./2024/01/05/Build-An-Programming-Language.html), named *"aria"*. |
-|               | Empowering Python Developers: [A Comprehensive Exploration of Remote Package Imports](./2024/01/19/Empowering-Python-Developers-A-Comprehensive-Exploration-of-Remote-Package-Imports.html). |
+## Research
+
+I am a computer science student, and I am interested in artificial intelligence and music theory. I think these two fields have infinite creativity and beauty, and can help us better understand nature and humanity. I am doing research on the following aspects:
+
+[Music programming language design]()
+
+_**DSL music language based on Rust:** Implementing DSL music language based on Rust_ <a href="./fool" title="" rel="tipsy">(#)</a>  
+_**Formalization system of interval relations integrating category theory:** Interval Algebra: When Category Theory Reshapes Musical DNA_ <a href="./2025/02/01/Interval-Algebra.html" title="融合范畴论的音程关系形式化系统" rel="tipsy">(#)</a>  
+_**Compiler front-end design:** conversion from MIDI to music theory logic_ <a href="./fool" title="" rel="tipsy">(#)</a>  
+_Real-time audio synthesis back-end development (can be combined with WebAssembly)_ <a href="./fool" title="" rel="tipsy">(#)</a>  
 
 <script type="text/javascript">
    function toggle_vis(id) {
@@ -57,39 +72,49 @@ These activities reflect my current pursuits, and I hope you find them interesti
 
 <div id="news" style="display:none" markdown="1">
 
-| **Dec  2023** | [Build A Script Language](./2023/12/27/Build-A-Script-Language.html), using rust to build a simple script language named psi. |
-| **Jun  2023** | [Reading "Attention Is All You Need"](/2023/06/12/Reading-Attention-Is-All-You-Need.html), how about having a rest after every coding time? |
-| **May  2023** | [How to Use Chords to Enhance the Expressiveness of Music](./2023/05/03/HccetEMA.html), analyzing from the Acoustic and Audience Perspectives. |
-| **Mar  2023** | [Now You Have Three Problems](./2023/03/03/Now-You-Have-Three-Problems.html). |
-| **Jan  2023** | [Training an acoustic model for CMUSphinx](./2023/01/11/Training-an-acoustic-model-for-CMUSphinx-en.html), an article explaining how to train one's own acoustic model in CMUSphinx speech recognition project. |
-|               | [GPT-3 vs. Rasa chatbots](./2023/01/10/GPT-3-vs-Rasa-chatbots.html), an article explains the difference between GPT-3 and Rasa. |
-|               | [The Pain of AI](./2023/01/09/The-Pain-of-AI.html), some anecdotes with my teacher. |
+[Formal verification of game engines]()
+
+_Use Rust type system to ensure the safety of game state machines_ <a href="./fool" title="" rel="tipsy">(#)</a>  
+_Collision detection verification of physical engines based on linear logic_ <a href="./fool" title="" rel="tipsy">(#)</a>  
+_Timing correctness of TLA+ modeling game loops_ <a href="./fool" title="" rel="tipsy">(#)</a>  
+_Fuzz testing framework for generating adversarial test cases_ <a href="./fool" title="" rel="tipsy">(#)</a>  
+
+[Algebraic structure of AI music generation]()
+
+_Group theory representation method of music chords_ <a href="./fool" title="" rel="tipsy">(#)</a>  
+_Application of differential homeomorphism on melodic manifolds_ <a href="./fool" title="" rel="tipsy">(#)</a>  
+_Music motivation combination system based on type theory_ <a href="./fool" title="" rel="tipsy">(#)</a>  
+_Efficient music grammar parser implemented in Rust_ <a href="./fool" title="" rel="tipsy">(#)</a>  
+
+[LaTeX mathematical typesetting engine optimization]()
+
+_Mathematical formula instant compilation based on LLVM_ <a href="./fool" title="" rel="tipsy">(#)</a>  
+_Parallel typesetting algorithm design and implementation_ <a href="./fool" title="" rel="tipsy">(#)</a>  
+_Topological layout optimization of mathematical symbols_ <a href="./fool" title="" rel="tipsy">(#)</a>  
+_Rust+Wasm browser-side LaTeX renderer_ <a href="./fool" title="" rel="tipsy">(#)</a>  
+
+[Compiler optimization technology for game AI]()
+
+_Compilation conversion from behavior tree to intermediate representation_ <a href="./fool" title="" rel="tipsy">(#)</a>  
+_MIR-based static analysis of game scripts_ <a href="./fool" title="" rel="tipsy">(#)</a>  
+_ECS optimization using Rust procedural macros_ <a href="./fool" title="" rel="tipsy">(#)</a>  
+_JIT compilation and execution engine for AI strategies_ <a href="./fool" title="" rel="tipsy">(#)</a>  
+
+[Automatic proof system for music geometry]()
+
+_Formal Coq implementation of music theory axioms_ <a href="./fool" title="" rel="tipsy">(#)</a>  
+_Differential geometry modeling of interval space_ <a href="./fool" title="" rel="tipsy">(#)</a>  
+_Category theory proof of automatic counterpoint_ <a href="./fool" title="" rel="tipsy">(#)</a>  
+_Generative adversarial network-assisted composition theorem discovery_ <a href="./fool" title="" rel="tipsy">(#)</a>  
+
+[Cross-domain collaborative development tool chain]()
+
+_Unified Markdown extension for music/code/math_ <a href="./fool" title="" rel="tipsy">(#)</a>  
+_Real-time collaborative LaTeX-ABC notation converter_ <a href="./fool" title="" rel="tipsy">(#)</a>  
+_Music theory visual debugger embedded in game engine_ <a href="./fool" title="" rel="tipsy">(#)</a>  
+_Music programming language server based on LSP_ <a href="./fool" title="" rel="tipsy">(#)</a>  
 
 </div>
-
-<br />
-
-## About
-
----
-
-Hi! I'm from China, a college student majoring in artificial intelligence, and I am also the manager of [`FragmentXwords`](https://fm.jyunko.cn) label, and I am currently studying for a master's degree in composition. I like programming, writing poetry, composing music, drawing, and other creative activities. I think these activities can help me better understand nature and humanity, and also help me better express my thoughts and emotions.
-
-I hope that through my academic site, I can share my research and creation with you, and also communicate and learn with you. If you have any comments or suggestions on my research or creation, please feel free to leave me a message or contact me. Thank you for your attention and support! 😊
-
-<br />
-
-## Research
-
----
-
-I am a computer science student, and I am interested in artificial intelligence and music theory. I think these two fields have infinite creativity and beauty, and can help us better understand nature and humanity. I am doing research on the following aspects:
-
-- **Artificial intelligence:** I am writing my own machine learning framework, which can implement various machine learning algorithms and models, such as neural networks, decision trees, support vector machines, etc. I also participate in some projects of artificial intelligence and computational modeling virtual university, such as computer vision, data science, natural language processing, robotics, etc. I hope to use artificial intelligence to solve some practical problems, such as image recognition, text analysis, speech synthesis, etc.
-- **Music theory:** I like to write some tiny songs, and I also want to be a poet. I have a deep understanding of the expressiveness and emotion of music, and discussed how chord colors enhance the expression of music. I also have a peculiar idea, which is to compose music in a programming language and program in a music language. I think this can create a new connection between music and programming, and also allow music and programming enthusiasts to learn and communicate with each other.
-- **Mathematics:** I have some research on mathematics, especially the insights and applications of Gödel numbers. I use LaTeX to write mathematical formulas and articles, because I think LaTeX is a beautiful and efficient typesetting system. I also use mathematics to analyze some natural phenomena and artistic works, such as the shape of snowflakes, the rhythm of poetry, etc.
-
-I hope that through my research, I can make some contributions to the development of artificial intelligence, music theory and mathematics, and also bring some fun and inspiration to myself and others.
 
 <script type="text/javascript">
    function toggle_vis(id) {
@@ -101,10 +126,8 @@ I hope that through my research, I can make some contributions to the developmen
    }
 </script>
 
-<a href="javascript:toggle_vis('orgs')">**Show/Hide Organizations' Project**</a>
-
-<div id="orgs" style="display:none" markdown="1">
-   
+## Organizations & Project
+ 
 **AICMUniversity**
 > <font color="gray"><small>Artificial Intelligence and Computational Modeling University</small></font>  
 
@@ -160,12 +183,9 @@ email("support", "hydroroll.team");
 - [*Quantumix*](#), a Rust-based project distribution project that is currently under development. [[Source Code]](https://github.com/noctisynth/Quantumix)
 - [*Moonstone*](#), A communication tool based on the end-to-end encryption protocol Oblivion. [[Source Code]](https://github.com/noctisynth/mOONSTONE)
 
-</div>
-
 <br />
 
-## Contact
-
+---
 ---
 
 <br />

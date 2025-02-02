@@ -1,113 +1,29 @@
-@font-face {
-    font-family: 'Times';
-    src: url('https://academic.jyunko.cn/assets/fonts/times.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'TimesBD';
-    src: url('https://academic.jyunko.cn/assets/fonts/timesbd.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'TimesBI';
-    src: url('https://academic.jyunko.cn/assets/fonts/timesbi.ttf') format('truetype');
-    font-weight: bold;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'TimesI';
-    src: url('https://academic.jyunko.cn/assets/fonts/timesi.ttf') format('truetype');
-    font-weight: normal;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Skrine Regular';
-    font-style: normal;
-    font-weight: normal;
-    src: url('https://academic.jyunko.cn/assets/fonts/Skrine.woff') format('woff');
-}
-
-body {
-    font-family: 'Times', sans-serif;
-}
-
-
-/* h1, h2, h3, h4, h5, h6 {
-    font-family: 'Skrine Regular', sans-serif;
-} */
-
-strong {
-    font-family: 'TimesBD', sans-serif;
-}
-em {
-    font-family: 'TimesI', sans-serif;
-}
-strong em, .em strong {
-    font-family: 'TimesBI', sans-serif;
-}
-
-.tooltipster-base {
-  max-width: 200px;
-  padding: 10px;
-  background-color: #333;
-  color: #fff;
-}
-
-.tooltipster-base::before {
-  border-top-color: #333;
-  top: -5px;
-  /* 将箭头上移 */
-  left: 5px;
-  /* 将箭头向右移动 */
-}
-
-.post-content {
-  margin-left: auto;
-  margin-right: 0;
-}
 
 table {
-  border-collapse: collapse;
-  margin: 0 auto;
-}
-
-td,
-th {
-  border-top: 1px solid #ccc;
-  border-bottom: 1px solid #ccc;
-  padding: 5px;
-  text-align: center;
-}
-
-.container {
-  max-width: 800px;
-  margin: 0;
-  padding: 20px;
-  background-color: #fff;
-  border-radius: 0;
-  box-shadow: none;
-  text-align: right;
-  /*将容器内的内容向右对齐*/
-}
-
-.summary {
-  width: 90%;
-  display: inline-block;
-  /*将元素设置为行内块级元素*/
-  text-align: left;
-  /*将文本内容向左对齐*/
-}
-
-.signature {
-    font-family: 'Skrine Regular', sans-serif;
-    font-size: 14px;
-    color: #333; /* 设置签名颜色 */
-}
-
-
+    width: 100%;
+    border-collapse: collapse;
+    border-style: hidden; /* 隐藏所有边框 */
+  }
+  
+  table td, table th {
+    padding: 8px;
+    text-align: left;
+  }
+  
+  /* 添加顶部边框 */
+  table thead tr {
+    border-top: 2px solid #000;
+  }
+  
+  /* 添加底部边框 */
+  table tfoot tr {
+    border-bottom: 2px solid #000;
+  }
+  
+  /* 移动端调整 */
+  @media (max-width: 768px) {
+    table {
+      display: block;
+      overflow-x: auto;
+    }
+  }

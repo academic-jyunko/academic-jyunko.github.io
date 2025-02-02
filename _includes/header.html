@@ -3,71 +3,71 @@
   <script src="https://cdn.bootcdn.net/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
   <script type='text/javascript' src='/assets/js/jquery.tipsy.js'></script>
   <link rel="stylesheet" href="/assets/css/tipsy.css" type="text/css" />
-<!--   <link rel="stylesheet" href="/assets/css/style.css" type="text/css" /> -->
-<!--   <link rel="stylesheet" href="/assets/css/main.css" type="text/css" /> -->
-  <link rel="stylesheet" href="/assets/main.scss" type="text/css" />
   <style>
     @font-face {
-        font-family: 'Times';
-        src: url('https://academic.jyunko.cn/assets/fonts/times.ttf') format('truetype');
-        font-weight: normal;
-        font-style: normal;
+      font-family: 'Times';
+      src: url('https://academic.jyunko.cn/assets/fonts/times.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
     }
-    
+
     @font-face {
-        font-family: 'TimesBD';
-        src: url('https://academic.jyunko.cn/assets/fonts/timesbd.ttf') format('truetype');
-        font-weight: bold;
-        font-style: normal;
+      font-family: 'TimesBD';
+      src: url('https://academic.jyunko.cn/assets/fonts/timesbd.ttf') format('truetype');
+      font-weight: bold;
+      font-style: normal;
     }
-    
+
     @font-face {
-        font-family: 'TimesBI';
-        src: url('https://academic.jyunko.cn/assets/fonts/timesbi.ttf') format('truetype');
-        font-weight: bold;
-        font-style: italic;
+      font-family: 'TimesBI';
+      src: url('https://academic.jyunko.cn/assets/fonts/timesbi.ttf') format('truetype');
+      font-weight: bold;
+      font-style: italic;
     }
-    
+
     @font-face {
-        font-family: 'TimesI';
-        src: url('https://academic.jyunko.cn/assets/fonts/timesi.ttf') format('truetype');
-        font-weight: normal;
-        font-style: italic;
+      font-family: 'TimesI';
+      src: url('https://academic.jyunko.cn/assets/fonts/timesi.ttf') format('truetype');
+      font-weight: normal;
+      font-style: italic;
     }
-    
+
     @font-face {
-        font-family: 'Skrine Regular';
-        font-style: normal;
-        font-weight: normal;
-        src: url('https://academic.jyunko.cn/assets/fonts/Skrine.woff') format('woff');
+      font-family: 'Skrine Regular';
+      font-style: normal;
+      font-weight: normal;
+      src: url('https://academic.jyunko.cn/assets/fonts/Skrine.woff') format('woff');
     }
-    
+
     body {
-        font-family: 'Times', sans-serif;
+      font-family: 'Times', sans-serif;
     }
-    
-    
+
+
     /* h1, h2, h3, h4, h5, h6 {
         font-family: 'Skrine Regular', sans-serif;
     } */
-    
+
     strong {
-        font-family: 'TimesBD', sans-serif;
+      font-family: 'TimesBD', sans-serif;
     }
+
     em {
-        font-family: 'TimesI', sans-serif;
+      font-family: 'TimesI', sans-serif;
     }
-    strong em, .em strong {
-        font-family: 'TimesBI', sans-serif;
+
+    strong em,
+    .em strong {
+      font-family: 'TimesBI', sans-serif;
     }
-    
+
     .tooltipster-base {
       max-width: 200px;
       padding: 10px;
       background-color: #333;
       color: #fff;
     }
-    
+
     .tooltipster-base::before {
       border-top-color: #333;
       top: -5px;
@@ -75,25 +75,13 @@
       left: 5px;
       /* 将箭头向右移动 */
     }
-    
+
     .post-content {
       margin-left: auto;
       margin-right: 0;
     }
-    
-    table {
-      border-collapse: collapse;
-      margin: 0 auto;
-    }
-    
-    td,
-    th {
-      border-top: 1px solid #ccc;
-      border-bottom: 1px solid #ccc;
-      padding: 5px;
-      text-align: left;
-    }
-    
+
+
     .container {
       max-width: 800px;
       margin: 0;
@@ -104,7 +92,7 @@
       text-align: right;
       /*将容器内的内容向右对齐*/
     }
-    
+
     .summary {
       width: 90%;
       display: inline-block;
@@ -112,100 +100,154 @@
       text-align: left;
       /*将文本内容向左对齐*/
     }
-    
+
     .signature {
-        font-family: 'Skrine Regular', sans-serif;
-        font-size: 14px;
-        color: #333; /* 设置签名颜色 */
+      font-family: 'Skrine Regular', sans-serif;
+      font-size: 14px;
+      color: #333;
+      /* 设置签名颜色 */
     }
+
     $base-font-weight: 300; // 400
 
-    $brand-color:      #2980b9; // #808080
-    $brand-color-light:lighten($brand-color, 50%);
-    
+    $brand-color: #2980b9; // #808080
+    $brand-color-light: lighten($brand-color, 50%);
+
     $content-width: 900px;
-    
+
     @import "minima";
     @import "minima/syntax-highlighting";
-    
+
     /* Custom */
     .centering {
-        text-align: center;
-    }
-    
-    table {
-        width: 100%;
-        max-width: 100%;
-        background-color: #fdfdfd;
-        border: 0 !important;
-    }
-    
-    tr, td {
-        background-color: #fdfdfd;
-        border: 0 !important;
-        padding: 0 !important;
-    }
-    
-    td:nth-child(1) {  
-        min-width: 80px;
-        width: 10%;
-        vertical-align: top;
-    }
-    
-    /* Combo Home About */
-    
-    .profilepicmain {
-        float: right;
-        max-width: 25%;
-        border-radius: 100%;
-        margin-left: 30px;
-        margin-top: -70px;
-    }
-    
-    .profilepicabout {
-        border-radius: 20px;
-    }
-    
-    /* Combo Home About Mobile */
-    
-    @media only screen and (max-width: 735px) {
-        .profilepicmain {
-            float: none;
-            max-width: 60%;
-            border-radius: 100%;
-            display: block;
-            margin: 10px auto 30px;
-        }
-    }
-    
-    /* Posts */
-    
-    img {
-        margin-top: 25px;
-    }
-    
-    img + em {
-        display: block;
-        text-align: center;
-        margin-bottom: 25px;
-    }
-    
-    figure.highlight {
-        margin-top: 25px;
-        margin-bottom: 25px;
-    }
-    
-    .half-size-center {
-        margin-left: auto;
-        margin-right: auto;
-        width: 50%;
-    }
-    
-    pre,
-    code {
-        background-color: $brand-color-light;
+      text-align: center;
     }
 
+    /* Combo Home About */
+
+    .profilepicmain {
+      float: right;
+      max-width: 25%;
+      border-radius: 100%;
+      margin-left: 30px;
+      margin-top: -70px;
+    }
+
+    .profilepicabout {
+      border-radius: 20px;
+    }
+
+    /* Combo Home About Mobile */
+
+    @media only screen and (max-width: 735px) {
+      .profilepicmain {
+        float: none;
+        max-width: 60%;
+        border-radius: 100%;
+        display: block;
+        margin: 10px auto 30px;
+      }
+    }
+
+    /* Posts */
+
+    img {
+      margin-top: 25px;
+    }
+
+    img+em {
+      display: block;
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    figure.highlight {
+      margin-top: 25px;
+      margin-bottom: 25px;
+    }
+
+    .half-size-center {
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+    }
+
+    pre,
+    code {
+      background-color: $brand-color-light;
+    }
+
+    .post-container {
+      position: relative;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .margin-notes {
+      position: absolute;
+      right: 0;
+      width: 200px;
+      margin-right: -250px;
+      margin-bottom: 20px;
+      padding: 10px;
+      background: #f9f9f9;
+      border-left: 3px solid #ccc;
+      font-size: 0.9em;
+      color: #132730;
+    }
+    
+    /* 移动端样式 */
+    @media (max-width: 768px) {
+      .margin-notes {
+        position: static;
+        width: 100%;
+        margin-right: 0;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border-left: none;
+        border-top: 3px solid #ccc;
+      }
+    }
+
+    table {
+      width: auto;
+      /* 表格宽度自适应内容 */
+      border-collapse: collapse;
+      border-style: hidden;
+      /* 隐藏所有边框 */
+      background-color: transparent;
+      /* 清除表格背景颜色 */
+      margin: 0 auto;
+      /* 表格居中 */
+    }
+
+    /* 清除所有单元格的背景颜色 */
+    table td,
+    table th,
+    table tr,
+    table thead th,
+    table tbody td,
+    table tfoot td {
+      padding: 4px 8px;
+      /* 减少上下内边距，让内容更紧凑 */
+      text-align: left;
+      background-color: transparent !important;
+      /* 强制清除背景颜色 */
+      border-left: none;
+      /* 去掉左侧竖线 */
+      border-right: none;
+      /* 去掉右侧竖线 */
+    }
+
+    /* 移动端调整 */
+    @media (max-width: 768px) {
+      table {
+        display: block;
+        overflow-x: auto;
+        width: 100%;
+        /* 移动端铺满宽度 */
+      }
+    }
   </style>
 
   <div class="wrapper">
@@ -213,10 +255,10 @@
     {% assign page_paths = site.header_pages | default: default_paths %}
 
     {% if page.title contains 'HsiangNianian' %}
-    <a class="site-title" href="{{ "/" | relative_url}}"><img src="{{ relative_url  }}/assets/Erigit.png"
+    <a class="site-title" href="{{ " /" | relative_url}}"><img src="{{ relative_url  }}/assets/Erigit.png"
         style="height:40px; margin-top:0px; border-radius:100%" /></a>
     {% else %}
-    <a class="site-title" href="{{ "/" | relative_url}}">{{ site.title | escape }}</a>
+    <a class="site-title" href="{{ " /" | relative_url}}">{{ site.title | escape }}</a>
     {% endif %}
 
     {% if page_paths %}

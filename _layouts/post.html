@@ -70,9 +70,7 @@ layout: default
     <div class="margin-notes">
       {% if page.margin_notes %}
         {% for note in page.margin_notes %}
-          <div class="margin-note">
             <b>{{ forloop.index }}</b> {{ note }}
-          </div>
         {% endfor %}
       {% endif %}
     </div>

@@ -22,6 +22,10 @@ The basic principle of Python remote import is to use Python's **importlib** mod
 
 ## The methods of Python remote import
 
+<p class="margin-notes">
+Python remote import is a useful feature, that can let you load Python modules from different locations, without having to install or copy them beforehand. You can use Python's importlib module, as well as some other libraries, to implement the function of importing modules from HTTP, S3, SSH and other locations. When using it, you need to pay attention to some security, performance and dependency issues, and use some appropriate technologies to solve them.
+</p>
+
 There are many methods of Python remote import, depending on the location and protocol of the modules you want to import. Below I will introduce some common methods, and their corresponding example codes.
 
 ### Using importlib to Import Packages from URLs
@@ -178,7 +182,3 @@ Python remote import is a useful feature, but there are also some precautions, t
 - Python remote import may bring security risks, because you may execute some untrusted or malicious code, so you need to make sure that the source of the modules you import is reliable, or use some sandbox or isolation environments to run them.
 - Python remote import may bring performance loss, because you need to get the module source code through the network, which may be much slower than loading modules from the local file system, so you need to consider the size of the modules you import and the speed of the network, or use some caching or preloading strategies to optimize them.
 - Python remote import may bring dependency issues, because the modules you import may depend on some other modules, which may not be in your local environment, or have inconsistent versions, so you need to make sure that the dependencies of the modules you import can be resolved correctly, or use some virtual environments or container technologies to isolate them.
-
-## Summary
-
-Python remote import is a useful feature, that can let you load Python modules from different locations, without having to install or copy them beforehand. You can use Python's importlib module, as well as some other libraries, to implement the function of importing modules from HTTP, S3, SSH and other locations. When using it, you need to pay attention to some security, performance and dependency issues, and use some appropriate technologies to solve them.

@@ -64,6 +64,7 @@ trait IntervalCategory {
 
 </p>
 
+
 Rust implementation enforces compile-time verification:
 ```rust
 #[test]
@@ -157,10 +158,12 @@ impl FreeCategory {
 | Memory Usage  | 210MB               | 18MB             |
 | Diversity     | 2.1 bits/interval   | 3.4 bits/interval |
 
+<br />
+
 ---
 ---
 
-<h2 align="center">Epilogue: Differential Geometry of Music Rules</h2>  
+<h2 align="center"><i>Epilogue: Differential Geometry of Music Rules</i></h2>  
 
 Our Rust-implemented interval category reveals the topological essence of musical conventions:
 
@@ -178,7 +181,7 @@ Err(MusicError::LifeCycle(
 
 The ultimate form of music theory may reside where mathematical rigor dances with creative chaos.  
 
-<h2 align="center"> Appendix: Core Proofs </h2>  
+<h2 align="center"><i>Appendix: Core Proofs</i></h2>  
   
 Complete formal proofs available in the project Wiki: [Formal Proofs](https://github.com/HsiangNianian/interval-algebra/wiki/formal-proofs), including:
 1. Associativity proof of interval monoid  
