@@ -244,7 +244,7 @@
       table {
         display: block;
         overflow-x: auto;
-        width: 100%;
+        width: 90%;
         /* 移动端铺满宽度 */
       }
     }
@@ -255,10 +255,10 @@
     {% assign page_paths = site.header_pages | default: default_paths %}
 
     {% if page.title contains 'HsiangNianian' %}
-    <a class="site-title" href="{{ " /" | relative_url}}"><img src="{{ relative_url  }}/assets/Erigit.png"
+    <a class="site-title" href="{{ '/' | relative_url}}"><img src="{{ relative_url  }}/assets/Erigit.png"
         style="height:40px; margin-top:0px; border-radius:100%" /></a>
     {% else %}
-    <a class="site-title" href="{{ " /" | relative_url}}">{{ site.title | escape }}</a>
+    <a class="site-title" href="{{ '/' | relative_url}}">{{ site.title | escape }}</a>
     {% endif %}
 
     {% if page_paths %}
