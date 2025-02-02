@@ -62,11 +62,21 @@ layout: default
   <br />
   {% endif %}
 
-  <div class="post-content" itemprop="articleBody">
-    {{ content }}
+  <div class="post-container">
+    <div class="post-content" itemprop="articleBody">
+      {{ content }}
+    </div>
+    
+    <div class="margin-notes">
+      {% if page.margin_notes %}
+        {% for note in page.margin_notes %}
+          <div class="margin-note">
+            <b>{{ forloop.index }}</b> {{ note }}
+          </div>
+        {% endfor %}
+      {% endif %}
+    </div>
   </div>
-
-
   
   <!-- mathjax -->
   {% if page.mathjax %}

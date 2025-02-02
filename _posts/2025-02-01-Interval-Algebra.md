@@ -37,6 +37,7 @@ $$
 This structure explains why the C→G→D interval chain (P5⊗P5) collapses into C→A augmented second – a geodesic distortion on the interval torus $\mathbb{T}^2$.
 
 <br />
+
 <h2 align="right"> $2023.10.9|_{\text{Breakthrough}}^{\text{Categorical Formalization}}$ </h2>  
 
 ### Interval Category Definition
@@ -55,6 +56,13 @@ trait IntervalCategory {
 1. **Closure**: $\forall f,g \in \text{Mor}, f \otimes g \in \text{Mor}$
 2. **Associativity**: $(f \otimes g) \otimes h = f \otimes (g \otimes h)$
 3. **Identity**: $e = P1 \text{ (Perfect Unison)}$
+
+
+<p class="margin-notes">
+
+这里的“平行五度悖论”指的是在传统和声学中，平行五度被认为是不和谐的,<a herf="#">但在某些现代音乐理论中，这种限制被重新审视。</a>
+
+</p>
 
 Rust implementation enforces compile-time verification:
 ```rust
