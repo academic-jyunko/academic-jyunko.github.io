@@ -1,0 +1,12 @@
+[package]
+name = "academic"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+midly = "0.5.3"
+nom = "8.0.0"
+
+[[bin]]
+name = "academic"
+path = "main.rs"

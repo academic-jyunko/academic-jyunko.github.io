@@ -1,3 +1,7 @@
 # ignore everything in this directory
 _site/
 vendor/
+
+# Added by cargo
+
+/target
