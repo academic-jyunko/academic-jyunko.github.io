@@ -195,7 +195,7 @@
       font-size: 0.9em;
       color: #132730;
     }
-    
+
     /* 移动端样式 */
     @media (max-width: 768px) {
       .margin-notes {
@@ -211,42 +211,56 @@
 
     table {
       width: auto;
-      /* 表格宽度自适应内容 */
       border-collapse: collapse;
-      border-style: hidden;
-      /* 隐藏所有边框 */
-      background-color: transparent;
-      /* 清除表格背景颜色 */
+      background: none;
       margin: 0 auto;
-      /* 表格居中 */
+      border: none;
     }
 
-    /* 清除所有单元格的背景颜色 */
+    /* Remove all row backgrounds and stripes */
+    table tr,
+    table tr:nth-child(even),
+    table tr:nth-child(odd) {
+      background: none !important;
+    }
+
+    /* Basic cell styling */
     table td,
     table th,
-    table tr,
-    table thead th,
-    table tbody td,
-    table tfoot td {
+    table td:nth-child(even),
+    table td:nth-child(odd) {
       padding: 4px 8px;
-      /* 减少上下内边距，让内容更紧凑 */
       text-align: left;
-      background-color: transparent !important;
-      /* 强制清除背景颜色 */
-      border-left: none;
-      /* 去掉左侧竖线 */
-      border-right: none;
-      /* 去掉右侧竖线 */
+      background: none !important;
+      border: none;
     }
 
-    /* 移动端调整 */
-    @media (max-width: 768px) {
-      table {
-        display: block;
-        overflow-x: auto;
-        width: 90%;
-        /* 移动端铺满宽度 */
-      }
+    /* Header borders only */
+    table th,
+    table thead th {
+      border-top: double 3px #000;
+      border-bottom: 1px solid #000;
+      background: none !important;
+    }
+
+    /* First data row border */
+    table tbody tr:first-child td {
+      border-top: 1px solid #000;
+      margin-top: 2px; /* Add small gap between header bottom border */
+    }
+
+    /* Last row border */
+    table tr:last-child td {
+      border-bottom: 1px solid #000;
+    }
+
+
+    /* Ensure no borders or backgrounds on data cells */
+    table td,
+    table tbody td,
+    table tfoot td {
+      border: none;
+      background: none !important;
     }
   </style>
 
