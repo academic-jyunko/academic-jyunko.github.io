@@ -121,11 +121,12 @@ fn validate_counterpoint(voices: &[Voice]) -> Result<(), Error> {
 }
 ```
 
-### Bach Fugue Analysis
 
 <p class="margin-notes">
 Bach's fugue works are famous for their rigorous structure, complex counterpoint techniques and profound emotional connotations.
-</a>
+</p>
+
+### Bach Fugue Analysis
 
 $$
 \begin{tikzcd}
@@ -190,6 +191,12 @@ Complete formal proofs available in the project Wiki: [Formal Proofs](https://gi
 2. Naturality verification for tonality functor  
 3. Equivalence between diagram commutativity and counterpoint rules  
 
+```mermaid
+graph TD;
+    A[Start] --> B{Decision?};
+    B -->|Yes| C[Do something];
+    B -->|No| D[Do something else];
+```
 
 ***
 

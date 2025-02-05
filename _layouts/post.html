@@ -6,6 +6,11 @@ layout: default
     <!-- {% if page.signature %}
         <div class="signature">{{ page.signature }}</div>
     {% endif %} -->
+    <!-- 引入 Mermaid -->
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <script>
+      mermaid.initialize({ startOnLoad: true });
+    </script>
     <h1 class="post-title" itemprop="name headline" style="text-align:center">
       {{ page.title | escape }}
     </h1>
@@ -14,8 +19,8 @@ layout: default
       <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: date_format
         }}</time>
       {% if page.author %}
-      • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author 
-        }}</span></span>
+      • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author
+          }}</span></span>
       {% endif %}
     </p>
     {% seo %}
@@ -35,8 +40,9 @@ layout: default
   {% if page.summary %}
   <div class="container">
     <div class="summary">
-      <b><i>Summary:</i></b><hr />
-        <font color=""><small>{{ page.summary | html}}</small></font>
+      <b><i>Summary:</i></b>
+      <hr />
+      <font color=""><small>{{ page.summary | html}}</small></font>
     </div>
     {% if page.scontent %}
     <div class="content">
@@ -50,7 +56,8 @@ layout: default
   {% if page.notes %}
   <div class="container">
     <div class="summary">
-      <b><i>Notes:</i></b><hr />
+      <b><i>Notes:</i></b>
+      <hr />
       <font color=""><small>{{ page.notes}}</small></font>
     </div>
     {% if page.ncontent %}
@@ -66,20 +73,21 @@ layout: default
     <div class="post-content" itemprop="articleBody">
       {{ content }}
     </div>
-    
+
     {% if page.margin_notes and page.margin_notes.size > 0 %}
     <div class="margin-notes">
       {% for note in page.margin_notes %}
-        <b>{{ forloop.index }}</b> {{ note }}
+      <b>{{ forloop.index }}</b> {{ note }}
       {% endfor %}
     </div>
     {% endif %}
   </div>
-  
+
   <!-- mathjax -->
   {% if page.mathjax %}
   <script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});</script>
-  <script type="text/javascript" async src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+  <script type="text/javascript" async
+    src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
   {% endif %}
   <!-- Share -->
   <strong>Share:</strong>
@@ -113,19 +121,19 @@ layout: default
 
   <script type='text/javascript' src='/assets/js/jquery.tipsy.js'></script>
   <link rel="stylesheet" href="/assets/css/tipsy.css" type="text/css" />
-  
+
   {% if page.toc %}
   <!-- Add TOC JavaScript -->
   <script src="https://cdn.jsdelivr.net/npm/tocbot/dist/tocbot.min.js"></script>
   <script>
-    $(document).ready(function() {
+    $(document).ready(function () {
       tocbot.init({
         tocSelector: '#toc',
         contentSelector: '.post-content',
         headingSelector: 'h1, h2, h3, h4, h5, h6',
         collapseDepth: 3,
         scrollSmooth: true,
-      });
+      })
     });
   </script>
   {% endif %}
