@@ -123,6 +123,10 @@ fn validate_counterpoint(voices: &[Voice]) -> Result<(), Error> {
 
 ### Bach Fugue Analysis
 
+<p class="margin-notes">
+Bach's fugue works are famous for their rigorous structure, complex counterpoint techniques and profound emotional connotations.
+</a>
+
 $$
 \begin{tikzcd}
 C \arrow[r, "P5"] \arrow[d, "M3"'] & G \arrow[d, "m3"] \\
@@ -172,6 +176,10 @@ Err(MusicError::LifeCycle(
     "Banned intervals resurrect through quantum fluctuations"
 ))
 ```
+
+<p class="margin-notes">
+In short, the "ultimate form" of music theory may be reflected in this seemingly contradictory but interdependent binary relationship - both scientific precision and rules, and artistic freedom and passion. It is this tension and unity that makes music a unique art form that can be quantified and analyzed but also deeply felt.
+</p>
 
 The ultimate form of music theory may reside where mathematical rigor dances with creative chaos.  
 
