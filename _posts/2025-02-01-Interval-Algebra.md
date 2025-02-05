@@ -19,7 +19,7 @@ excerpt: |
 While debugging an AI composition system at dawn, I encountered the 42nd "parallel fifth paradox": when optimizing harmonic consonance, the model persistently generated intervals forbidden by classical theory. The monitoring log revealed:
 
 <p class="margin-notes">
-这里的“平行五度悖论”指的是在传统和声学中，平行五度被认为是不和谐的,<a herf="#">但在某些现代音乐理论中，这种限制被重新审视。</a>
+The "parallel fifths paradox" here refers to the fact that in traditional harmony, parallel fifths are considered dissonant, <a herf="#">but in some modern music theories, this limitation has been re-examined.</a>
 </p>
 
 ```rust
