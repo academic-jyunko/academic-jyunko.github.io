@@ -162,7 +162,7 @@ impl FreeCategory {
 
 <br />
 
-<h2 align="center"><i>Epilogue: Differential Geometry of Music Rules</i></h2>  
+## Epilogue: Differential Geometry of Music Rules  
 
 Our Rust-implemented interval category reveals the topological essence of musical conventions:
 
@@ -184,7 +184,7 @@ In short, the "ultimate form" of music theory may be reflected in this seemingly
 
 The ultimate form of music theory may reside where mathematical rigor dances with creative chaos.  
 
-<h2 align="center"><i>Appendix: Core Proofs</i></h2>  
+## Appendix: Core Proofs  
   
 Complete formal proofs available in the project Wiki: [Formal Proofs](https://github.com/HsiangNianian/interval-algebra/wiki/formal-proofs), including:
 1. Associativity proof of interval monoid  
