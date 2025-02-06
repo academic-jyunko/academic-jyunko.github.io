@@ -133,19 +133,8 @@ _Music programming language server based on LSP_ <a href="./fool" title="" rel="
 
 [[Github]](https://github.com/AICMUniversity) [[Home Page]](https://aicmu.ac.cn) [[anthology]](https://anthology.aicmu.ac.cn) [[Publication]](https://pub.aicmu.ac.cn) [[1629]](https://1629.aicmu.ac.cn)  
 
-**Opensource:* 
-<script type="text/javascript">
-<!--//--><![CDATA[//><!--
-function email(e, d) {
-   if (!document.write) return false;
-   if (document.write) {
-      var e; var d;
-      document.write('<a href="' + 'mailto:' + e + '@' + d + '">' + e + '@' + d + '<\/a>');
-   }
-}
-email("opensource", "aicmu.ac.cn");
-//--><!]]>
-</script>
+**Opensource:**  
+<opensource@aicmu.ac.cn>  
 
 - [*psi*](https://psi.aicmu.ac.cn), a script language written in rust, [check the source code on Github](https://github.com/AICMUniversity/psi).
 - [*aria*](https://aria.aicmu.ac.cn), audio programming language written in rust, [check the source code on Github](https://github.com/AICMUniversity/aria).
@@ -160,19 +149,8 @@ email("opensource", "aicmu.ac.cn");
 **HydroRoll-Team**  
 [[Github]](https://github.com/HydroRoll-Team) [[Home Page]](https://hydroroll.team) 
 
-**Support:*
-<script type="text/javascript">
-<!--//--><![CDATA[//><!--
-function email(e, d) {
-   if (!document.write) return false;
-   if (document.write) {
-      var e; var d;
-      document.write('<a href="' + 'mailto:' + e + '@' + d + '">' + e + '@' + d + '<\/a>');
-   }
-}
-email("support", "hydroroll.team");
-//--><!]]>
-</script>
+**Support:**  
+<support@hydroroll.team>  
 
 - [*infini*](https://grps.hydroroll.team), Core of HydroRoll. Official Python Version Implementation for GRPS-1. [[Source Code]](https://github.com/HydroRoll-Team/infini)
 - [*HydroRoll*](https://hydroroll.team). [[Source Code]](https://github.com/HydroRoll-Team/HydroRoll)
@@ -191,20 +169,9 @@ email("support", "hydroroll.team");
 <br />
 我不用微信，我不用QQ，给我发邮件。
 
-**Mr. HsiangNianian**<br>
-**Email:**
-<script type="text/javascript">
-<!--//--><![CDATA[//><!--
-function email(e, d) {
-   if (!document.write) return false;
-   if (document.write) {
-      var e; var d;
-      document.write('<a href="' + 'mailto:' + e + '@' + d + '">' + e + '@' + d + '<\/a>');
-   }
-}
-email("academic", "jyunko.cn");
-//--><!]]>
-</script>
+**Mr. HsiangNianian**  
+**Email:**  
+<academic@jyunko.cn>  
 
 <meta name="viewport" content="width=device-width">
 
