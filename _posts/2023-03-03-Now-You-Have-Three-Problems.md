@@ -18,7 +18,9 @@ spirit of that!
 The code that follows is Python, but it could be adapted to any 
 language with support for higher-order functions.
 
-*"Yarko suggests you read all the way through--there's a story in this."* -- Yarko
+<p class="margin-notes">
+<i>"Yarko suggests you read all the way through--there's a story in this."</i> -- Yarko
+</p>
 
 ## Elementary Particles
 
