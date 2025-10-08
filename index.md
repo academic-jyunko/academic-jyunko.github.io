@@ -35,6 +35,7 @@ These activities reflect my current pursuits, and I hope you find them interesti
 
 ## Recent
 
+[**Maillard Reaction**](./2025/10/08/Maillard-Reaction.html), why maillard reaction hardly happens in the microwave oven.  
 [**Interval Algebra:**When Category Theory Reshapes Musical DNA](./2025/02/01/Interval-Algebra.html).  
 [*Can Kolmogorov–Arnold Networks (KAN) beat MLPs?*](https://academic.jyunko.cn/2024/05/25/Can-KAN-beat-MLPs.html)Lately, it seems that the entire AI community has become about one and one thing only, LLMs.  
 [Build An Audio Programming Language](./2024/01/05/Build-An-Programming-Language.html), named *"aria"*.  
