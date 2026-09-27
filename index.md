@@ -35,7 +35,7 @@ These activities reflect my current pursuits, and I hope you find them interesti
 
 ## Recent
 
-[**The Cortex Cloudflare incident**](/2026/09/27/cloudflare-worker-incident-en.html) ([中文](/2026/09/27/cloudflare-worker-incident-zh.html)): an evidence-based account of a deployment failure, injected HTML, and recovery.<br>
+[**I only meant to fix a deployment**](/2026/09/27/cloudflare-worker-incident-en.html) ([中文](/2026/09/27/cloudflare-worker-incident-zh.html)): what happened when fixing Cortex led to a Worker I hadn’t put there.<br>
 [**Maillard Reaction**](./2025/10/08/Maillard-Reaction.html), why maillard reaction hardly happens in the microwave oven.  
 [**Interval Algebra:**When Category Theory Reshapes Musical DNA](./2025/02/01/Interval-Algebra.html).  
 [*Can Kolmogorov–Arnold Networks (KAN) beat MLPs?*](https://academic.jyunko.cn/2024/05/25/Can-KAN-beat-MLPs.html)Lately, it seems that the entire AI community has become about one and one thing only, LLMs.  
