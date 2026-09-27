@@ -1,17 +1,17 @@
 time_utc,time_shanghai,action,resource_category,result,actor_attribution,evidence
 2026-09-24T08:19:15.337Z,2026-09-24T16:19:15.337000+08:00,Create Token,malicious account token,success,dashboard context; human identity not established,retained audit extract
-2026-09-24T17:39:17.186Z,2026-09-25T01:39:17.186000+08:00,Upload Worker Module,malicious Worker,success,suspect account token,retained audit extract
+2026-09-24T17:39:17.186Z,2026-09-25T01:39:17.186000+08:00,Upload Worker Module,investigated Worker name,success,suspect account token,retained audit extract
 2026-09-24T17:39:26.204Z,2026-09-25T01:39:26.204000+08:00,Delete a zone ruleset,zone ruleset,success,suspect account token,retained audit extract
 2026-09-24T17:39:26.439Z,2026-09-25T01:39:26.439000+08:00,rulesets.delete,zone ruleset,success,api_token,retained audit extract
 2026-09-24T17:39:32.074Z,2026-09-25T01:39:32.074000+08:00,Delete Worker Route,Worker route,success,suspect account token,retained audit extract
 2026-09-24T17:39:39.154Z,2026-09-25T01:39:39.154000+08:00,Create Worker Route,Worker route,success,suspect account token,retained audit extract
 2026-09-24T17:39:42.209Z,2026-09-25T01:39:42.209000+08:00,Edit zone setting,ipv6,success,suspect account token,retained audit extract
 2026-09-24T17:39:45.07Z,2026-09-25T01:39:45.070000+08:00,Edit zone setting,ssl,success,suspect account token,retained audit extract
-2026-09-25T00:46:14.112Z,2026-09-25T08:46:14.112000+08:00,Upload Worker Module,malicious Worker,success,suspect account token,retained audit extract
+2026-09-25T00:46:14.112Z,2026-09-25T08:46:14.112000+08:00,Upload Worker Module,investigated Worker name,success,suspect account token,retained audit extract
 2026-09-25T00:46:29.333Z,2026-09-25T08:46:29.333000+08:00,Edit zone setting,ipv6,success,suspect account token,retained audit extract
 2026-09-25T00:46:32.515Z,2026-09-25T08:46:32.515000+08:00,Edit zone setting,ssl,success,suspect account token,retained audit extract
 2026-09-25T12:06:06.925Z,2026-09-25T20:06:06.925000+08:00,Delete Worker Route,Worker route,success,suspect account token,retained audit extract
-2026-09-25T12:06:17.939Z,2026-09-25T20:06:17.939000+08:00,Delete Worker,malicious Worker,success,suspect account token,retained audit extract
+2026-09-25T12:06:17.939Z,2026-09-25T20:06:17.939000+08:00,Delete Worker,investigated Worker name,success,suspect account token,retained audit extract
 2026-09-25T17:29:55.457Z,2026-09-26T01:29:55.457000+08:00,Delete Worker,other application Worker,success,suspect account token,retained audit extract
 2026-09-25T17:29:59.288Z,2026-09-26T01:29:59.288000+08:00,Delete Worker,other application Worker,success,suspect account token,retained audit extract
 2026-09-25T17:30:13.153Z,2026-09-26T01:30:13.153000+08:00,Delete Worker,other application Worker,success,suspect account token,retained audit extract
@@ -22,13 +22,13 @@ time_utc,time_shanghai,action,resource_category,result,actor_attribution,evidenc
 2026-09-25T17:30:32.462Z,2026-09-26T01:30:32.462000+08:00,Delete Worker,other application Worker,success,suspect account token,retained audit extract
 2026-09-25T17:30:35.314Z,2026-09-26T01:30:35.314000+08:00,Delete Worker,other application Worker,success,suspect account token,retained audit extract
 2026-09-25T17:30:38.338Z,2026-09-26T01:30:38.338000+08:00,Delete Worker,other application Worker,success,suspect account token,retained audit extract
-2026-09-27T03:00:41.169Z,2026-09-27T11:00:41.169000+08:00,Upload Worker Module,malicious Worker,success,suspect account token,retained audit extract
+2026-09-27T03:00:41.169Z,2026-09-27T11:00:41.169000+08:00,Upload Worker Module,investigated Worker name,success,suspect account token,retained audit extract
 2026-09-27T03:00:53.551Z,2026-09-27T11:00:53.551000+08:00,Create Worker Route,Worker route,success,suspect account token,retained audit extract
 2026-09-27T03:00:56.492Z,2026-09-27T11:00:56.492000+08:00,Edit zone setting,ipv6,success,suspect account token,retained audit extract
 2026-09-27T03:00:59.24Z,2026-09-27T11:00:59.240000+08:00,Edit zone setting,ssl,success,suspect account token,retained audit extract
-2026-09-27T03:29:38.043Z,2026-09-27T11:29:38.043000+08:00,Containment upload,malicious Worker,success,incident response operation,retained API receipt
+2026-09-27T03:29:38.043Z,2026-09-27T11:29:38.043000+08:00,Containment upload,investigated Worker name,success,incident response operation,retained API receipt
 2026-09-27T03:45:36.897Z,2026-09-27T11:45:36.897000+08:00,Delete Token,malicious account token,success,dashboard context; human identity not established,retained audit extract
 2026-09-27T03:45:37Z,2026-09-27T11:45:37+08:00,TOKEN_REVOKE,malicious account token,success,api,retained audit extract
-2026-09-27T03:51:28.844Z,2026-09-27T11:51:28.844000+08:00,Delete contained malicious Worker,malicious Worker,success,incident response operation,retained API receipt
+2026-09-27T03:51:28.844Z,2026-09-27T11:51:28.844000+08:00,Delete contained malicious Worker,investigated Worker name,success,incident response operation,retained API receipt
 2026-09-27T04:06:48.666Z,2026-09-27T12:06:48.666000+08:00,Edit zone setting,ipv6,success,dashboard context; human identity not established,retained audit extract
 2026-09-27T04:07:18.863Z,2026-09-27T12:07:18.863000+08:00,Edit zone setting,ssl,success,dashboard context; human identity not established,retained audit extract

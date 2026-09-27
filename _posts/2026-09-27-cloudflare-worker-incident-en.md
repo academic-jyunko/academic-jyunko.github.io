@@ -76,14 +76,14 @@ Cloudflare supports running a route Worker in front of a Worker attached to a Cu
 
 <figure>
   <a href="/assets/incidents/2026-09-27-cloudflare/request-path-en.svg"><img src="/assets/incidents/2026-09-27-cloudflare/request-path-en.svg" alt="A browser request first reaches the malicious route Worker, which fetches the Cortex response, appends scripts and returns the modified HTML" width="960" height="820" loading="lazy" style="width:100%;height:auto;"></a>
-  <figcaption>Figure 1. The request path reconstructed from retained source and routing configuration. It explains why redeploying Cortex alone would leave the injection in place. Select the image to open the SVG.</figcaption>
+  <figcaption>Figure 1. The request path reconstructed from retained source and routing configuration. It explains why redeploying Cortex alone would leave the injection in place. Select the image to open the SVG, or <a href="/assets/incidents/2026-09-27-cloudflare/request-path-en@2x.png">download the PNG</a>.</figcaption>
 </figure>
 
 The repository and application Worker could therefore lack the observed injection while the public response still contained it. An application deployment does not automatically remove a separate Worker attached through account configuration.
 
 ## 4. The recovered code contained more than hidden links
 
-After preserving the Worker, we inspected its source and decoded strings offline. We did not execute the original script or download and run its external payload. Several distinct behaviors were present:
+After preserving the Worker, we inspected its source and decoded strings offline. We did not replay the downloaded Worker locally or fetch and run the external payload referenced by its conditional delivery branch. The hidden content described above was observed on the live page. Several distinct behaviors were present:
 
 - **Hidden content injection.** The script inserted promotional links, headings and text, hiding them with off-screen positioning, opacity and related styles. This implementation matched the content observed in the public response.
 - **Conditional script delivery.** A separate branch used Windows User-Agent checks, cookies, network-organization information and proxy or hosting-network checks to decide whether to retrieve and append an external script. The external addresses were obscured with a simple XOR string transformation.
@@ -110,11 +110,13 @@ This was different from the normal Cortex build token. It was also an **account-
 Expanding the query window revealed activity that predated the deployment failure:
 
 <figure>
-  <a href="/assets/incidents/2026-09-27-cloudflare/timeline-en.svg"><img src="/assets/incidents/2026-09-27-cloudflare/timeline-en.svg" alt="A token is created on September 24; earlier injection appears on September 25; ten application Workers are deleted on September 26; injection and containment follow on September 27" width="960" height="1300" loading="lazy" style="width:100%;height:auto;"></a>
-  <figcaption>Figure 2. Incident and response chronology. All times are UTC+8; spacing is not proportional to elapsed time. The 11:51 deletion time comes from a successful API receipt. The main attack events come from audit records.</figcaption>
+  <a href="/assets/incidents/2026-09-27-cloudflare/timeline-en.svg"><img src="/assets/incidents/2026-09-27-cloudflare/timeline-en.svg" alt="A token is created on September 24; a Worker with the same name is uploaded on September 25; ten application Workers are deleted on September 26; injection and containment follow on September 27" width="960" height="1300" loading="lazy" style="width:100%;height:auto;"></a>
+  <figcaption>Figure 2. Incident and response chronology. All times are UTC+8; spacing is not proportional to elapsed time. The 11:51 deletion time comes from a successful API receipt. The main attack events come from audit records. <a href="/assets/incidents/2026-09-27-cloudflare/timeline-en@2x.png">Download the PNG</a>.</figcaption>
 </figure>
 
-At 16:19 on September 24, the token-creation record carried a dashboard context. Early on September 25, the same token had already uploaded the Worker, configured routing and changed zone settings. Later that day, it deleted an associated route and the Worker. **Those earlier deletions were associated with the same token; they should not be retold as a successful cleanup by the site administrator.**
+At 16:19 on September 24, the token-creation record carried a dashboard context. Early on September 25, the same token had already uploaded a Worker under the same name, configured routing and changed zone settings. Later that day, it deleted an associated route and the Worker. **Those earlier deletions were associated with the same token; they should not be retold as a successful cleanup by the site administrator.** The earlier source versions were not preserved; the behavioral analysis in this report applies to the sample obtained on September 27.
+
+The earlier audit also records a zone-ruleset deletion. Its previous contents were not preserved, so the specific policy change cannot be established from this record alone.
 
 Between 01:29 and 01:30 on September 26, the token also deleted ten application Workers, including the previous Cortex service and services used for documentation, proxying, websites and webhooks. The deletion events are established. How long each service was unavailable would require its own monitoring and logs; this report does not fill those gaps with estimates.
 
@@ -167,7 +169,7 @@ This report does not end with every question answered. We located the response m
 
 ## Sources and method
 
-This report draws on build logs, API receipts, audit extracts, Worker source, HTML responses and dashboard screenshots retained during an investigation I carried out with Codex. Source inspection was kept separate from executing external payloads. The two diagrams are reconstructions; the deletion screenshot is an original record.
+This report draws on build logs, API receipts, audit extracts, Worker source, HTML responses and dashboard screenshots retained during an investigation I carried out with Codex. The downloaded Worker was not replayed locally, and the remote payload referenced by its conditional branch was not retrieved or executed. Live-page observations and source-level capabilities are reported separately. The two diagrams are reconstructions; the deletion screenshot is an original record.
 
 A [field-filtered timeline CSV](/assets/incidents/2026-09-27-cloudflare/timeline-extract.csv) is available for checking the sequence described here. It is a derived extract, not an untouched audit export or independent third-party forensic verification. Full account and Zone identifiers, token IDs, email addresses, operation-source IPs and raw request contents are omitted. API secrets, the complete malicious source and external payloads are not published with the article.
 

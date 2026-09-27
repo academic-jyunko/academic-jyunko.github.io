@@ -76,14 +76,14 @@ Cloudflare 的路由 Worker 可以运行在 Custom Domain Worker 前面；前者
 
 <figure>
   <a href="/assets/incidents/2026-09-27-cloudflare/request-path-zh.svg"><img src="/assets/incidents/2026-09-27-cloudflare/request-path-zh.svg" alt="浏览器先访问恶意路由 Worker，后者取得 Cortex 的 HTML 后追加脚本，再把修改后的页面返回浏览器" width="960" height="820" loading="lazy" style="width:100%;height:auto;"></a>
-  <figcaption>图 1．依据保全的源码和路由配置重建的请求链路。它解释了为什么重新发布 Cortex 本身不能移除注入。点击图片可查看原始 SVG。</figcaption>
+  <figcaption>图 1．依据保全的源码和路由配置重建的请求链路。它解释了为什么重新发布 Cortex 本身不能移除注入。点击图片可查看原始 SVG，也可<a href="/assets/incidents/2026-09-27-cloudflare/request-path-zh@2x.png">下载 PNG</a>。</figcaption>
 </figure>
 
 因此，Git 仓库和应用 Worker 都可以保持没有上述注入特征，而最终页面仍被污染。只重新部署应用，不会顺带删除账户里独立存在的路由 Worker。
 
 ## 4. 源码显示的能力，比隐藏链接更多
 
-保全这份 Worker 后，我们只做静态阅读和字符串解码，没有执行原始脚本，也没有下载或运行它引用的外部载荷。源码中有几类不同的行为：
+保全这份 Worker 后，我们对下载的 Worker 做静态阅读和字符串解码，没有在本地重放它，也没有主动获取或运行条件投放分支引用的外部载荷。前述隐藏内容则是在实际页面中观察到的。源码中有几类不同的行为：
 
 - **隐藏内容注入。** 脚本向页面插入推广链接、标题和文本，通过离屏定位、透明度等样式隐藏。这一部分与现场返回内容相符。
 - **条件式脚本投放。** 另一条分支依据 Windows User-Agent、Cookie、网络组织信息，以及对代理或托管网络的判断，决定是否获取并追加外部脚本。外部地址使用了简单的 XOR 字符串混淆。
@@ -110,11 +110,13 @@ SHA-256（保全的 Worker 源码文件）
 扩大查询窗口后，时间线比当天的部署故障更早：
 
 <figure>
-  <a href="/assets/incidents/2026-09-27-cloudflare/timeline-zh.svg"><img src="/assets/incidents/2026-09-27-cloudflare/timeline-zh.svg" alt="9月24日创建令牌，25日已有注入部署，26日删除十个业务 Worker，27日再次注入并完成阻断、撤销令牌和删除 Worker" width="960" height="1300" loading="lazy" style="width:100%;height:auto;"></a>
-  <figcaption>图 2．事件与处置时间线。所有时间均为 UTC+8；节点间距不代表实际经过时长。11:51 的删除时间取自成功 API 回执，其余主要攻击节点取自审计记录。</figcaption>
+  <a href="/assets/incidents/2026-09-27-cloudflare/timeline-zh.svg"><img src="/assets/incidents/2026-09-27-cloudflare/timeline-zh.svg" alt="9月24日创建令牌，25日上传同名 Worker，26日删除十个业务 Worker，27日再次注入并完成阻断、撤销令牌和删除 Worker" width="960" height="1300" loading="lazy" style="width:100%;height:auto;"></a>
+  <figcaption>图 2．事件与处置时间线。所有时间均为 UTC+8；节点间距不代表实际经过时长。11:51 的删除时间取自成功 API 回执，其余主要攻击节点取自审计记录。<a href="/assets/incidents/2026-09-27-cloudflare/timeline-zh@2x.png">下载 PNG</a>。</figcaption>
 </figure>
 
-9 月 24 日 16:19，令牌创建记录带有控制台上下文。9 月 25 日凌晨，同一令牌已经上传过该 Worker、配置路由，并修改域名设置；当天晚些时候，又删除过相关路由和 Worker。**这些较早的删除同样关联到该令牌，不能写成站点管理员已经完成过一次清理。**
+9 月 24 日 16:19，令牌创建记录带有控制台上下文。9 月 25 日凌晨，同一令牌已经上传过同名 Worker、配置路由，并修改域名设置；当天晚些时候，又删除过相关路由和 Worker。**这些较早的删除同样关联到该令牌，不能写成站点管理员已经完成过一次清理。** 较早版本的源码没有保全；本文对脚本行为的分析只针对 27 日取得的样本。
+
+较早的审计还记录了一项 Zone 规则集的删除。它的旧内容没有保全，无法据此确定具体改变了什么策略。
 
 9 月 26 日 01:29 至 01:30，同一令牌还删除了十个业务 Worker，涉及此前的 Cortex、文档、代理、站点及 webhook 等服务。删除记录能够确认；各服务具体中断了多久，需要各自的监控和日志，本文没有用推测补齐。
 
@@ -167,7 +169,7 @@ Full 与 Full (Strict) 仍有区别：Full 对 HTTPS 回源加密，但不验证
 
 ## 资料与方法
 
-本文依据我与 Codex 协同排查时保存的构建日志、API 回执、审计摘录、Worker 源码、HTML 响应和控制台截图撰写。源码分析与外部载荷执行严格分开；没有把未知载荷运行后的效果写成既成事实。文中两张示意图是证据重建，删除截图是原始记录。
+本文依据我与 Codex 协同排查时保存的构建日志、API 回执、审计摘录、Worker 源码、HTML 响应和控制台截图撰写。下载的 Worker 没有在本地重放，条件分支引用的远程载荷也没有被主动获取或执行；实际页面观察与源码能力分析分别记录。文中两张示意图是证据重建，删除截图是原始记录。
 
 可下载[经过字段筛选的时间线 CSV](/assets/incidents/2026-09-27-cloudflare/timeline-extract.csv)。它方便核对本文的事件顺序，但不是未经修改的原始审计文件，也不构成第三方独立取证。公开版本省略账户与 Zone 的完整 ID、令牌 ID、邮箱、操作来源 IP 和原始请求内容；API 密钥、完整恶意源码及外部载荷不随文章发布。
 
