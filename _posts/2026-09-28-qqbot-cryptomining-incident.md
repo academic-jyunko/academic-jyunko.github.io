@@ -10,6 +10,8 @@ excerpt: "本来在给傻氪补语音、网页读取和中途回复。看了一�
 description: "一次与 Codex 共同完成的服务器挖矿事件排查记录：从 QQ bot 功能开发，到识别伪装矿工、关联 SSH 与 RAGFlow 模板注入证据，再到隔离、取证和清理。"
 ---
 
+[English version](/2026/09/28/qqbot-cryptomining-incident-en.html)
+
 2026 年 9 月 28 日，我本来在给一个 QQ bot 加功能。
 
 她叫 Krypton，平时叫“傻氪”。当天的目标是让她能发语音、自己查网页，处理长任务时知道还剩多少预算，必要时先回一句，再继续干活。

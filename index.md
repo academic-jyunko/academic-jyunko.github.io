@@ -35,6 +35,7 @@ These activities reflect my current pursuits, and I hope you find them interesti
 
 ## Recent
 
+[**I meant to fix a QQ bot**](/2026/09/28/qqbot-cryptomining-incident-en.html) ([中文](/2026/09/28/qqbot-cryptomining-incident.html)): a wall of migration threads, two cryptominers, and a feature request that got out of hand.<br>
 [**I only meant to fix a deployment**](/2026/09/27/cloudflare-worker-incident-en.html) ([中文](/2026/09/27/cloudflare-worker-incident-zh.html)): what happened when fixing Cortex led to a Worker I hadn’t put there.<br>
 [**Maillard Reaction**](./2025/10/08/Maillard-Reaction.html), why maillard reaction hardly happens in the microwave oven.  
 [**Interval Algebra:**When Category Theory Reshapes Musical DNA](./2025/02/01/Interval-Algebra.html).  
