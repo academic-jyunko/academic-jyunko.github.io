@@ -124,7 +124,7 @@ The name was not entirely wrong. It eventually helped me diagnose that the syste
 | 05:35:34 | The `System Diagnostics` workflow was created |
 | 05:35:46–05:35:48 | The application logged the rendered prompt; the access log recorded completion of the workflow run request |
 | September 20, 05:56–05:57 | Another malicious workflow run coincided with changes to files in a mining directory |
-| September 21, 02:45–02:46 | Further registration, model configuration, and workflow execution records closely preceded miner files appearing in the cache directory |
+| September 21, 02:45–02:46 | Further registration, model configuration, and workflow execution records were close in time to miner files appearing in the cache directory |
 
 A regular user here meant an application account, not a Linux login. This route did not require an SSH password first.
 
