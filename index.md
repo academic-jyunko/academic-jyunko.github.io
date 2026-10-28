@@ -23,20 +23,19 @@ Artificial Intelligence, Music Theories. There's going to be something more acad
 
 ## Current
 
-I am actively involved in the HydroRoll-Team and associated projects, which focus on a TRPG system built on the cross-platform robot framework iamai, primarily utilized for machine learning. Within this initiative, I've contributed to core components and tool libraries like "infini," a dice expression parsing library, and the HydroWindow CLI language.
+Most of my time goes into a handful of things that sit somewhere between games, agents and music.
 
-Beyond HydroRoll-Team, I manage and update personal projects such as iamai and unpredictableFate, spanning diverse fields like artificial intelligence, games, forums, and search. You can explore these projects on my GitHub profile.
+- **Agents and tools.** [*iamai*](https://github.com/retrofor/iamai) reached v1.0 this August: a cross-platform AI agent and chatbot runtime with a Rust core, Python plugins and normalized adapters. [*soon*](https://github.com/HsiangNianian/soon) is a local-first terminal agent that learns my routines and predicts the next full command. [*dsh-auto-continue*](https://github.com/HsiangNianian/dsh-auto-continue) quietly sends 「继续」 for me when a request gets interrupted by something other than a human.
+- **Games.** [*jev-turtle-soup*](https://hgt.mmstudio.games) is a turtle-soup (lateral-thinking mystery) community with an AI keeper of the truth—solve a case alone, invite friends to a table, or write the next one. [*Yapshire*](https://github.com/HsiangNianian/Yapshire) is a cozy pixel town in Rust + Bevy, with LAN and online multiplayer. [*GlyphWeave*](https://github.com/HsiangNianian/GlyphWeave) is an infinite-canvas ASCII roguelike tilemap editor. More of this lives under [mmstudio-games](https://github.com/mmstudio-games).
+- **HydroRoll-Team.** Still the TRPG side of things: the [*HydroRoll*](https://github.com/HydroRoll-Team/HydroRoll) dice framework, the [*infini*](https://github.com/HydroRoll-Team/infini) expression library, and [*DropOut*](https://github.com/HydroRoll-Team/DropOut), a fast Rust Minecraft launcher that aims to be a reproducible Minecraft workspace manager.
+- **Music, and the absurd idea.** Composing in code and programming in music is still the long-term plan—see [*aria*](https://github.com/AICMUniversity/aria) and the interval-algebra notes below. I also put out an album, *MalkuthInfo*, earlier this year, and the older EP *sequel* is [on my Fm site](https://fm.jyunko.cn).
 
-In addition to my coding endeavors, I maintain a diary and publish academic articles covering topics like artificial intelligence, music theory, and mathematics. You can read these articles on my Jyunko or academic site.
-
-I'm also passionate about music and poetry. Recently, I released an EP titled "sequel," which you can listen to [on my Fm site](https://fm.jyunko.cn).
-
-These activities reflect my current pursuits, and I hope you find them interesting.
+Besides code, I keep a [diary](https://diary.jyunko.cn) and write here about AI, music theory, maths—and lately, the occasional incident write-up when a server decides to have a life of its own.
 
 ## Recent
 
-[**I meant to fix a QQ bot**](/2026/09/28/qqbot-cryptomining-incident-en.html) ([中文](/2026/09/28/qqbot-cryptomining-incident.html)): a wall of migration threads, two cryptominers, and a feature request that got out of hand.<br>
-[**I only meant to fix a deployment**](/2026/09/27/cloudflare-worker-incident-en.html) ([中文](/2026/09/27/cloudflare-worker-incident-zh.html)): what happened when fixing Cortex led to a Worker I hadn’t put there.<br>
+[**I meant to fix a QQ bot**](/2026/09/28/qqbot-cryptomining-incident-en.html) ([中文](/2026/09/28/qqbot-cryptomining-incident.html)): I was teaching a QQ bot to send voice messages and report progress on long tasks. A wall of `migration` threads led to two cryptominers instead—one dropped in through a brute-forced SSH password, the other through a RAGFlow template injection (CVE-2026-45312)—and to an advisory correction upstream.<br>
+[**I only meant to fix a deployment**](/2026/09/27/cloudflare-worker-incident-en.html) ([中文](/2026/09/27/cloudflare-worker-incident-zh.html)): a pnpm lockfile error on Cloudflare, then hidden Betaflight spam in a page I had never written. It came from a rogue Worker in front of Cortex, planted with an account token created three days earlier that had already deleted ten application Workers. Updated in October: the same trick turned up on jyunko.cn.<br>
 [**Maillard Reaction**](./2025/10/08/Maillard-Reaction.html), why maillard reaction hardly happens in the microwave oven.  
 [**Interval Algebra:**When Category Theory Reshapes Musical DNA](./2025/02/01/Interval-Algebra.html).  
 [*Can Kolmogorov–Arnold Networks (KAN) beat MLPs?*](https://academic.jyunko.cn/2024/05/25/Can-KAN-beat-MLPs.html)Lately, it seems that the entire AI community has become about one and one thing only, LLMs.  

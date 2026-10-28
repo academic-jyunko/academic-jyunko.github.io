@@ -7,237 +7,245 @@ lang: en
 permalink: /2026/09/28/qqbot-cryptomining-incident-en.html
 toc: true
 excerpt: "I was adding voice messages, web reading, and progress replies to Krypton. Then I checked the server. The bot was still learning to report progress; the server was already using more than a hundred cores to announce its side hustle."
-description: "Investigating a cryptomining incident with Codex: a QQ bot feature request, disguised miners, separate SSH and RAGFlow intrusion trails, and the limits of containment and cleanup."
+description: "A cryptomining incident: a QQ bot feature request, disguised miners, separate SSH and RAGFlow intrusion trails, and the limits of containment and cleanup."
 ---
 
 [中文版](/2026/09/28/qqbot-cryptomining-incident.html)
 
-On September 28, 2026, I meant to add a few features to a QQ bot.
+> Put together from that day's records. All times are Beijing time (UTC+8); account and infrastructure details are anonymized. The response status is as of that evening—the case isn't closed.
 
-Her name is Krypton. We usually call her Sha Ke, an affectionate Chinese nickname roughly meaning “silly Krypton.” The plan was to get voice messages working, let her read web pages, and show her how much budget she had left during a long task. If useful, she could send a reply along the way and then keep working.
+September 28, 2026.
 
-Then I glanced at the server. Why were there so many `migration` threads, and why was CPU usage so high?
+I was adding features to a QQ bot.
 
-A few hours later, the deliverables included two intrusion timelines, a quarantined archive of mining software, and an incident report I had never intended to write.
+Her name is Krypton; we usually call her Sha Ke—roughly "silly Krypton". The plan for the day: let her send voice messages, read web pages on her own, know how much budget she had left on a long task, and, when it made sense, say something first and then keep working.
 
-The bot was still learning to report progress. The server was already using more than a hundred cores to announce its side hustle.
+Then I glanced at the server.
 
-I worked through this with Codex again. This account is based on the records we collected that day. All times are Beijing time, UTC+8. Account and infrastructure details have been anonymized. The response status is as of that evening, and the investigation remains open. I want to keep what we saw at the time, what we established later, and what we still do not know separate.
+…why so many `migration` threads? Why is the CPU this high?
 
-## It really did start with a bot that could not send voice messages
+A few hours later I had two intrusion timelines, a quarantined bundle of miners, and this write-up, which I had absolutely no plans to write.
 
-The first error was specific: sending a voice message returned `ActionFailed`. We found the bot's tmux window and traced the audio file locations and sending path. After fixing a path mismatch, I received the voice message in QQ.
+The bot still hadn't learned to report on her own. The server, meanwhile, had used more than a hundred cores to tell me about its side hustle.
 
-Then there was the way she talked. Whenever she was uncertain, she would fall back to something like, “I haven't verified this yet, so I won't jump to conclusions.” Once or twice was fine. Repeated often enough, it felt like a friend in the group chat had suddenly put on a customer service uniform.
+## It really did start with a bot that couldn't send voice messages
 
-We replaced the canned fallback with a response generated from the conversation, followed by a validation step. I chose a clear boundary: if generation or validation failed, send nothing rather than fill the gap with a template. That mattered later. Some silence came from failure handling, not from a decision to ignore us.
+The first error was a concrete one: sending a voice message returned `ActionFailed`. I found the bot's tmux window, followed the audio file locations and the send path, and it turned out the paths didn't match. Fixed that, and her voice message arrived in QQ.
 
-We also removed a leftover voice diagnostics plugin. Its job was done, but it was still handling messages and trying to write into a temporary directory that no longer existed. Removing the file required a process restart too. The instance in memory had not received the retirement memo.
+Next, the way she talked. Whenever she wasn't sure, out came "I haven't verified this part yet, so I won't jump to conclusions." Once or twice, fine. Every time, and it was like a friend in the group chat suddenly changing into a customer-service uniform.
 
-Next came a tool called Bash, initially limited to a constrained form of `curl`: public HTTP/HTTPS destinations, GET/HEAD requests, and bounded response sizes. The host controlled the permissions. A chat message could not promote it into an unrestricted shell.
+So the canned fallback became something generated from the conversation, then checked. The rule I set: if generating or checking fails, say nothing—don't paper over it with a template. (That rule matters later. Some of her silences were failure handling, not her deciding to ignore us.)
 
-She already had Tavily search. I wanted to see whether she would combine search and page retrieval on a moderately complex task, without us prescribing the sequence first.
+I also removed a leftover voice-diagnostics plugin. Its job was long finished, but it was still answering messages and trying to write into a temp directory that no longer existed. Deleting the plugin meant restarting the process too—the file on disk was gone, but the instance in memory wasn't going to leave on its own.
 
-In practice, calling a tool and reading its result well turned out to be different skills. Long pages were truncated. Answers included links the evidence did not support. Several revisions could still fail validation. The terminal looked busy; the QQ conversation looked abandoned.
+Then she got a tool called Bash, starting with nothing but a restricted `curl`: public HTTP/HTTPS, GET/HEAD, capped response size. Permissions stay with the host; one chat message can't promote it to an arbitrary shell.
 
-So we added text extraction, a page cache for the conversation, line-based reading, and keyword search. The tools reported the total line count and where to read next. Validation used only the passages actually returned to the model. Having the whole page in a cache did not mean she had read it, however confidently she said she had.
+She already had Tavily search. What I wanted to see: given a moderately complex task, would she combine search and page reading herself, rather than following an order we'd laid out for her?
 
-Finally, we exposed the remaining model rounds, tool allowance, time, and length limits. We also added a way for her to send a validated progress message and continue within the original budget.
+In practice, the tools got called, but the results didn't get read well. Long pages were truncated; answers sprouted links with nothing behind them; a few rounds of rewriting still failed the check. The terminal was buzzing; the QQ side was as quiet as an empty office.
 
-I specifically wanted the model to choose when to use it. The code would supply the tools and constraints, without a fixed script saying “announce progress when only a few rounds remain.” The capability worked, but on one real complex task she did not choose to use it and still ended in silence. We had implemented the option; we had not demonstrated reliable independent use.
+So in went text extraction, a per-conversation page cache, line-based reading and keyword lookup. The tool tells her how many lines there are and where the next chunk starts, and the check only counts passages actually returned to her. I mean—having the whole page in a cache isn't the same as the model having read it, and "I've read it all" doesn't get to paper over that.
 
-I was still studying how to make her more proactive. Two other residents of the server had already mastered that part.
+Only then came budget and mid-task replies: she can see her remaining rounds, tool allowance, time and length limits, and she's allowed to send one checked progress message and keep going within the same budget.
 
-## The wall of migration threads was mostly minding its own business
+I was particular about one thing here: *when* to speak is the model's call. The code supplies the environment and the limits—no script saying "three rounds left, say something". The path works. But on one real, complex task she never used it, and ended in silence anyway. So the ability is there; that she's learned to use it on her own is not shown.
 
-At about 18:47, we turned to the process list.
+I'm still working out how to make her more proactive. Two other residents of the server needed no such help.
 
-The machine had 128 logical CPUs and 128 `migration/N` threads. These belong to the Linux kernel's per-CPU stopper mechanism, used for work including task migration. They were not an application frantically migrating its database. The name matches the [kernel source](https://github.com/torvalds/linux/blob/master/kernel/stop_machine.c).
+## A wall of migration threads, doing almost nothing
 
-Over a three-second sample, those threads together used about 0.3% of one CPU. Two other processes were doing most of the work:
+Around 18:47 I turned to the process list.
 
-| Process name | Actual location | Sampled CPU use |
+The machine has 128 logical CPUs, and so 128 `migration/N` threads. They're the Linux kernel's per-CPU stopper threads, used for things like task migration—nothing to do with some app frantically migrating a database. The name matches the [kernel source](https://github.com/torvalds/linux/blob/master/kernel/stop_machine.c).
+
+Over a three-second sample, that whole row of threads used about 0.3% of a single core. The ones that stood out were these two:
+
+| Process name | Actual location | Sampled CPU |
 | --- | --- | --- |
-| `-bash` | An executable in a hidden directory on the host | About 9943%, equivalent to 99 logical cores |
-| `xmrig` | A hidden cache directory inside the RAGFlow container | About 2642%, equivalent to 26 logical cores |
+| `-bash` | An executable in a hidden directory on the host | About 9943%, i.e. 99 logical cores |
+| `xmrig` | A hidden cache directory inside the RAGFlow container | About 2642%, i.e. 26 logical cores |
 
-These percentages count one logical CPU as 100%, so a multithreaded process can exceed 100%. We also measured changes in CPU time from `/proc`, rather than treating a historical average as current usage.
+(One logical CPU counts as 100%, so a multithreaded process going past 100% is normal. To avoid mistaking a historical average for current load, I read the CPU-time deltas from `/proc`.)
 
-The suspicious-looking crowd of threads was barely working. The process with a perfectly respectable shell name had almost booked out the machine. Process names were proving to be poor character references.
+The row of suspicious-sounding threads was basically idling, while the most respectable-sounding name of all—a shell—had nearly booked out the machine. Judge a server's health by process names and you'll suspect the wrong people.
 
-The executable behind `-bash` was not the system Bash binary. It was hidden under `/var/tmp/.ICE-Unix/`. Static inspection found strings associated with RandomX, stratum, and XMRig, alongside launchers, keepalive scripts, and PID files.
+That `-bash` wasn't where the system Bash lives at all; it was tucked under `/var/tmp/.ICE-Unix/`. Its static strings mentioned RandomX, stratum and XMRig, with a launcher, keepalive scripts and a PID file sitting next to it.
 
-The other process was XMRig inside the container, with mining pool settings and watchdog scripts. [XMRig](https://xmrig.com/docs/miner) is open-source mining software. The problem here was its unauthorized deployment and the extra startup hooks inserted into a business service.
+The other one was XMRig in the container, with pool configuration and watchdog scripts. [XMRig](https://xmrig.com/docs/miner) itself is open-source mining software; the problem was that someone had deployed it without permission and wired auto-restart into a service's startup entry.
 
-The timing also ruled against one tempting explanation. The container miner's process had started on September 21, and the host miner's files had changed on September 25. Both predated the bot's new `curl` capability on September 28. The evidence did not support blaming that feature for letting the miners in.
+One guess could be ruled out right away: the container miner had been running since September 21, and the host miner's files changed on September 25—both before the bot got `curl` on the 28th. "The new tool let the miners in" isn't supported by the evidence.
 
-## Stop the mining first, then find out who invited it
+## Stop the miners first, then ask who invited them
 
-We saved process metadata, executables, configuration, crontabs, and startup scripts, and recorded their hashes. Then we suspended the confirmed miners and watchdogs and blocked the automatic startup paths we had identified.
+Save first: process metadata, executables, configuration, crontabs, startup scripts, with hashes recorded. Then suspend the confirmed miners and watchdogs, and cut off the autostart paths found so far.
 
-The first sample afterward showed overall CPU utilization at about 7.4%. At 19:04, it was about 6.3%. That was an immediate improvement, but it was still containment. We had not answered how the attackers got in or whether they could return.
+The first sample afterwards showed overall CPU busy at about 7.4%; at 19:04 it was about 6.3%. Instant relief—but that's only containment. How they got in, and whether they could come back, was still unanswered.
 
-I mentioned that two accounts had weak passwords. I will call them Account A and Account B rather than publish their actual identities. Both belonged to the `sudo` group, and SSH allowed password authentication at the time.
+That's when I remembered two accounts had fairly simple passwords. I'll call them Account A and Account B. Both were in the `sudo` group, and SSH allowed password logins at the time.
 
-A weak password was a lead, not a finding. Authentication logs, file timestamps, and startup records were what gave us a clearer picture of Account A.
+A weak password is a lead, not a finding. Only after lining up the auth logs, file times and startup records did Account A's story come out in full.
 
-## First trail: log in with a password, then change it
+## First trail: log in with the password, then change it
 
-This is the sequence we could align across the preserved authentication logs, syslog, and file metadata. Every entry in this table is from September 25:
+This is what the auth logs, syslog and file metadata agree on—all on September 25:
 
 | Time | Record |
 | --- | --- |
-| 21:19:14 | External Source 1 successfully authenticated to Account A with a password |
-| 21:19:15 | `.ssh` and `authorized_keys` changed; a suspicious public key appeared |
-| 21:19:18 | Source 1 logged in again using a password |
-| 21:19:21 | The logs recorded a password change for Account A |
-| 21:19:24 | Source 2 logged in to the same account using a password |
-| 21:25:13 | Miner binaries and startup scripts changed; syslog recorded a crontab replacement |
-| 21:26:01 | Cron began running the keepalive script in the hidden directory, repeating every minute |
+| 21:19:14 | External Source 1 logs in to Account A with a password |
+| 21:19:15 | `.ssh` and `authorized_keys` change; a suspicious public key appears |
+| 21:19:18 | Source 1 logs in again with a password |
+| 21:19:21 | Logs record Account A's password being changed |
+| 21:19:24 | Source 2 logs in to the same account with a password |
+| 21:25:13 | Miner binary and startup scripts change; syslog records the crontab being replaced |
+| 21:26:01 | Cron starts running the keepalive script in the hidden directory, once a minute from then on |
 
-Within the retained authentication logs, Source 1 accounted for 353,477 failed password attempts. Account A had only three successful SSH authentications in that period: the three password logins in the table.
+In the retained auth logs, Source 1 left 353,477 failed password attempts. Account A's only three successful SSH authentications were exactly those three password logins.
 
-Login, public key, password change, miner files, cron. Roughly six minutes. This went well beyond “the password was weak, so someone might have guessed it.” The evidence strongly supported a password-based compromise of Account A followed by miner deployment.
+Log in, plant a key, change the password, drop the miner, add cron—about six minutes, start to finish. This is well past "the password was simple, so maybe it got guessed": Account A was brute-forced and then used to deploy a miner, and the evidence for that is strong.
 
-File timestamps still are not a command audit. We could not turn those points into a complete recording of the attacker's terminal.
+Of course, file times aren't a per-command audit. Those timestamps can't be stretched into a full recording of the attacker's terminal.
 
-Account B had login records too, but no evidence connected them to those two sources. A similarly weak password was not grounds to label it a second compromised account.
+Account B had logins too, but nothing ties them to those two sources. A similarly simple password isn't a reason to declare it compromised as well.
 
-At 19:17 on the response day, September 28, we backed up and checked the SSH configuration, blocked new SSH logins for Account A, and quarantined the suspicious public key. Account B was restricted to its existing public keys. We reloaded SSH, successfully reconnected with the management account, and left existing services running.
+At 19:17, after backing up and checking the SSH config: new SSH logins blocked for Account A, the suspicious key quarantined, and Account B restricted to its existing keys. SSH reloaded, the management account reconnected fine, and running services weren't touched.
 
-One limitation mattered: Account A had password-protected sudo access, and the attacker had already changed its password. We found no successful sudo use in the retained logs. That did not prove privilege escalation had never happened.
+One thing I can't gloss over: Account A had password-protected sudo, and the attacker had already changed that password. No successful sudo shows up in the retained logs—but that doesn't prove privileges were never escalated.
 
-## Second trail: a RAGFlow workflow called “System Diagnostics”
+## Second trail: a RAGFlow workflow called "System Diagnostics"
 
-The container's miner appeared before the September 25 SSH intrusion. We kept the two trails separate instead of rushing to join them.
+The container miner showed up earlier than the September 25 SSH intrusion, so I didn't rush to join the two into one story.
 
-RAGFlow's Docker log was about 23.6 GB. We located time windows around changes to the mining files, preserved the relevant sections with offsets and hashes, and compared them with Nginx access logs and database records.
+RAGFlow's Docker log was about 23.6 GB. I used the miner files' change times to narrow the windows, saved the relevant slices with offsets and hashes, and lined them up against Nginx access logs and database records.
 
-That turned up **six Canvas workflows containing remote command payloads and five model configurations pointing to the same external server**. The earliest workflow, created in the early hours of September 14, was called `System Diagnostics`.
+Out came **six Canvas workflows carrying remote-command payloads, and five model configurations pointing at the same external server**. The earliest workflow, created in the small hours of September 14, was called `System Diagnostics`.
 
-The name was not entirely wrong. It eventually helped me diagnose that the system was taking instructions from someone besides its administrator.
+To be fair, the name wasn't wrong—it did end up diagnosing that this system was taking orders from someone other than its admin.
 
-| Time | Evidence collected |
+| Time | Record |
 | --- | --- |
-| September 14, 05:21:03 | An external source registered a regular RAGFlow user; the database contained the corresponding account |
-| 05:35:32 | An OpenAI-compatible model pointing to an external server was added |
-| 05:35:34 | The `System Diagnostics` workflow was created |
-| 05:35:46–05:35:48 | The application logged the rendered prompt; the access log recorded completion of the workflow run request |
-| September 20, 05:56–05:57 | Another malicious workflow run coincided with changes to files in a mining directory |
-| September 21, 02:45–02:46 | Further registration, model configuration, and workflow execution records were close in time to miner files appearing in the cache directory |
+| September 14, 05:21:03 | An external source registers a regular RAGFlow user; the database has the matching account |
+| 05:35:32 | An OpenAI-compatible model pointing at an external server is added |
+| 05:35:34 | The `System Diagnostics` workflow is created |
+| 05:35:46–05:35:48 | The app logs the rendered prompt; the access log records the run request completing |
+| September 20, 05:56–05:57 | The malicious workflow runs again; files in the miner directory change at the same time |
+| September 21, 02:45–02:46 | Another batch of registrations, model configs and workflow runs, right next to the miner landing in the cache directory |
 
-A regular user here meant an application account, not a Linux login. This route did not require an SSH password first.
+A "regular user" here is an application account, not a Linux login. This route never needed an SSH password at all.
 
-The workflows we found followed `Begin → PubMed → LLM → Message`. Custom citation instructions from the LLM prompt reached `citation_prompt()`, where an ordinary `jinja2.Environment` rendered them as a template.
+The workflows were shaped `Begin → PubMed → LLM → Message`. Custom citation rules in the LLM prompt went into `citation_prompt()`, where a plain `jinja2.Environment` rendered them as a template.
 
-That was the failed boundary. A user-controlled template could access Python objects and execute system commands. It closely matched the already disclosed [CVE-2026-45312 / GHSA-wpg4-h5g2-jxm6](https://github.com/infiniflow/ragflow/security/advisories/GHSA-wpg4-h5g2-jxm6). The published example used DuckDuckGo; our evidence involved PubMed. Both fed into the same citation-template rendering step.
+That's where it broke: a user-controlled template got past the boundary it should never have crossed, reaching Python objects and running system commands. It lines up with the already published [CVE-2026-45312 / GHSA-wpg4-h5g2-jxm6](https://github.com/infiniflow/ragflow/security/advisories/GHSA-wpg4-h5g2-jxm6)—the advisory's example uses DuckDuckGo, ours used PubMed, and both feed the same citation-template step.
 
-Calling this a model jailbreak would miss the mechanism. The dangerous operation happened while the application rendered a template. It did not depend on the model agreeing to run a command.
+So "the model got jailbroken" would be the wrong description. The dangerous part happened while the application rendered a template; it didn't depend on the model agreeing to run anything.
 
-We did not rely on the image tag alone. The preserved `generator.py` had exactly the same SHA-256 as the official v0.23.1 file. Application logs also contained rendered template output: the original expression had been replaced by an output marker, and another entry included a response from the result-reporting endpoint.
+I didn't stop at the image tag, either. The saved `generator.py` has exactly the same SHA-256 as the official v0.23.1 file, and the app logs kept the rendered output—the original expression replaced by an output marker, and in another entry, a response from the result-callback endpoint.
 
-That was stronger evidence than an HTTP 200: the malicious template had reached execution. But the command server's complete responses were not retained, so we still could not reconstruct every command used to install the miner.
+That says much more than an HTTP 200: the malicious template really did reach execution. Unfortunately the command server's full responses weren't kept, so the exact commands that installed the miner can't be rebuilt one by one.
 
-The external address in the template matched the download address in the mining watchdog script. Several workflow runs also fell close to the times the mining files appeared. Together, these were strong evidence linking the RAGFlow template injection to mining inside the container. The missing command contents remained a gap; inference could not turn them into recorded evidence.
+The external address in the template is the same one the miner's watchdog script downloads from, and several workflow runs sit right next to the miner files landing. Put together, the link between the RAGFlow template injection and the container miner is strong. The missing command contents are still missing, though—reasoning can't fill them in as if they were logs.
 
-There was another boundary to preserve. The container ran as root, and the service entrypoint was a writable bind mount. That allowed it to alter the corresponding file on the host. It did not, by itself, prove container escape or host root access.
+One more boundary: the container ran as root, and the service entry script was a writable mount, so the container could tamper with the matching file on the host. That alone proves neither a container escape nor host root.
 
-At this point, the two trails looked like this:
+At this point the two trails sit like this:
 
 | | Host account trail | RAGFlow container trail |
 | --- | --- | --- |
-| Identified entry | SSH password authentication | Application registration, malicious workflows, template injection |
+| Entry found | SSH password authentication | App registration, malicious workflows, template injection |
 | Key date | September 25 | Workflow activity traced back to at least September 14 |
-| Execution identity | Account A | Root inside the container |
-| Link to mining | File changes, crontab replacement, and cron execution records | Rendered output, matching external address, and closely timed file creation |
-| What this does not establish | That privilege escalation was ruled out | That a container escape occurred |
+| Running as | Account A | Root inside the container |
+| Link to mining | File changes, crontab replacement, cron execution | Rendered output, same external address, adjacent landing times |
+| Can't conclude | That escalation is ruled out | That the container escaped |
 
-Nor did the evidence establish that both trails belonged to one attacker. Sharing a server did not mean sharing an employer.
+Nor does anything show the two trails are the same attacker. They just happened to crowd onto the same server.
 
-## “Have we found everything?” produced two more startup hooks
+## "Did we find everything?"—and two more entry points appear
 
-Finding two running miners was a long way from establishing that nothing else remained. We continued inspecting actual process executables, cron, systemd, shell startup files, and container entrypoints.
+Finding two running miners is a long way from "nothing's left". I kept going: the real executable behind every process, cron, systemd, shell startup files, container entrypoints.
 
-In RAGFlow, beyond `.bashrc`, cron, and the service entrypoint, we found `cache-warm.service` and a profile script that ran when a login shell started. Both pointed to the mining watchdog already identified.
+On the RAGFlow side, beyond `.bashrc`, cron and the service entry script, there was a `cache-warm.service` and a profile script that ran at login—both pointing at the same miner watchdog.
 
-Those were additional persistence mechanisms, not two more running miners. Files needed their own count too: we eventually confirmed three miner executables with different hashes, one of which was not running when examined. The “two cryptominers” in the title refers to the two processes first found consuming the CPU.
+These were extra persistence hooks, not new running processes. Files on disk get their own count: in the end, three miner executables with different hashes, one of them not running at the time. The "two cryptominers" in the title are the two processes that were eating the CPU at the start.
 
-Had I declared the cleanup complete when CPU usage dropped, I would have needed to patch my own incident report half an hour later.
+Had I declared victory the moment the CPU came down, I'd have been patching my own incident report half an hour later.
 
-A process-name disguise tool sat beside the host miner. We unpacked a copy of the launcher in an isolated environment without executing the sample. The resulting script explicitly invoked that tool to make the miner appear as `-bash`.
+Next to the host miner was a small tool for faking process names. A copy of the launcher was only unpacked in an isolated environment, and the script inside clearly calls that tool to make the miner show up as `-bash`. The sample was never run.
 
-The script also selected other high-CPU processes and attempted to kill them. Occupying the machine apparently was not enough; it wanted to send the other services home. But finding that capability did not prove it caused any particular service outage. An ordinary account's ability to terminate other processes is also limited by permissions.
+The script also picks out other high-CPU processes and tries to kill them. Come to take the CPU, and send everyone else home while you're at it. Still, having that capability doesn't prove any particular service exit was its doing, and what an ordinary account can kill is limited by permissions anyway.
 
-Some legitimate programs looked odd too. Several Node processes started from `/tmp`; their binaries matched files from the official release. A real database migration came from Coze's container initialization configuration. After all that, we finally found a migration doing what its name suggested. It just had nothing to do with the original wall of kernel threads.
+Some innocent programs got suspected along the way, too. A few Node processes launched from `/tmp` matched the official release binaries hash for hash. And one genuine database migration came from Coze's container init config. After all that, a migration that actually was a migration—shame it had nothing to do with that row of threads.
 
-Those distinctions matter. An operations tool that translates “I don't recognize this” into “safe to delete” can do quite enough damage on its own.
+Those distinctions are worth keeping. An ops tool that translates "I don't recognize this" into "delete it" can do as much damage as the miners.
 
-## Before stopping RAGFlow, find out who else its Elasticsearch serves
+## Before stopping RAGFlow, ask who else its Elasticsearch works for
 
-I asked to stop RAGFlow if no other services depended on it. We found no other business services using the application itself, its MySQL, or its MinIO. The neighboring Elasticsearch instance, however, was shared by an asset library, a knowledge base, and another question-answering service.
+I said: if nothing else depends on it, stop RAGFlow. It turned out the app and its MySQL and MinIO had no other users—but the Elasticsearch next to it was shared by an asset library, a knowledge base and another Q&A service.
 
-A container's Compose project name did not tell us who depended on it now. Taking down the whole stack would have taken unrelated services with it.
+Which Compose project a container is named under and who it actually serves today are two different things. Stopping the whole project would have taken unrelated services down with it.
 
-At 19:59, we stopped the RAGFlow application container and its dedicated MySQL and MinIO, disabled automatic restarts, and isolated those services in Compose. Shared Elasticsearch and Kibana stayed up. Database and object-storage volumes were retained.
+At 19:59: the RAGFlow app container and its own MySQL and MinIO stopped, auto-restart disabled, and those services isolated in Compose. The shared Elasticsearch and Kibana stayed up, and the database and object-storage volumes were kept.
 
-We then checked listening ports, service responses, and index counts. The shared services had not restarted, and existing applications behaved as they had before. Elasticsearch had been yellow before the intervention and remained yellow afterward. We had not accidentally fixed its health status along the way.
+Then I checked listening ports, service responses and index counts: the shared services hadn't restarted, and everything else behaved as before. Elasticsearch was yellow going in and yellow coming out—I didn't "accidentally fix" it.
 
-This closed the identified application entry point. It did not revoke shared credentials the compromised application might have read. Credential rotation and checks on shared data still needed follow-through.
+That closes the confirmed application entry point. But any shared credentials the compromised app could have read don't expire just because the container stopped; rotating them and checking the shared data still has to happen.
 
-## The miners clocked out and went into an archive best left unopened
+## The miners clocked out, into an archive you shouldn't double-click
 
-We archived the confirmed miners, launchers, keepalive scripts, and the compromised container's writable layer locally. File contents were stored by hash, with a separate manifest recording original paths, permissions, and timestamps. After downloading, we verified both the archive hash and every content object's hash.
+The confirmed miners, launchers, keepalive scripts and the infected container's writable layer were archived locally. Files are stored by content hash, with a manifest recording original paths, permissions and times; after downloading, both the archive and each content object were hash-checked.
 
-The archive was about 18.8 MB: 115 unique content objects corresponding to 138 regular-file records. Its directory had restricted access; the archive was read-only and marked for quarantine by the operating system. These were still malicious samples. A quarantine flag reduced the chance of a mistake; it did not disinfect them.
+About 18.8 MB: 115 unique content objects, corresponding to 138 regular-file records. The directory is access-restricted, the archive is read-only and carries the OS quarantine flag. They're still malware, mind—the flag only guards against slips of the hand; it doesn't disinfect anything.
 
-At 20:09, after local verification, we terminated the still-suspended host miner, removed the confirmed mining directories and sample copies from the server, removed the malicious crontab, and deleted the compromised RAGFlow application container. We did not restart it to perform cleanup, and we did not delete the business data volumes.
+At 20:09, with local verification done: the still-suspended host miner terminated, the confirmed miner directories and sample copies on the server deleted, the malicious crontab removed, and the infected RAGFlow app container deleted. It wasn't restarted for the cleanup, and the data volumes weren't touched.
 
-The review also corrected an earlier response note. The host's cron job had initially been disabled in practice by renaming its startup script; the cron entry itself was still there. This time, after confirming the account had no other scheduled jobs, we removed the malicious crontab completely.
+The review also corrected one note: the host cron job had earlier been disabled only because its startup script was renamed—the cron line itself was still there. After confirming the account had no other scheduled jobs, the malicious crontab was removed entirely.
 
-At 20:11, the old processes, watchdogs, original files, and application container were gone. Checks of selected directories, current executables, and forensic copies left on the server found no matches for known miner names or hashes.
+At 20:11, the old processes, watchdogs, original files and the original container were all gone. Re-checking selected directories, current executables and the forensic copies on the server turned up no hits on known miner names or hashes.
 
-That result had a defined scope. Some dependency caches were skipped, search depth was limited, and we had not examined the entire data disk byte by byte. “No matches in this pass” did not mean “all malicious files ruled out.”
+That result has a scope, though: some dependency caches were skipped, depth was limited, and the data disk wasn't read byte by byte. "No hits this pass" can't be written up as "all malicious files are gone".
 
-Malicious workflow records also remained in the stopped database. Restoring RAGFlow could not simply mean starting the old services and declaring the environment trustworthy again.
+The stopped database still holds the malicious workflow records. Bringing RAGFlow back can't mean starting the old service and calling it a trusted environment again.
 
-Account A could not be casually deleted either. It still ran three business projects, with Python and Node environments in its home directory. We kept the account and services while restricting new SSH logins. Retirement would require moving those services first; the local password, sudo privileges, and existing sessions still needed attention.
+Account A couldn't simply be deleted either. It still runs three business projects, with Python and Node environments in its home directory. So the account and services stay, new SSH logins stay blocked; retiring the account waits on moving those services, and the local password, sudo rights and old sessions still need finishing off.
 
-That day's recurring pattern was that anything which sounded ready to remove turned out to have dependencies willing to argue the point.
+All day, the things whose names sounded easiest to deal with were the ones whose dependencies objected the most.
 
-## The code was already fixed. The advisory still listed no patched version.
+## The code was fixed long ago; the advisory still says "no patched version"
 
-I had contributed to the GitHub Advisory Database before, so I wanted to see whether this material could support useful analysis or remediation verification.
+I've contributed to the GitHub Advisory Database before, so I thought I'd see whether this material could add some analysis or fix verification.
 
-Checking public information revealed a specific omission. At the time of writing, the project advisory still had no patched version recorded. Yet [PR #14068](https://github.com/infiniflow/ragflow/pull/14068) had been merged on April 13, replacing the relevant rendering environment with `SandboxedEnvironment`. The fix was included in [v0.25.0](https://github.com/infiniflow/ragflow/releases/tag/v0.25.0), released on April 21.
+Checking the public record first turned up a very specific gap: at the time of writing, the project advisory's patched-version field was empty. Yet [PR #14068](https://github.com/infiniflow/ragflow/pull/14068) was merged back on April 13, switching the rendering environment to `SandboxedEnvironment`, and [v0.25.0](https://github.com/infiniflow/ragflow/releases/tag/v0.25.0), released April 21, already includes it.
 
-We also checked the [commit ancestry](https://github.com/infiniflow/ragflow/compare/6fdca2d2125edcf9bc91eeb26975314483e9e892...v0.25.0). The [official CVE record](https://github.com/CVEProject/cvelistV5/blob/main/cves/2026/45xxx/CVE-2026-45312.json) already listed CWE-1336, while the corresponding field in the project advisory was empty.
+The [commit ancestry](https://github.com/infiniflow/ragflow/compare/6fdca2d2125edcf9bc91eeb26975314483e9e892...v0.25.0) checks out too. The [official CVE record](https://github.com/CVEProject/cvelistV5/blob/main/cves/2026/45xxx/CVE-2026-45312.json) for the same vulnerability already lists CWE-1336, while the matching field in the project advisory is empty.
 
-To check the known boundary, we extracted the actual environment declarations and `citation_prompt()` from several versions. The check accessed an object attribute without executing system commands, reading files, or making network requests:
+To confirm the known boundary, I pulled the real environment declarations and `citation_prompt()` out of several versions and ran an attribute-access check that executes no commands, reads no files and makes no network calls:
 
-| Source version | Ordinary template rendering | Known object-attribute traversal check |
+| Source version | Ordinary template rendering | Known object-attribute traversal |
 | --- | --- | --- |
-| v0.23.1 | Passed | Allowed |
-| v0.24.0 | Passed | Allowed |
-| v0.25.0 | Passed | `SecurityError` |
-| v0.27.2 | Passed | `SecurityError` |
-| Pinned main snapshot from that day | Passed | `SecurityError` |
+| v0.23.1 | Passes | Allowed |
+| v0.24.0 | Passes | Allowed |
+| v0.25.0 | Passes | `SecurityError` |
+| v0.27.2 | Passes | `SecurityError` |
+| main snapshot pinned that day ([`d64b84c`](https://github.com/infiniflow/ragflow/commit/d64b84c7095b1edb81987bbf82cdc95b36a28cbf)) | Passes | `SecurityError` |
 
-This was a boundary check on extracted functions. We did not start the full application or replay an attack over HTTP. It supported the conclusion about this historical fix; it was not a security guarantee for an entire release, every workflow, or other template vulnerabilities. The main snapshot was pinned to [d64b84c](https://github.com/infiniflow/ragflow/commit/d64b84c7095b1edb81987bbf82cdc95b36a28cbf).
+This only checks the extracted functions—no full application, no attack replayed over HTTP. It supports "this historical fix works"; it can't vouch for a whole release, every workflow, or other template bugs.
 
-At 21:12, I opened [issue #20324](https://github.com/infiniflow/ragflow/issues/20324), requesting the patched version, actual fix reference, and CWE, and asking the maintainers to consider analyst or remediation-verifier credit. At publication, the issue remained open without a reply, and the advisory had not yet been updated.
+At 21:12 I opened [issue #20324](https://github.com/infiniflow/ragflow/issues/20324), asking for the patched version, the actual fix reference and the CWE to be filled in, and asking the maintainers to consider analyst or fix-verification credit.
 
-It was an advisory correction request. We had not discovered the vulnerability, and we had not written the fix. Submitting an existing patch again would not make it a new security contribution. Credit was for the maintainers to assess too.
+To be clear: it's an advisory correction request. I didn't discover the vulnerability and didn't write the fix; re-submitting an existing patch doesn't turn into a new security contribution. Whether credit fits is the maintainers' call.
 
-The incident material may support a more complete, anonymized analysis later. This article includes no raw logs, malicious workflows, attack commands, or miner samples. More extensive workflow-level validation was still unfinished; it did not belong in the “verified” column yet.
+The incident material might support a fuller anonymized analysis later, but this post includes no raw logs, malicious workflows, attack commands or miner samples. Deeper workflow-level verification isn't finished, so it doesn't go in the "verified" column yet.
 
-## When can we call it cleaned up?
+## When can I say it's cleaned up?
 
-We could confirm that the known miners and watchdogs had been terminated, identified samples and persistence mechanisms had been removed from the server, the compromised application container had been deleted, and the anomalous SSH entry point had been restricted. The immediate cause of the high CPU usage had been addressed.
+What I can confirm: the known miners and watchdogs are terminated, the confirmed samples and persistence hooks are removed from the server, the infected app container is deleted, and the anomalous SSH entry is restricted. The direct cause of the maxed-out CPU is dealt with.
 
-We could not yet establish whether there had been earlier intrusions, host privilege escalation, lateral movement, exposure of shared credentials, or other data access or exfiltration. Restoring trust still required credential rotation, service migration or rebuilding, checks for remaining entry points, and continued observation.
+What I can't confirm yet: whether there were earlier intrusions, host privilege escalation or lateral movement, whether shared credentials leaked, or whether other data was read or taken. Actually trusting the system again needs credential rotation, migrating or rebuilding services, checking the remaining entry points, and time spent watching.
 
-What stayed with me was how often we had to stop and separate things that looked interchangeable: a process name and its executable, an account and its owner, template execution and model behavior, container root and host root, lower CPU usage and a trustworthy system.
+What stuck with me most were all the places where I had to stop and tell two things apart: a process name and the actual program, an account and the person it belongs to, template execution and model behavior, root in a container and root on the host—and the CPU coming down versus the environment being trustworthy again.
 
-I had only wanted the bot to stop going silent during long tasks. Whether she has learned when to speak up still needs observation. At least the server's side hustle has stopped.
+I only wanted the bot to stop going quiet during long tasks. Whether she's learned when to speak up, I'll have to keep watching; the server's side business, at least, is shut down.
 
-I cannot claim the same success for every feature. But if the goal was to observe autonomous behavior, the scope of the task certainly developed a mind of its own.
+How much of the feature request got done, let's not get into. But "autonomous emergence" in the scope of the request—that, I certainly got to experience.
+
+---
+
+> **Update (2026-10-28):** Issue #20324 got a reply from a maintainer on September 30, thanking me for the verification. As of today, the patched-version and CWE fields of GHSA-wpg4-h5g2-jxm6 are still empty.
