@@ -11,8 +11,6 @@ description: "The Cortex Cloudflare incident: a failed pnpm install, a Worker re
 image: /assets/incidents/2026-09-27-cloudflare/request-path-en@2x.png
 ---
 
-[中文版](/2026/09/27/cloudflare-worker-incident-zh.html)
-
 > I've tried to keep what I saw at the time apart from what I only found out later—otherwise, reading it back, it would look as if I'd known the answer all along. I hadn't. In the morning, all I had was an install log that refused to install anything.
 
 September 27, 2026, 9:00.
