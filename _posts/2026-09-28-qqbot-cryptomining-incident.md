@@ -4,13 +4,11 @@ title: "I meant to fix a QQ bot. A wall of migration threads led me to two crypt
 date: 2026-09-28 22:45:00 +0800
 author: HsiangNianian
 lang: en
-permalink: /2026/09/28/qqbot-cryptomining-incident-en.html
+permalink: /2026/09/28/qqbot-cryptomining-incident.html
 toc: true
 excerpt: "I was adding voice messages, web reading, and progress replies to Krypton. Then I checked the server. The bot was still learning to report progress; the server was already using more than a hundred cores to announce its side hustle."
 description: "A cryptomining incident: a QQ bot feature request, disguised miners, separate SSH and RAGFlow intrusion trails, and the limits of containment and cleanup."
 ---
-
-[中文版](/2026/09/28/qqbot-cryptomining-incident.html)
 
 > Put together from that day's records. All times are Beijing time (UTC+8); account and infrastructure details are anonymized. The response status is as of that evening—the case isn't closed.
 
