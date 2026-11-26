@@ -4,7 +4,7 @@ title: "I only meant to fix a deployment: the Cortex Cloudflare incident"
 date: 2026-09-27 12:10:00 +0800
 author: HsiangNianian
 lang: en
-permalink: /2026/09/27/cloudflare-worker-incident-en.html
+permalink: /2026/09/27/cloudflare-worker-incident.html
 toc: true
 excerpt: "I wanted Cortex to deploy from my machine and from GitHub. We fixed the build, then found HTML I had never written. Following it led to another Worker and an audit trail going back three days."
 description: "The Cortex Cloudflare incident: a failed pnpm install, a Worker rewriting HTML, a hard-to-find account token and the checks after cleanup."
