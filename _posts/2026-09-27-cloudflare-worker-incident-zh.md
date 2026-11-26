@@ -4,6 +4,7 @@ title: "本来只是想修一次部署：Cortex 的 Cloudflare 事件记录"
 date: 2026-09-27 12:10:00 +0800
 author: HsiangNianian
 lang: zh-CN
+draft: true
 permalink: /2026/09/27/cloudflare-worker-incident-zh.html
 toc: true
 excerpt: "本来只想让 Cortex 的本地发布和 GitHub 自动部署都能跑通。后来构建修好了，页面里却多出一段我没写过的东西。顺着它往回查，事情一直到了三天前。"
