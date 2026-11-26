@@ -6,6 +6,7 @@ author: HsiangNianian
 lang: zh-CN
 permalink: /2026/09/28/qqbot-cryptomining-incident.html
 toc: true
+draft: true
 excerpt: "本来在给傻氪补语音、网页读取和中途回复。看了一眼服务器，顺着一排 migration，最后查出了两条入侵链。机器人还没学会自主汇报，服务器已经用一百多个核汇报了自己的副业。"
 description: "一次服务器挖矿事件排查记录：从 QQ bot 功能开发，到识别伪装矿工、关联 SSH 与 RAGFlow 模板注入证据，再到隔离、取证和清理。"
 ---
